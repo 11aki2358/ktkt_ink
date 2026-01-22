@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="pinterest" content="nopin">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+<title>backyard</title>
+<link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+</head>
+<body>
+<header>
+<nav>
+<div class="header-logo-menu">
+<div class="logo-area">
+<h1><a href="./backyard.html">backyard</a></h1>
+</div>
+<div id="nav-drawer">
+<input id="nav-input" type="checkbox" class="nav-unshown">
+<label id="nav-open" for="nav-input"><span></span></label>
+<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+<div id="nav-content-record"></div>
+<div id="nav-content-jacket">
+<div class="nav-content-text center-list"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!-- CSS : prism -->
+<!-- genre : design -->
+<h2 id="inline-decorations">Inline decorations</h2>
+<p>インライン要素のうち、文や単語の装飾に関するものを集めた。
+具体例はここ : <a href="./example.html#menu-4">link</a></p>
+<h2 id="a">a</h2>
+<p>11aki2358上のリンクはオレンジ、それ以外のサイトへのリンクはtarget="_blank"を指定して、新しいタブで開くようにしている。
+その際、target="_blank"なリンクのみのスタイルを変える方法には、</p>
+<pre data-label="inline-deco.css"><code class="language-css">
+a[target="_blank"] {
+  color: var(--type1-link-color2);  //  実際の設定とは違うよ
+}
+</code></pre>
+
+<p>javaScriptで、「外部リンクを貼る場合は、<code class="language-html">rel="noreferrer noopener"</code>を追加」する(属性の追加)には...</p>
+<p><a href="https://into-the-program.com/javascript-a-tag-target-blank-rel-noopener/" target="_blank">link</a></p>
+<pre data-label="general.js"><code class="language-js">
+function aTargetBlankRel() {
+  //ドキュメント内のa要素を取得
+  const elements = document.getElementsByTagName('a');
+
+  for (let element of elements) {
+    //a要素のhref（リンク）を取得
+    let target = element.getAttribute('target');
+
+    //target属性が_blankであれば
+    if (target === '_blank') {
+      //rel属性を付与
+      element.setAttribute('rel', 'noreferrer noopener');
+    }
+  }
+}
+var aBlankRel = aTargetBlankRel();
+</code></pre>
+
+<h2 id="code">Code</h2>
+<p><a href="https://prismjs.com/" target="_blank">これ</a>のCSSとjavaScriptを使うとオシャレにできる。jQuery不要。
+現在ダウンロードしたのは</p>
+<ul>
+<li>Minified version</li>
+<li>Solarized Light</li>
+<li>Markup + HTML + XML + SVG + MathML + SSML + Atom + RSS</li>
+<li>CSS</li>
+<li>C-like</li>
+<li>JavaScript</li>
+<li>Makefile</li>
+<li>Markup templating</li>
+<li>php</li>
+<li>Powershell</li>
+<li>JSON + Web App Manifest</li>
+<li>Show Language</li>
+<li>Normalize Whitespace</li>
+<li>Toolbar<!-- * Copy to Clipboard Button -->
+</li>
+</ul>
+<pre data-label=".html"><code class="language-html">
+&lt;pre data-label="test.css">
+  &lt;code class="lang-css">
+    ここにコード
+  &lt;/code>
+&lt;/pre>
+</code></pre>
+
+<p>preあるある :
+htmlファイルのインデントがそのまま反映されるから、ブラウザで見るとコード左側に余白があきすぎる
+... Normalize Whitespaceが全部解決してくれる! (使えばわかる!)</p>
+<p><a href="https://www.bugbugnow.net/2020/02/HTML-special-character-converter.html" target="_blank">こちら</a>のリンクで特殊記号のエスケープができる。
+数字の'1'が <em>&#NaN;</em> に変換されてしまうのだけ要注意。</p>
+<h2 id="-font-thin">.font-thin</h2>
+<p>HeaderのKatakata InakaやOPENなど。
+太くするときも、細くするときも、x, y方向の倍率を示して
+<code class="language-css">transform: scale(x, y)</code></p>
+<p>これをspanで指定(細いのはclass="font-thin")すると、あちこちで使いまわせる(decoration.css)。
+<a href="https://webparts.cman.jp/string/scale/" target="_blank">これ</a>を参考にした。
+でも、inline-blockに指定されたspanは、そのままだとコンテンツメニューよりも上に表示されてしまう。だから、</p>
+<pre data-label="inline-deco.css"><code class="language-css">
+position: relative;
+z-index: -10;
+</code></pre>
+
+<p>を追記。</p>
+</main>
+<footer>
+<button id="back-to-top"></button>
+<nav><ul>
+<li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
+<li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+<li><a href="./design.html" class="btn-flat"><span>design</span></a></li>
+</ul></nav>
+</footer>
+<script src="../js/prism.js"></script>
+<script src="../js/general.js"></script>
+</body>
+</html>

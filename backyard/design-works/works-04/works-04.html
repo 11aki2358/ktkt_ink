@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="../../../images/favicon.svg" type="image/svg+xml">
+  <title>Katakata Inaka</title>
+  <link rel="stylesheet" href="../../../css/decoration.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../../css/footer.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../../css/image.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" id="style">
+  <link rel="stylesheet" href="./works-04.css" type="text/css" id="style">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="header-logo-menu">
+        <div class="logo-area">
+          <h1><a href="">Katakata Inaka</a></h1>
+        </div>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content-record"></div>
+          <div id="nav-content-jacket">
+            <div class="nav-content-text center-list">
+              jsonファイル(改良版?)にコンテンツのリストが入っている
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- コンテンツのタグ検索 -->
+    <div id="contents-select">
+
+      <input type="checkbox" id="select-hide">
+      <label class="checkbox-label content-select-title center" for="select-hide">Select contents</label>
+
+      <div id="checkbox-area">
+        <div class="input-area">
+          <span class="select-area-name">genre :</span>
+          <div class="label-input">
+            <input type="checkbox" value="theBeatles" id="theBeatles" name="select-genre" checked>
+            <label class="checkbox-label" for="theBeatles">the Beatles</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="JeffBeck" id="JeffBeck" name="select-genre" checked>
+            <label class="checkbox-label" for="JeffBeck">Jeff Beck</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="LedZep" id="LedZep" name="select-genre" checked>
+            <label class="checkbox-label" for="LedZep">Led Zeppelin</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="Queen" id="Queen" name="select-genre" checked>
+            <label class="checkbox-label" for="Queen">Queen</label>
+          </div>
+        </div>
+
+        <div class="input-area">
+          <span class="select-area-name">year :</span>
+          <div class="label-input">
+            <input type="checkbox" value="2020" id="y2020" name="select-year" checked>
+            <label class="checkbox-label" for="y2020">2020</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="2021" id="y2021" name="select-year" checked>
+            <label class="checkbox-label" for="y2021">2021</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="2022" id="y2022" name="select-year" checked>
+            <label class="checkbox-label" for="y2022">2022</label>
+          </div>
+        </div>
+        <div class="input-area">
+          <span class="select-area-name">warn :</span>
+          <div class="label-input">
+            <input type="checkbox" value="A" id="A" name="select-warn">
+            <label class="checkbox-label" for="A">A</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="B" id="B" name="select-warn">
+            <label class="checkbox-label" for="B">B</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="C" id="C" name="select-warn">
+            <label class="checkbox-label" for="C">C</label>
+          </div>
+        </div>
+
+        <button id="button-select" onclick="selectContent()">select</button>
+        <label class="checkbox-label content-select-title center" for="select-hide">Hide tags</label>
+      </div>
+    </div>
+
+    <div id="content-box">
+
+      <!-- コンテンツの表示 -->
+      <div id="content-display">
+
+        <div id="content-title">
+          title
+        </div>
+        <div id="content-image"></div>
+        <div id="content-explain">
+          explain<br> 絵です! 今のところ、<a href="https://picsum.photos/" target="_blank">Lorem Picsum</a>をプレースホルダにしています!
+        </div>
+        <div id="content-props">
+          propety<br> 詳細なタグ・注意書き(アイコン)、コンテンツ固有のページに飛ぶためのリンクをここに貼る
+        </div>
+      </div>
+
+      <!-- 該当するコンテンツのリスト -->
+      <div id="content-list">
+        <ul id="content-ul">
+
+        </ul>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <button id="back-to-top"></button>
+    <nav>
+      <ul>
+        <li><a href="" class="btn-flat"><span>home</span></a></li>
+        <li><a href="" class="btn-flat"><span>top</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="../../../js/general.js"></script>
+  <script src="./works-04-selectData.js"></script>
+  <script src="./works-04-view.js"></script>
+</body>
+
+</html>

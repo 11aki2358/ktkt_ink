@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="pinterest" content="nopin">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+<title>backyard</title>
+<link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+</head>
+<body>
+<header>
+<nav>
+<div class="header-logo-menu">
+<div class="logo-area">
+<h1><a href="./backyard.html">backyard</a></h1>
+</div>
+<div id="nav-drawer">
+<input id="nav-input" type="checkbox" class="nav-unshown">
+<label id="nav-open" for="nav-input"><span></span></label>
+<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+<div id="nav-content-record"></div>
+<div id="nav-content-jacket">
+<div class="nav-content-text center-list"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<h2 id="escape-search">Escape Search</h2>
+<p>検索除けについて</p>
+<h2 id="basic">Basic</h2>
+<ul>
+<li>METAタグでロボット対策と、robots.txt(<em>全ページ</em>) :<br><a href="https://www.just-size.net/support/tips_searchdeny.php" target="_blank">link</a></li>
+<li>aリンクに<code class="language-html">rel="nofollow"</code>をつける(ヤバいページに至るリンクには必須か) :<br><a href="https://www.just-size.net/support/tips_searchdeny.php" target="_blank">link</a>  </li>
+</ul>
+<p>いずれの方法も、ロボットの侵入を完全に防げるという保障はない。
+おまじない程度。</p>
+<h2 id="more">more</h2>
+<ul>
+<li>一番安全な方法は、パスワード制限を付けるなどして、サーバ側で閲覧管理をすること(ロボットは絶対に侵入できない)<br>...htaccessとかを置ける環境であれば、サーバ側からの制限を書けることが出来る(Basic認証など)<br>Vercelの場合、ディレクトリpublicにしかBasic認証を掛けることが出来ない</li>
+<li>プログラムによる制限<br>phpとかを使うやりかた(フォーム認証)<br>データベース不要で実装できることもある。
+Vercelの場合。phpやRubyを使えるのは、ディレクトリapi以下のファイルのみ。
+javaScriptで同様のプログラムを書くことも不可能ではないが、phpプログラムの実行は絶対であるのに対し、javascriptは無効化できるので、む～～～ん...</li>
+</ul>
+</main>
+<footer>
+<button id="back-to-top"></button>
+<nav><ul>
+<li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
+<li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+<li><a href="./design.html" class="btn-flat"><span>design</span></a></li>
+</ul></nav>
+</footer>
+<script src="../js/prism.js"></script>
+<script src="../js/general.js"></script>
+</body>
+</html>

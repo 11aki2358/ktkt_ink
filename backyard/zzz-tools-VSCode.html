@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+  <title>backyard</title>
+  <link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <nav>
+      <div class="header-logo-menu">
+        <div class="logo-area">
+          <h1><a href="./backyard.html">backyard</a></h1>
+        </div>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content-record"></div>
+          <div id="nav-content-jacket">
+            <div class="nav-content-text center-list">
+              <!-- ここ記入しろ -->
+              <span><a href="#menu-1" class="nav-link">Extension</a></span>
+              <span><a href="#menu-2" class="nav-link">Formatting</a></span>
+              <span><a href="#menu-3" class="nav-link"></a></span>
+              <span><a href="#menu-4" class="nav-link"></a></span>
+              <span><a href="#menu-5" class="nav-link"></a></span>
+              <span><a href="#menu-6" class="nav-link"></a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- メイン -->
+  <main>
+    <!-- ページの概要 -->
+    <h2><span class="font-thin">VS Code</span></h2>
+    <div>
+      Visual Studio Codeを使うコツ。
+    </div>
+
+    <!-- コンテンツ1 -->
+    <article id="menu-1">
+      <h2><span class="font-thin">Extension</span></h2>
+      <div>
+        VS Codeの拡張機能。
+        一度にいろいろインストールしすぎたせいで、どれが何に効いているのか分らない。
+        <ul>
+          <li>HTML Snippets</li>
+          <li>HTML CSS Support</li>
+          <li>IntelliSense for CSS class names in HTML</li>
+          <li>CSS Peek</li>
+          <li>
+            <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a><br>
+            htmlの変更を、ローカルサーバーを通じてリアルタイムで確認できる。
+            <ul>
+              <li>サイト内外で貼られたリンクも自由に行き来できる。</li>
+              <li>(VS Codeのデフォルトのhtmlビューワーだと、CSSが反映されない&ページ内に貼られたリンクで移動できないので不便)</li>
+              <li>普通のブラウザで開きながら変更を確認するのもいいけれど、VS Code上で変更を保存する度にリロードしないと変更点を確認できないので面倒。</li>
+              <li>VS CodeのSettings.jsonで<br>
+                "liveServer.settings.CustomBrowser": "chrome",<br>
+              と書き加えれば、htmlをChromeで確認できる。</li>
+            </ul>
+            <ol>
+              <li>作成中のサイトを、ディレクトリごと開く(Ctr-K Ctr-Oから選択)</li>
+              <li>プレビューしたいhtmlファイルをVS Code上で開く</li>
+              <li>右下(ステータスバー)にちっこく表示された「Go Live」をクリック</li>
+              <li>ブラウザが開く。VS CodeでhtmlやCSSに変更を加えて「上書き保存(Ctr-S)」する度に、リアルタイムで変更点が反映される。</li>
+            </ol>
+          </li>
+        </ul>
+
+      </div>
+    </article>
+
+    <!-- コンテンツ2 -->
+    <article id="menu-2">
+      <h2><span class="font-thin">Formatting</span></h2>
+      <div>
+        <ul>
+          <li>html:
+            <a href="https://marketplace.visualstudio.com/items?itemName=adrianwilczynski.format-selection-as-html"
+              target="_blank">Format Selection As HTML</a>が便利(Ctr-K Ctr-H)<br>
+            故意に改行したOR改行しなかった、というのは反映してくれるので良い。
+            次に述べる拡張機能は改行の仕方が厳密すぎて、かえってわかりづらくなってしまうから。<br>
+            デフォルトではショートカットキーが設定されていない。 コマンドパレットを開き(Shift-Ctr-P)、Format Selection As
+            HTMLの右側の歯車のアイコンをクリックすれば、ショートカットを登録できる。
+            とりあえずCtr-K Ctr-Hにしてみたけれど、他のショートカットキーと被っていたらヤだな(デフォルトの設定では大丈夫そうだった)。
+          </li>
+          <li>CSSとJavaScript:
+            <a href="https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter"
+              target="_blank">JS-CSS-HTML Formatter</a>が便利(Alt-Shift-F)<br>
+            デフォルトでは、「タブ1個=スペース4個」だが、jsonをいじれば、「タブ1個=スペース2個」にできる。<br>
+            onSaveはfalseにすること。<br>
+            htmlファイルの整形もできるが、改行とかインデントとかが厳密すぎて不便。
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- コンテンツ3 -->
+    <article id="menu-3">
+      <h2><span class="font-thin">git</span>関連</h2>
+      <div>
+        gitやgitHubと絡んだ操作。まだまだ模索中。
+      </div>
+
+      <h3>拡張機能 git history</h3>
+      <div>
+        Alt + Hで、gitへのプッシュの履歴を確認できる。
+      </div>
+    </article>
+
+    <!-- コンテンツ4 -->
+    <article id="menu-4">
+      <h2><span class="font-thin"></span></h2>
+      <div>
+
+      </div>
+    </article>
+
+    <!-- コンテンツ5 -->
+    <article id="menu-5">
+      <h2><span class="font-thin"></span></h2>
+      <div>
+
+      </div>
+    </article>
+
+    <!-- コンテンツ6 -->
+    <article id="menu-6">
+      <h2><span class="font-thin"></span></h2>
+      <div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <button id="back-to-top"></button>
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="btn-flat"><span>index</span></a></li>
+        <li><a href="./backyard.html"  class="btn-flat"><span>backyard</span></a></li>
+        <li><a href="./start.html" class="btn-flat"><span>start</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="../js/general.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="pinterest" content="nopin">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+<title>backyard</title>
+<link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+</head>
+<body>
+<header>
+<nav>
+<div class="header-logo-menu">
+<div class="logo-area">
+<h1><a href="./backyard.html">backyard</a></h1>
+</div>
+<div id="nav-drawer">
+<input id="nav-input" type="checkbox" class="nav-unshown">
+<label id="nav-open" for="nav-input"><span></span></label>
+<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+<div id="nav-content-record"></div>
+<div id="nav-content-jacket">
+<div class="nav-content-text center-list"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!-- CSS : ---  -->
+<!-- genre : start -->
+<h2 id="start">Start</h2>
+<p>PCを一台用意して、html、CSSやjavaScriptをいじってサイトを作り、ネット上に公開するまでの方法。<br>他にもいろいろなやり方があるけれど、私がやっている方法の記録として、一例として紹介。</p>
+<h2 id="tools">Tools</h2>
+<ul>
+<li>PC: Windows</li>
+<li>Visual Studio Code(VS Code): ローカル環境(自分のパソコン)でhtml, CSS, javaScriptファイルの編集を行う貯めのエディタ。git操作を楽にできる。</li>
+<li>git: PCにダウンロード。</li>
+<li>gitHub:
+無料で登録が可能。VS Codeと連携させれば、ローカル環境で作成したサイトの編集履歴を保存できる。</li>
+<li>NetlifyかVercel: 無料で登録が可能。静的サイト(html, CSS, javaScriptで記述されたサイト)をネット上に公開するためのホスティングサービス。</li>
+</ul>
+<h2 id="initial-settings">Initial Settings</h2>
+<p>最初にやること</p>
+<ol>
+<li>VS Codeをインストール<br> 拡張機能を入れておくと便利だが、無くても大丈夫</li>
+<li>htmlを書いてみる! (テンプレ使うのも良い)</li>
+<li>gitをインストール。</li>
+<li>gitHubのアカウントを作る。</li>
+<li>gitHubに新しいレポジトリを作る。</li>
+<li>Vercel(Netlifyでも可)のアカウントを作る。<br><a href="start-vercel.html">Deploy with Vercel</a></li>
+<li>Vercelからサイトをデプロイ。<br><a href="start-vercel.html">Deploy with Vercel</a></li>
+</ol>
+<h2 id="update-your-site">Update your Site</h2>
+<p>最初の設定さえ完了すれば、サイトを更新するのは簡単 </p>
+<p><a href="start-vercel.html">Update your site - Vercel</a></p>
+<ol>
+<li>VS Codeでサイトに変更を加える</li>
+<li>変更点をgitHubにプッシュ</li>
+<li>(変更点は、自動でVercelやNetlifyに反映される)</li>
+</ol>
+</main>
+<footer>
+<button id="back-to-top"></button>
+<nav><ul>
+<li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
+<li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+<li><a href="./start.html" class="btn-flat"><span>start</span></a></li>
+</ul></nav>
+</footer>
+<script src="../js/general.js"></script>
+</body>
+</html>

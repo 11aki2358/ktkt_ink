@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <link rel="stylesheet" href="../css/design-bodyGrid.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
+</head>
+
+<body>
+  <header>
+    header
+  </header>
+  <main>
+    ここがmain
+    <h2>Grid Layout</h2>
+    <div>
+      作りたかったもの
+      <ul>
+        <li>header : 常にウィンドウ最上部に固定して表示</li>
+        <li>main : headerとfooterの間に、隙間なく配置</li>
+        <li>
+          footer :
+          <ul>
+            <li>コンテンツが多い場合 : ページ最下部に表示</li>
+            <li>コンテンツが少ない場合 : ウィンドウ最下部に固定</li>
+          </ul>
+        </li>
+      </ul>
+
+      headerを最上部に固定するのは
+      <pre><code class="lang-css">
+        header{
+          position: fixed;
+        }
+      </code></pre> で、 footerをページ最下部(mainが少ないときには、ウィンドウの最下部)に固定するのは
+      <pre><code class="lang-css">
+        footer{
+          position: absolute; 
+          bottom: 0;
+        }
+      </code></pre> みたいな感じで実装できる。
+      <br> mainの高さは、「mainのコンテンツがぴったりはまるように」決まる。
+      <br> だが、mainの量が少なくてウィンドウをスクロールする必要がないとき、mainの底辺とfooterの上辺との間に空白ができてしまう。
+      <br> この、mainとfooterの間の空白を埋める方法を探した。 marginやpaddingの設定では、完全にはならない(無駄な余白が出来たり、コンテンツがはみ出たり)。
+      <br> これの解決で役に立ったのが、CSSのgridレイアウト。<br> 
+      出来上がった構成は、<a href="./design-bodyGrid2.html" target="_blank">ここ(別窓で開く)</a>で確認すると分かりやすい。<br>
+      htmlの構成は
+      <ul>
+        <li>
+          html
+          <ul>
+            <li>
+              body
+              <ul>
+                <li> header </li>
+                <li> main </li>
+                <li> footer </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      bodyにgridを適用し、その子要素header, main, footerを縦に3つ並べる。 最低限必要なCSSは、以下の通り。
+
+      <pre><code class="lang-css">
+        html {
+          height: 100%;
+        }
+        
+        body {
+          background-color: wheat;
+          margin: 0;
+          height: 100%;
+          display: grid;
+          grid-template-rows: 12vw auto 10vh;
+          grid-template-columns: 100%;
+          grid-auto-flow: column;
+        }
+        
+        body header {
+          grid-row: 1 /3;
+          grid-column: 1/1;
+          background-color: aquamarine;
+          width: 100%;
+          position: fixed;
+          height: 12vw;
+        }
+        
+        body main {
+          grid-row: 2/3;
+          grid-column: 1/1;
+          background-color: violet;
+          width: 90%;
+          margin: auto;
+          height: 100%;
+        }
+        
+        body footer {
+          grid-row: 3/3;
+          grid-column: 1/1;
+          background-color:tan;
+          bottom: 0;
+          height: 10vh;
+        }
+      </code></pre> headerの高さ
+
+      <code class="lang-html">12vw</code>とfooterの高さ<code class="lang-html">10vh</code>は、好きに変えていい。
+
+    </div>
+    ＊＊＊mainのコンテンツはここまで＊＊＊
+  </main>
+  <footer>
+    footer
+  </footer>
+  <script src="../js/prism.js"></script>
+
+</body>
+
+</html>

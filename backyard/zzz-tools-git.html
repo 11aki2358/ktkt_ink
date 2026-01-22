@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+  <title>backyard</title>
+  <link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <nav>
+      <div class="header-logo-menu">
+        <div class="logo-area">
+          <h1><a href="./backyard.html">backyard</a></h1>
+        </div>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content-record"></div>
+          <div id="nav-content-jacket">
+            <div class="nav-content-text center-list">
+              <!-- ここ記入しろ -->
+              <span><a href="#menu-1" class="nav-link">git操作</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- メイン -->
+  <main>
+    <!-- ページの概要 -->
+    <article id="menu-0">
+      <h2><span class="font-thin">gitHub</span></h2>
+      <div>
+        git, gitHubについて
+      </div>
+    </article>
+
+    <!-- コンテンツ1 -->
+    <article id="menu-1">
+      <h2><span class="font-thin">git</span>操作</h2>
+      <div>
+        <p>
+          <a href="https://breezegroup.co.jp/202102/vscode-github-windows/" target="_blank">この</a>
+          ページを見れば、VS CodeをgitHubに連携させる方法が分かる。<br>
+          <a href="https://www.sukerou.com/2019/12/git-tipsgit.html" target="_blank">この</a>
+          ページを見れば、既存のディレクトリをgitに登録する方法がわかる。
+        </p>
+      </div>
+
+      <h3>git Bashや、任意のターミナルからやる方法</h3>
+      <div>
+        <p>
+          <ul>
+            <li>ルートディレクトリに移動</li>
+            <li>git add .</li>
+            <li>git commit -m "memo"</li>
+            <li>git push origin main</li>
+          </ul>
+        </p>
+      </div>
+
+      <h3>VS Codeからやる方法</h3>
+      <div>
+        <p>
+          (<a href="https://qiita.com/y-tsutsu/items/2ba96b16b220fb5913be" target="_blank">link</a>)
+          <ul>
+            <li>VS Codeの左端のSourse Controlを開く。</li>
+            <li class="next">→編集したファイルは、Changes以下にリストアップされている。</li>
+            <li>gitにプッシュしたいファイルについては、ファイル名の右にある「+」のアイコンをクリック。</li>
+            <li class="next">→クリックしたファイルはStaged Changes以下に移る。</li>
+            <li>Source Controlの右側のレ点ぽいマーク(Commit)をクリックする。</li>
+            <li class="next">→入力フォームが表示される。</li>
+            <li>フォームに、コミット時のコメントを記入しEnterを打つ。</li>
+            <li class="next">→Sync Changesボタンが表示される。</li>
+            <li>ボタンをクリックする。</li>
+          </ul>
+          (Desktop/mysite以下でescape-Links-copyより上のディレクトリに変更を加えると、Sourse
+          Controlの通知数がヤバくなるけれど、commitやpushされるのはescape-Links-copy以下だけだし、VSCodeを再起動すれば通知数は収まる)
+          <br>
+        </p>
+      </div>
+
+      <h3>ページの更新</h3>
+      <div>
+        <p>
+          いずれの方法であっても、ローカルPCでの変更がgitHubに反映される＆その反映がNetlifyに及ぶので、後は放置しておけば勝手にページが更新されている。<br>
+        </p>
+        <p>
+          gitにプッシュしたのに、公開されたページが勝手に更新されていない場合: <br>
+          何かのミスで、NetlifyのDeploysのStop aut publishingボタンを押してしまったのだろう。Stop aut publishingボタンの代わりにStart aut
+          publishingボタンがあるはずだから、それを押す。
+        </p>
+      </div>
+    </article>
+
+  </main>
+  <!-- フッター -->
+  <footer>
+    <button id="back-to-top"></button>
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="btn-flat"><span>index</span></a></li>
+        <li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="../js/general.js"></script>
+
+</body>
+
+</html>

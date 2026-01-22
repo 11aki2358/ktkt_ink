@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="pinterest" content="nopin">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+<title>backyard</title>
+<link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+</head>
+<body>
+<header>
+<nav>
+<div class="header-logo-menu">
+<div class="logo-area">
+<h1><a href="./backyard.html">backyard</a></h1>
+</div>
+<div id="nav-drawer">
+<input id="nav-input" type="checkbox" class="nav-unshown">
+<label id="nav-open" for="nav-input"><span></span></label>
+<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+<div id="nav-content-record"></div>
+<div id="nav-content-jacket">
+<div class="nav-content-text center-list"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!--  -->
+<h2 id="images">Images</h2>
+<p>Lightboxの使い方や、サムネについて</p>
+<h2 id="thumbnails">thumbnails</h2>
+<p>準備中</p>
+<h2 id="lightbox">Lightbox</h2>
+<p>画像がフワッと浮かび上がる。
+使用例は<a href="https://lokeshdhakar.com/projects/lightbox2/" target="_blank">ここ</a>。<br><b>jQuery必須。なんとかして代わりのプログラム(CSSとjavaScriptのみ)を実装できないか?</b></p>
+<h3 id="lightbox-">lightboxの導入</h3>
+<p>lightboxを使うには、</p>
+<ul>
+<li>jQuery(適当なところからダウンロード)</li>
+<li><a href="https://github.com/lokesh/lightbox2" target="_blank">この</a>CSSとjavaScript</li>
+</ul>
+<p>が必要。
+lightboxのzipファイルをダウンロードする沢山ファイルが入っているけれど、</p>
+<ul>
+<li>dist/images中の画像</li>
+<li>dist/jsのlightbox.js</li>
+<li>dist/cssのlightbox.css</li>
+</ul>
+<p>しか使わない。</p>
+<p>lightbox.css(&lt;header>の中)</p>
+<pre data-label=".html"><code class="language-html">
+&lt;link rel="stylesheet" href="css/lightbox.css" type="text/css">
+</code></pre>
+
+<p>jQuery(&lt;/body>の直前)</p>
+<pre data-label=".html"><code class="language-html">
+&lt;script src="js/jquery-3.6.0.min.js">&lt;/script>
+</code></pre>
+
+<p>lightbox.js(&lt;/body>の直前)</p>
+<pre data-label=".html"><code class="language-html">
+&lt;script src="js/lightbox.js">&lt;/script>
+</code></pre>
+
+<h3 id="lightbox-">lightboxのアレンジ</h3>
+<p>キャプションのアレンジなど。</p>
+<ul>
+<li><a href="https://oku-log.com/blog/lightbox/" target="_blank">これ</a>をみると、タイトル内でpとかも指定できる。<br>オプションdata-titleを使えば、タイトルを書ける。<br>タイトルは <strong>"</strong> でくくること。<br><strong>"</strong> の中で、a hrefを使ってリンクを貼ることもできる(この時、リンクは <strong>"</strong> ではなく <strong>'</strong> でくくること)。</li>
+<li><a href="https://www.web-myoko.net/blog/web-production/how-to-make-new-line-jquery-lightbox-caption/"
+target="_blank">これ</a>上手く使ってjavaScriptを書きかえれば、キャプションで改行できる。</li>
+<li><a href="https://qiita.com/YuuTee/items/1860b988485d0504b831" target="_blank">これ</a>でjavaScriptいじるのも。</li>
+</ul>
+<h2 id="spotlight">Spotlight</h2>
+<p>lightboxと似ているので、Spotlightというのもある。<br>lightboxと比較して</p>
+<ul>
+<li>導入方法はほぼ同じ(jQueryと、Spotlight用のCSS、javaScript、imagesを使う)</li>
+<li>モーダルウィンドウの内容が充実<br>「全画面表示」ボタンとかがある。<br>タイトルやキャプションが充実している(ボタン付けたりできる)。<br>でも、タイトルなどで画像が覆われてしまうことも...</li>
+<li>レスポンシブ対応のやり方がよく分からなかった...?<br>私の設定のやり方が悪かったはず。Spotlightのデモページはちゃんとレスポンシブ対応していたけれど、自分でコードを組むと上手くいかない。lightboxは、特に何も考えなくてもレスポンシブしてくれる。</li>
+</ul>
+</main>
+<footer>
+<button id="back-to-top"></button>
+<nav><ul>
+<li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
+<li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+<li><a href="./design.html" class="btn-flat"><span>design</span></a></li>
+</ul></nav>
+</footer>
+<script src="../js/prism.js"></script>
+<script src="../js/general.js"></script>
+</body>
+</html>

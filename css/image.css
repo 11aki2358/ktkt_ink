@@ -1,0 +1,25 @@
+/***************************
+  image.css
+***************************/
+
+img {
+  width: 100%;
+}
+
+.banner {
+  width: 15%;
+}
+
+.medium {
+  width: 26vw;
+  height: 26vw;
+  object-fit: cover;
+}
+
+.image-set a:hover {
+  background-color: var(--type1-base-color);
+}
+
+.banner a:hover {
+  background-color: var(--type1-base-color);
+}

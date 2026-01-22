@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="pinterest" content="nopin">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+<title>backyard</title>
+<link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+</head>
+<body>
+<header>
+<nav>
+<div class="header-logo-menu">
+<div class="logo-area">
+<h1><a href="./backyard.html">backyard</a></h1>
+</div>
+<div id="nav-drawer">
+<input id="nav-input" type="checkbox" class="nav-unshown">
+<label id="nav-open" for="nav-input"><span></span></label>
+<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+<div id="nav-content-record"></div>
+<div id="nav-content-jacket">
+<div class="nav-content-text center-list"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!-- CSS : --- -->
+<!-- genre : start -->
+<p>最終更新 : 2022年</p>
+<h2 id="compare-static-hosting-services">Compare Static Hosting Services</h2>
+<p>静的サイトをホスティングできる無料サービスの比較。
+ここでは、Netlify, Vercel, Firebaseを紹介。<br>
+個人サイトのサーバと言えば、国内のサービスが候補にあがると思う。
+でも、「サーバ」(のようなものだけれど)静的ホスティングサービスというものもあって、こちらの方が便利な感じがあったので紹介する。  </p>
+<p>良い所</p>
+<ul>
+<li>最低限必要な機能は、無期限・無料で使える</li>
+<li>広告が挟まれない </li>
+<li>独自ドメインを持っていなくても、ドメイン発行してくれる<br>独自ドメインを使いたい場合にもOK</li>
+</ul>
+<p>難点</p>
+<ul>
+<li>海外のサービスなので、公式からは日本語での案内がない・少ない。<br>(シンプルな英語なので、グーグル翻訳を駆使すればなんとかなる...)
+(多くの日本人が「○○のやり方」的な記事を書いているので参考に)</li>
+</ul>
+<h2 id="overall">Overall</h2>
+<ul>
+<li>全体的にお手軽。メールフォームを楽に付けるならばNetlify。認証・閲覧制限が必要な内容には不向き。</li>
+<li>ちょうどよいバランスのVercel</li>
+<li>上級者向き・サイト公開だけではもったいないFirebase</li>
+</ul>
+<h2 id="netlify">Netlify</h2>
+<p>よいところ</p>
+<ul>
+<li>静的サイトだけれど、メールフォームは楽々付けられる。</li>
+<li>gitHubと連携してデプロイできる。初期設定が簡単。</li>
+<li>でも、git使わなくても、ブラウザにドラッグ&ドロップでもデプロイできる。<br>「絶対にgit使いたくない! ターミナル見たくない! CLIって何?」という人に最適。</li>
+</ul>
+<p>難点</p>
+<ul>
+<li>扱えるのは静的サイトのみ(html, CSS, javaScript)。<br>サーバ側の設定は限定的。プログラムの使用は不可。</li>
+<li>Basic認証など使うには、有料会員になる必要がある。<br>(検索除けも閲覧制限も、html, CSS, javaScriptだけでは不完全かなぁ)。</li>
+<li>ページの読み込みは遅めかも。</li>
+</ul>
+<h2 id="vercel">Vercel</h2>
+<p>よいところ : </p>
+<ul>
+<li>gitHubと連携してデプロイできる。初期設定が簡単。</li>
+<li>無料でデータベースを使える</li>
+<li>無料でBasic認証を使える</li>
+<li>phpやRubyなどのプログラムを使える :
+...頑張ればフォーム認証を作れる</li>
+<li>ページの読み込みが速い</li>
+</ul>
+<h2 id="firebase">Firebase</h2>
+<p>静的サイト(+ちょびっとphpとか)のためだけにfirebaseを使うのは大げさな印象。</p>
+<p>よいところ</p>
+<ul>
+<li>無料で登録可能、Basic認証も無料</li>
+<li>静的サイト以外にも、データベースなどを扱うことが出来る</li>
+<li>ページの読み込みが速いらしい</li>
+</ul>
+<p>難点</p>
+<ul>
+<li>機能が多すぎて、初心者が使うには難しい</li>
+<li>データベースを使うには、支払方法の登録が必要(有料版を使わなくても)。
+使えるデータベースは、MySQLとは違う(日本語の資料が少ない気がする)。</li>
+<li>npmやFirebase CLIのインストールが必要 :
+<a href="https://www.yururiwork.net/archives/1322" target="_blank">link</a></li>
+<li>gitとの連携が難しそう(まだやっていない) :
+<a href="https://zenn.dev/yuji/articles/bee992e91349d6" target="_blank">link</a>
+<a href="https://nainaistar.hatenablog.com/entry/2020/05/26/Github_Actions%E3%81%A7Firebase%E3%82%92%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%99%E3%82%8B" target="_blank">link</a><br>普通にFirebase CLIからページを更新(デプロイ)すればいいだけの話だけれど、gitにも履歴を保存しておきたいし、でもFirebase CLIとgitへのプッシュで二度手間になるのはめんどいしな～</li>
+</ul>
+</main>
+<footer>
+<button id="back-to-top"></button>
+<nav><ul>
+<li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
+<li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+<li><a href="./start.html" class="btn-flat"><span>start</span></a></li>
+</ul></nav>
+</footer>
+<script src="../js/general.js"></script>
+</body>
+</html>

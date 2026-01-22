@@ -1,0 +1,125 @@
+/* works-01-flex */
+
+
+/* 
+main {
+  background-color: yellowgreen;
+} 
+*/
+
+#contents-select {
+  display: block;
+  /* background-color: bisque; */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#contents-select #select-hide:checked~#checkbox-area {
+  display: none;
+}
+
+#contents-select .content-select-title {
+  display: block;
+  font-weight: bold;
+}
+
+#contents-select #checkbox-area {
+  flex: auto;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+#contents-select #checkbox-area .input-area {
+  display: block;
+}
+
+#contents-select #checkbox-area .input-area .select-area-name {
+  display: block;
+  margin: 0.1rem;
+}
+
+#contents-select #checkbox-area .input-area .label-input {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+#contents-select #checkbox-area #button-select {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+  padding: .2rem;
+  width: 60%;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.checkbox-label {
+  padding: 0.2rem;
+  border: 2px solid var(--type1-main-color);
+  /* ラベルの境界線を実線で指定する */
+}
+
+.checkbox-label:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked+.checkbox-label {
+  background-color: var(--type1-main-color);
+}
+
+#contents-select #checkbox-area #button-select:hover {
+  cursor: pointer;
+}
+
+
+/* 以下、flexで配置
+  gridを使えば、もっと楽なjsでOKかも */
+
+#content-box {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* flex 1個め */
+
+#content-display {
+  flex: auto;
+  display: none;
+  background-color: powderblue;
+  margin-bottom: 0.5rem;
+}
+
+
+/* flex 2個め */
+
+#content-list {
+  flex: auto;
+  overflow-y: auto;
+  background-color: skyblue;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#content-list div[name="content-data"] {
+  padding: 0.7rem;
+  display: none;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+}
+
+.focus {
+  background-color: var(--type1-main-color);
+}

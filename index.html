@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg+xml">
+  <title>Katakata Inaka</title>
+  <link rel="stylesheet" href="./css/decoration.css" type="text/css" id="style">
+  <link rel="stylesheet" href="./css/footer.css" type="text/css" id="style">
+  <link rel="stylesheet" href="./css/header.css" type="text/css" id="style">
+  <link rel="stylesheet" href="./css/image.css" type="text/css" id="style">
+  <link rel="stylesheet" href="./css/style.css" type="text/css" id="style">
+  <link rel="stylesheet" href="./css/index.css" type="text/css" id="style">
+</head>
+
+<body id="INDEX">
+  <header>
+    <nav>
+      <div class="header-logo-menu">
+        <div class="logo-area">
+          <h1><a href="top.html">Katakata Inaka</a></h1>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- メイン -->
+  <main>
+    <div id="main-back">
+      <input type="checkbox" id="open-modal" checked>
+      <div></div>
+      <label for="open-modal" id="modal">
+        <div></div>
+        <div id="modal-content">
+          ロックバンド、ときどき映画のファンアートを収めています<br> 
+          公式とは一切関係のないサイトです<br>
+          当サイトのコンテンツの無断使用・無断転載はご遠慮ください<br><br>
+          左上のサイト名から入れます
+          <div class="click-area">OK</div>
+        </div>
+        <div></div>
+      </label>
+
+      <div id="main-content">
+        <div id="main-content01"></div>
+        <div id="main-content02"></div>
+        <div id="main-content03"></div>
+        <div id="main-content04"></div>
+        <div id="main-content05"></div>
+      </div>
+      <div id="moby-dick">
+        <img src="./images/k0803_2.svg">
+      </div>
+      <div></div>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <!-- <footer></footer> -->
+  <script>
+    function setVhMax() {
+      // https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+      // スマホで開くと、アドレスバーがウザいから
+      // スマホのアドレスバー問題は、jsで解決するしかないみたい。
+      const vh = window.innerHeight * 0.01;
+
+      // なぜか上手く機能しない
+      // とりあえず、CSSでhtml, bodyに
+      // overflow: hidden;
+      // 指定して対応している
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+  </script>
+  <script src="js/general.js"></script>
+</body>
+
+</html>

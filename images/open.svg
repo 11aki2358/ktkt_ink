@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="238mm"
+   height="100.55mm"
+   viewBox="0 0 238 100.55"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="open.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:snap-center="true"
+     inkscape:lockguides="false"
+     showguides="false"
+     inkscape:zoom="0.6405233"
+     inkscape:cx="854.76984"
+     inkscape:cy="13.270399"
+     inkscape:window-width="1902"
+     inkscape:window-height="1103"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     inkscape:window-x="0"
+     units="mm">
+    <inkscape:grid
+       type="xygrid"
+       id="grid14028" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <rect
+       x="-380"
+       y="-80"
+       width="38.092057"
+       height="116.71416"
+       id="rect31509" />
+    <rect
+       x="221"
+       y="235"
+       width="1"
+       height="6"
+       id="rect21678" />
+    <rect
+       x="40"
+       y="120"
+       width="620"
+       height="280"
+       id="rect16100" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text16098"
+       style="line-height:1.25;font-family:'Agency FB';font-size:0.66666667px;-inkscape-font-specification:'Agency FB';white-space:pre;shape-inside:url(#rect16100)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:92.7801px;line-height:1;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold';letter-spacing:-7.9375px;stroke-width:0.231952"
+       x="-5.1488285"
+       y="92.554893"
+       id="text17162"
+       transform="scale(1.1859714,0.84319064)"><tspan
+         sodipodi:role="line"
+         id="tspan17160"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:92.7801px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold';stroke-width:0.231952"
+         x="-5.1488285"
+         y="92.554893">OPEN</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text21676"
+       style="line-height:1.25;font-family:'Agency FB';font-size:0.66666667px;-inkscape-font-specification:'Agency FB';white-space:pre;shape-inside:url(#rect21678)" />
+    <rect
+       style="fill:#999999;stroke:#000000;stroke-width:0.15251499;stroke-miterlimit:4;stroke-dasharray:0,1.6776649;stroke-dashoffset:0"
+       id="rect29957"
+       width="238.125"
+       height="18.520834"
+       x="0"
+       y="0" />
+    <rect
+       style="fill:#999999;stroke:#000000;stroke-width:0.15251499;stroke-miterlimit:4;stroke-dasharray:0,1.6776649;stroke-dashoffset:0"
+       id="rect29981"
+       width="238.125"
+       height="18.520834"
+       x="0"
+       y="82.020836" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text31507"
+       style="line-height:1.25;font-family:'Agency FB';font-size:0.66666667px;-inkscape-font-specification:'Agency FB';white-space:pre;shape-inside:url(#rect31509)" />
+  </g>
+</svg>

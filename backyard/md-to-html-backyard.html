@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+  <title>backyard</title>
+  <link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/md-to-html.css" type="text/css" id="style">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="header-logo-menu">
+        <div class="logo-area">
+          <h1><a href="./backyard.html">backyard Editor</a></h1>
+        </div>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content-record"></div>
+          <div id="nav-content-jacket">
+            <div class="nav-content-text">
+              <div>
+                <!-- テスト (ファイルのアップロード・ダウンロード) -->
+                files : <br>
+                <form name="myform">
+                  <label for="upMd">
+                    <input id="upMd" name="myfile" type="file" accept=".md">
+                    <span>upload MD</span>
+                  </label>
+                </form>
+                <a id="downloadMd" download>download Markdown</a>
+                <a id="downloadHtml" download>download full html</a>
+                <!-- テスト ここまで -->
+              </div>
+              <div>
+                CSS and JS :<br>
+                <div class="label-input">
+                  <input type="checkbox" id="images">
+                  <label for="images" class="checkbox-label">images</label>
+                </div>
+                <div class="label-input">
+                  <input type="checkbox" id="prism" name="addCSSnJS">
+                  <label for="prism" class="checkbox-label">prism</label>
+                </div>
+                <div class="label-input">
+                  <input type="checkbox" id="lightbox" name="addCSSnJS">
+                  <label for="lightbox" class="checkbox-label">lightbox</label>
+                </div>
+                <div class="label-input">
+                  <input type="checkbox" id="jQuery">
+                  <label for="jQuery" class="checkbox-label">jQuery</label>
+                </div>
+              </div>
+
+              <div>
+                Genre :<br>
+                <div class="label-input">
+                  <input type="radio" name="genre" value="start" id="start" checked="checked"><label for="start">Start
+                    and Run</label>
+                </div>
+                <div class="label-input">
+                  <input type="radio" name="genre" value="design" id="design"><label for="design">design</label>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="contents3">
+
+      <div id="button-area">
+        <!-- flexの1個め -->
+        <!-- <h2>Backyard Creator</h2> -->
+        <div class="button-code">
+          <span class="button-exp">code</span>
+          <button type="button" name="help-code" value="help-css" onclick="helpBtn(this.value, this.name)">css</button>
+          <button type="button" name="help-code" value="help-html"
+            onclick="helpBtn(this.value, this.name)">html</button>
+          <button type="button" name="help-code" value="help-js" onclick="helpBtn(this.value, this.name)">js</button>
+          <button type="button" name="help-code" value="help-json"
+            onclick="helpBtn(this.value, this.name)">json</button>
+          <button type="button" name="help-code" value="help-php" onclick="helpBtn(this.value, this.name)">php</button>
+          <button type="button" name="help-link" value="" onclick="helpBtn(this.value, this.name)">a</button>
+
+        </div>
+        <hr>
+        <div class="button-pre">
+          <span class="button-exp">pre</span>
+          <button type="button" name="help-pre" value="help-css" onclick="helpBtn(this.value, this.name)">css</button>
+          <button type="button" name="help-pre" value="help-html" onclick="helpBtn(this.value, this.name)">html</button>
+          <button type="button" name="help-pre" value="help-js" onclick="helpBtn(this.value, this.name)">js</button>
+          <button type="button" name="help-pre" value="help-json" onclick="helpBtn(this.value, this.name)">json</button>
+          <button type="button" name="help-pre" value="help-php" onclick="helpBtn(this.value, this.name)">php</button>
+          <button type="button" name="help-noFileName" value="help-powershell"
+            onclick="helpBtn(this.value, this.name)">powershell</button>
+        </div>
+        <hr>
+
+        ここにhtmlエスケープ
+        <!-- スマホ版では、htmlエスケープは非表示(代わりに、別ページへのリンクを張る) -->
+        <!-- スケープしても、MD->html変換するときには、また通常タグにもどされてしまう... -->
+        <!-- 対策案1 : エスケープするのは'<'だけ -->
+        <!--           '>'はエスケープしない... コードを見やすくなる...? -->
+        <!-- 対策案2 : 2重にエスケープする -->
+        <!--           '>' ->  '&lt;' -> (&をエスケープして) -> '&amp;lt;' -->
+      </div>
+
+      <div id="txtarea-md">
+        <!-- flexの2個め -->
+        <label for="inMD" class="label-txtarea">markdown text</label>
+        <div class="txtarea-md-wrap">
+          <textarea id="inMD"></textarea>
+        </div>
+      </div>
+
+      <div id="wrap-tab">
+        <!-- flexの3個め -->
+        <ul id="js-tab" class="list-tab">
+          <li class="active">preview</li>
+          <li>simple</li>
+          <li onclick="completeHTML()">full</li>
+        </ul>
+
+        <div class="wrap-tab-content">
+          <div class="tab-content active">
+            <!-- htmlの見た目 -->
+            <div class="txtarea-html">
+              <div class="outHTML" id="outHTML-show"></div>
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <!-- htmlコード -->
+            <div class="txtarea-html">
+              <textarea class="outHTML" id="outHTML-txtbox" onclick="this.select()" readonly></textarea>
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <!-- 完成したhtml(ヘッダー、フッター付き) -->
+            <div class="txtarea-complete">
+              <textarea id="outHTML-complete" onclick="this.select()" readonly></textarea>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="../js/general.js"></script>
+  <script src="../js/prism.js"></script>
+  <script src="../js/md-to-html.js"></script>
+
+  <!-- https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js -->
+  <script src="../js/marked.js"></script>
+
+</body>
+
+</html>

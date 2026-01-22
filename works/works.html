@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+  <title>Katakata Inaka</title>
+  <link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+
+  <link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+  <link rel="stylesheet" href="./works.css" type="text/css" id="style">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="header-logo-menu">
+        <div class="logo-area">
+          <h1><a href="../top.html">Katakata Inaka</a></h1>
+        </div>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content-record"></div>
+          <div id="nav-content-jacket">
+            <div class="nav-content-text center-list">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- コンテンツのタグ検索 -->
+    <div id="contents-select">
+
+      <input type="checkbox" id="show-display">
+      <label class="checkbox-label content-select-title center" for="show-display">Select contents</label>
+
+      <div id="checkbox-area">
+        <div class="input-area">
+          <span class="select-area-name">genre :</span>
+          <div class="label-input">
+            <input type="checkbox" value="the-Beatles" id="the-Beatles" name="select-genre" checked>
+            <label class="checkbox-label" for="the-Beatles">the Beatles</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="Jeff-Beck" id="Jeff-Beck" name="select-genre" checked>
+            <label class="checkbox-label" for="Jeff-Beck">Jeff Beck</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="Led-Zeppelin" id="Led-Zeppelin" name="select-genre" checked>
+            <label class="checkbox-label" for="Led-Zeppelin">Led Zeppelin</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="Palaye-Royale" id="Palaye-Royale" name="select-genre" checked>
+            <label class="checkbox-label" for="Palaye-Royale">Palaye Royale</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="Pink-Floyd" id="Pink-Floyd" name="select-genre" checked>
+            <label class="checkbox-label" for="Pink-Floyd">Pink Floyd</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="Queen" id="Queen" name="select-genre" checked>
+            <label class="checkbox-label" for="Queen">Queen</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="the-Struts" id="the-Struts" name="select-genre" checked>
+            <label class="checkbox-label" for="the-Struts">the Struts</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="T-Rex" id="T-Rex" name="select-genre" checked>
+            <label class="checkbox-label" for="T-Rex">T Rex</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="films" id="films" name="select-genre" checked>
+            <label class="checkbox-label" for="films">films</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="X-JAPAN" id="X-JAPAN" name="select-genre" checked>
+            <label class="checkbox-label" for="X-JAPAN">X JAPAN</label>
+          </div>
+        </div>
+
+        <div class="input-area">
+          <span class="select-area-name">year :</span>
+          <div class="label-input">
+            <input type="checkbox" value="2020" id="y2020" name="select-year" checked>
+            <label class="checkbox-label" for="y2020">2020</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="2021" id="y2021" name="select-year" checked>
+            <label class="checkbox-label" for="y2021">2021</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" value="2022" id="y2022" name="select-year" checked>
+            <label class="checkbox-label" for="y2022">2022</label>
+          </div>
+        </div>
+
+        <!-- <div class="input-area">
+          <span class="select-area-name">category :</span>
+          <div class="label-input">
+            <input type="checkbox" value="rough" id="rough" name="select-rough">
+            <label class="checkbox-label" for="rough">include rough drawings</label>
+          </div>
+        </div> -->
+        <button id="button-select" onclick="selectContent()">select</button>
+        <label class="checkbox-label content-select-title center" for="show-display">Hide tags</label>
+
+      </div>
+    </div>
+
+    <div id="content-box">
+
+      <!-- コンテンツの表示 -->
+      <div id="content-display">
+
+        <div id="content-title">
+        </div>
+        <div id="content-image">
+          <label id="img-label">
+            <img src="" id="content-img">
+          </label>
+          <input type="checkbox" id="show-modal">
+          <label for="show-modal" id="modal-back">
+            <img src="" id="modal-img">
+            <div id="modal-comment">
+              <div id="modal-title"></div>
+              <div id="modal-explain"></div>
+              <div><a href="" id="modal-link">Visit page</a></div>
+            </div>
+          </label>
+          <label id="modal-left"></label>
+          <label id="modal-right"></label>
+        </div>
+        <div id="content-comment">
+        </div>
+      </div>
+
+      <!-- 該当するコンテンツのリスト -->
+      <div id="content-list">
+        <ul id="content-ul">
+
+        </ul>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <button id="back-to-top"></button>
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
+        <li><a href="../top.html" class="btn-flat"><span>top</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="../js/general.js"></script>
+  <script src="./works.js"></script>
+
+</body>
+
+</html>

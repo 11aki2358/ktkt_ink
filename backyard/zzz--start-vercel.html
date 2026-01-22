@@ -1,0 +1,517 @@
+Skip to content
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+  <title>backyard</title>
+  <link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <nav>
+      <div class="header-logo-menu">
+        <div class="logo-area">
+          <h1><a href="./backyard.html">backyard</a></h1>
+        </div>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content-record"></div>
+          <div id="nav-content-jacket">
+            <div class="nav-content-text center-list">
+              <!-- ここ記入しろ -->
+              <span><a href="#menu-1" class="nav-link">initial settings</a></span>
+              <span><a href="#menu-2" class="nav-link">Update your site</a></span>
+              <span><a href="#menu-3" class="nav-link">vercel CLI</a></span>
+              <span><a href="#menu-4" class="nav-link">404 error page</a></span>
+              <span><a href="#menu-5" class="nav-link"></a></span>
+              <span><a href="#menu-6" class="nav-link"></a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- メイン -->
+  <main>
+    <!-- ページの概要 -->
+    <h2><span class="font-thin">Vercel</span>を使う</h2>
+    <div>
+      静的サイト(html, CSS, javaScriptだけでできたサイト)も、動的サイトやWebアプリもホスティングできる。無料。gitにプッシュ→Vercelにデプロイ、という流れが楽&初期設定がめっちゃシンプル。<br>
+      絶対に静的サイトしか使わん、というならばNetlifyも楽だけれど、Basic認証付けたくなるかも、php使いたくなるかも、という人はVercelが良いと思う。
+    </div>
+
+    <!-- コンテンツ1 -->
+    <article id="menu-1">
+      <h2><span class="font-thin">Initial settings</span></h2>
+      <div>
+        gitHubのアカウントを持っていれば、楽々登録できる。<br>
+        (注意 : 無暗にアカウントは消さないこと!
+        アカウントを消したら、過去のメールアドレスで再度Vercelに登録することはできない。gitHubからVercelのアカウントを作った場合でも、gitHubに登録されているメアドはVercelに登録される。)
+      </div>
+
+      <!-- <h3>初めてのときだけやること</h3> -->
+      <h3>アカウント作成</h3>
+      <div>
+        <a href="https://vercel.com/login" target="_blank">Vercelのログイン画面</a>から、<b>Continue with GitHub</b>を選択。
+        登録方法の詳細は覚えていない... でも、どの設定も登録後に変更できるはずだから、成り行きに合わせて登録していけばOKだと思う。
+      </div>
+
+      <h3>ページの公開</h3>
+      <dov>
+        <ol>
+          <li>
+            Vercelのdashboardを開く。右上の<b>+ New Project</b>ボタンをクリック
+          </li>
+          <li>
+            <b>Import Git Repository</b>の下に、自分のgitHubアカウントのidが書かれていることを確認。
+          </li>
+          <li>
+            たぶん、そこにgitHubに公開中のレポジトリの一覧が表示されている。
+            デプロイ(公開)したいサイトと紐づいたレポジトリを選択。<br>
+            ! 目当てのgitレポジトリが見つからなかったら... : <br>
+            <b>Adjust GitHub App Permissions</b>をクリック。
+            別ウィンドウが開く。<br>
+            そこにある<b>Repository access</b>という項目で、<b>All repositories</b>ではなく<b>Only select repositories</b>にチェックを入れる。<br>
+            <b>Select repositories</b>ボタンが表示されるので、クリック。
+            そこから、たぶん非公開レポジトリも選択できると思うので、それをクリックして<b>Save</b>ボタン。
+          </li>
+          <li>
+            お目当てのレポジトリと対応したレポジトリを選択し、<b>import</b>ボタンをクリック
+          </li>
+          <li>
+            <b>Configure Project</b>という設定画面が開かれる。<br>
+            PROJECT NAMEには、好きな名前を記入。
+            コレが、デプロイされるサイトのURLになる。
+            (このサイトのURLのhttps://<em>marlboro-bambi</em>.vercel.app)<br>
+            FRAMEWORK PRESETは、Otherに設定。<br>
+            その他の設定は、とりあえず放置していてOK。<br>
+            <b>Deploy</b>ボタンを押す。
+          </li>
+          <li>
+            <b>Congratulatons!</b>と表示される。デプロイ完了。
+          </li>
+          <li>
+            このページの<b>Go to Dashboard</b>ボタンをクリック。
+          </li>
+          <li>
+            <b>Visit</b>ボタンを押せば、デプロイされたサイトを見れる。万歳!
+          </li>
+        </ol>
+      </dov>
+
+      <h3>サイトの初期設定</h3>
+      <h4>index.htmlの置き場所</h4>
+      <div>
+        Vercelで静的サイトを公開する際には、indexページをどこに置くか、というのに制限がある。
+        認められているのは、以下の2通り
+        <ol>
+          <li>
+            .\index.html
+          </li>
+          <li>
+            .\public\index.html
+          </li>
+        </ol>
+        のどちらか。<br>
+        当サイトは、今のところ.\index.htmlの方を採用している。<br>
+        index.html以外のページは、ルートディレクトリ以下のでのディレクトリに置いてもOK(ディレクトリpublicを使う場合は要注意かも)
+      </div>
+
+      <h5>サイトのルートディレクトリってどこさ</h5>
+      <div>
+        gitHubのレポジトリと対応しているディレクトリが、Vercelでデプロイするサイトのルートディレクトリ。
+        サイトに関するすべてのデータは、基本的にはこのディレクトリに全部入っている必要がある。<br>
+        例えば、gitHubにプッシュするときのコマンドが
+        <pre><code class="lang-powershell">
+          C:\\Users\~~~~\top> git push -u origin main
+        </code></pre>
+        であるならば、
+        gitHubのレポジトリと対応しているというのは、C:\\~~~~~\topのディレクトリ。
+      </div>
+
+      <h5>何も考えずにサイトを作った場合</h5>
+      <div>
+        .\index.html<br>
+        (index.htmlはルートディレクトリ直下に置く)<br><br>
+        index.html以外のファイルは、topの直下になくてもいい(.\blog\article001.htmlとか)。
+        でも、index.htmlを.\blog\index.htmlに置くのはダメ。
+      </div>
+
+      <h5>もうちょっとVercelらしくやる場合</h5>
+      <div>
+        .\public\index.html<br><br>
+        <em>どういうこと?</em><br>
+        ルートディレクトリに、publicという名前のディレクトリを作る。
+        他の名前じゃダメ。<br>
+        このディレクトリを使って、 上記のという位置関係でindex.htmlを配置する。<br>
+        (index.html以外は、<b>public下</b>の好きなところに配置できる。
+        例えば .\public\blog\article001.html とか)。
+        <br><br>
+        <em>なんで?</em><br>
+        Vercelでは、publicという名前のディレクトリには「ここには静的コンテンツだけが入っているよ」という特別な意味が込められている。
+        htmlファイルとかサイトで使う画像とか、「サイト閲覧者の操作に左右されない、完成したコンテンツ」はこのディレクトリに入れましょう、ということになっている。<br>
+        シンプルな静的サイトを作るだけだったら、publicうんぬんは特に気にしなくても大丈夫。
+        でも、Vercelには「Basic認証は、public下のファイルにしか適用できないよ」的な制限がある。
+        凝ったことをしたいならば、ディレクトリpublicを作って、html, CSS, javaScriptをまるっとお引越しする必要がある。
+      </div>
+    </article>
+
+    <article id="menu-2">
+      <h2><span class="font-thin">Update your site</span></h2>
+      <div>
+        サイトの初期設定が完了したら、あとはサイトの更新をgitHubにプッシュするだけでOK。
+        gitHub上での変更点は、Vercelサイトに自動的に反映される(デプロイ完了)。<br>
+        <br>
+        gitHubにプッシュしたサイトに致命的な過ち(vercel.jsonがおかしいとか)があった場合には、Vercelが文句
+        (Deployment has failed)
+        を垂れてくるし、その回のデプロイは無かったことにしてくれる。<br>
+        どこがマズかったのかのヒントはくれるから、それを読んでコードやら何やらを修正しよう。
+      </div>
+    </article>
+
+    <!-- コンテンツ3 -->
+    <article id="menu-3">
+      <h2><span class="font-thin">Vercel CLI</span></h2>
+      <div>
+        必須ではない。<br>
+        とりあえずデプロイしてみてからエラーがないか様子見る、というのもアリ。でも、一日のデプロイ回数には制限がある...<br>
+        html, CSS, javaScriptの部分は、ブラウザや、VS CodeのLive Serverからチェックできる。
+        でも、404ページどうなるの? とか、サーバに関するVercel独自のあれこれについては、上記方法ではチェックできない。
+        <br>
+        Vercelのローカル環境を準備すれば、デプロイせずに色んな機能をチェックできて便利。<br>
+        <ul>参考:
+          <li>
+            Vercel CLI 使ってみる :
+            <a href="https://neos21.net/blog/2020/11/23-03.html" target="_blank">link</a>
+          </li>
+          <li>
+            [Vercel] Serverless Functions をローカル環境で開発する :
+            <a href="https://kotsukotsu.work/tech/2020-08-30-vercel-serverless-functions-%E3%82%92%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E7%92%B0%E5%A2%83%E3%81%A7%E9%96%8B%E7%99%BA%E3%81%99%E3%82%8B/"
+              target="_blank">link</a>
+          </li>
+        </ul>
+      </div>
+
+      <h3>Node.jsをインストールする</h3>
+      <div>
+        (参考 : <a href="https://qiita.com/sefoo0104/items/0653c935ea4a4db9dc2b" target="_blank">link</a>)<br>
+        <em>コマンド<code class="lang-powershell">npm</code>を使えるようにするために必須</em>
+        <ol>
+          <li>
+            <a href="https://nodejs.org/ja/" target="_blank">公式サイト</a>から、Node.jsのインストーラーをダウンロード(とりあえず推奨版で)
+          </li>
+          <li>
+            インストーラーを起動し、インストールを進める。とりあえず[next]をクリックしていけばOK
+          </li>
+          <li>
+            インストールできたかチェック。ターミナルを開いて以下のコマンドを実行。<br>
+            (ターミナルでの作業ディレクトリはどこでもOK。たぶん。PowerShell起動してデフォルトのディレクトリ(C:\Users\私の氏名)でコマンド実行したけれど、特に問題なかった。)
+            <pre>
+              <code class="lang-powershell">
+                > npm --version
+              </code>
+            </pre>
+            エラーが出なければOK。
+          </li>
+        </ol>
+      </div>
+
+      <h3>Vercel CLIの準備</h3>
+      <div>
+        (ターミナルの作業ディレクトリはどこでもOkだと思う)
+      </div>
+
+      <h4>Vercel CLIのインストール</h4>
+      <div>
+        <pre>
+          <code class="lang-powershell">
+            > npm install -g vercel
+          </code>
+        </pre>
+      </div>
+
+      <h4>Vercelにログイン</h4>
+      <div>
+        以下のコマンドを実行したいのだが...
+        <pre><code class="lang-powershell">
+          > vercel login
+        </code></pre>
+        下記のようなエラーメッセージが出ました。上記コマンドは実行できませんでした。<br>
+        (エラー出なかったよ、という場合は、
+        <code class="lang-powershell">Continue</code>
+        うんぬんの操作へGo)
+        <pre><code class="lang-powershell">
+        vercel : このシステムではスクリプトの実行が無効になっているため、ファイル C:\Users\私の指名\AppData\Roaming\npm\
+        vercel.ps1 を読み込むことができません。詳細については、「about_Execution_Policies」(https://go.microsoft.com/fwlink/?Li
+        nkID=135170) を参照してください。
+        発生場所 行:1 文字:1
+        + vercel login
+        + ~~~~~~
+            + CategoryInfo          : セキュリティ エラー: (: ) []、PSSecurityException
+            + FullyQualifiedErrorId : UnauthorizedAccess
+        </code></pre>
+
+        <code class="lang-powershell">vercel</code>というコマンドを、「危険なコマンドかも!」とPowershellが拒否しています。<br>
+        この対策として、<a href="https://www.curict.com/item/d1/d1c4a3e.html" target="_blank">こちら</a>のサイトの「実行ポリシーの設定方法
+        その1」を試します。
+        <pre><code class="lang-powershell">
+        > Set-ExecutionPolicy RemoteSigned -Scope Process
+
+        実行ポリシーの変更
+        実行ポリシーは、信頼されていないスクリプトからの保護に役立ちます。実行ポリシーを変更すると、about_Execution_Policies
+        のヘルプ トピック (https://go.microsoft.com/fwlink/?LinkID=135170)
+        で説明されているセキュリティ上の危険にさらされる可能性があります。実行ポリシーを変更しますか?
+        [Y] はい(Y)  [A] すべて続行(A)  [N] いいえ(N)  [L] すべて無視(L)  [S] 中断(S)  [?] ヘルプ (既定値は "N"): 
+        </code></pre>
+
+        とりあえず<code class="lang-powershell">y</code>と入力しました。<br>
+        もう一度、vercelへのログインを試みます。コマンド
+        <pre><code class="lang-powershell">
+        > vercel login
+        </code></pre>
+        を書き込むと...
+        <pre><code class="lang-powershell">
+        > vercel login
+        Vercel CLI 24.0.0
+        > Log in to Vercel (Use arrow keys)
+        > Continue with GitHub
+          Continue with GitLab
+          Continue with Bitbucket
+          Continue with Email
+          Continue with SAML Single Sign-On
+          ─────────────────────────────────
+          Abort
+        </code></pre>
+        エラーは出なかった。<br>
+        ログイン方法(gitHub使う? gitLab使う? etc)を聞かれている。
+        gitHubでログインしたいので、
+        <code class="lang-powershell">Continue with GitHub</code>
+        の先頭に
+        <code class="lang-powershell">></code>
+        がついている状態(上記の状態)でEnterをクリック。<br>
+        すると、ブラウザでVercelのページが起動する。
+        <b>CLI Login Success</b>とか、gitHubに登録してあるメールアドレスとかが書いてある。
+        このページは閉じちゃってOK。<br>
+        ターミナル側の出力は、
+        <pre><code class="lang-powershell">
+        > vercel login
+        Vercel CLI 24.0.0
+        > Log in to Vercel github
+        > Success! GitHub authentication complete for 私のメールアドレス
+        Congratulations! You are now logged in. In order to deploy something, run `vercel`.
+        💡  Connect your Git Repositories to deploy every branch push automatically (https://vercel.link/git).          
+        </code></pre>
+        細かい文言は違うかもしれません。とりあえずSuccess! て書いてあるならば成功しているのだろう。
+      </div>
+
+      <h4>作業ディレクトリに移動(初期設定)</h4>
+      <div>
+        デスクトップ下のディレクトリ11aki2358をサイトのルートディレクトリとしてデプロイしている。
+        以下では、適宜ご自身の使っているフォルダ名・アカウント名・サイト名などに置き換えて読んで。
+        <pre>
+          <code class="lang-powershell">
+            PS C:\Users\私の名前\Desktop\11aki2358> vercel
+            Vercel CLI 24.0.0
+            ? Set up and deploy “~\Desktop\11aki2358”? [Y/n] y
+            ? Which scope do you want to deploy to? aki
+            ? Link to existing project? [y/N] y
+            ? What’s the name of your existing project? marlboro-bambi
+            🔗  Linked to 11aki2358/marlboro-bambi (created .vercel and added it to .gitignore)
+            🔍  Inspect: https://vercel.com/11aki2358/marlboro-bambi/5iJXofAL6heYwmpSD3vyfC8hFrJc [6s]
+            ✅  Preview: https://marlboro-bambi-11aki2358.vercel.app [copied to clipboard] [17s]
+            📝  To deploy to production (marlboro-bambi.vercel.app), run `vercel --prod`
+          </code>
+        </pre>
+        <ul>表示された質問と、その回答
+          <li>
+            <code class="lang-powershell">? Set up and deploy “~\Desktop\11aki2358”? [Y/n]</code><br>
+            yesと回答
+          </li>
+          <li>
+            <code class="lang-powershell">? Which scope do you want to deploy to?</code><br>
+            ユーザー名を選択肢から選べ、ということなのだろう。
+            Vercelのアカウントは"aki"で登録しているのしかないので、コレを選択した。
+          </li>
+          <li>
+            <code class="lang-powershell">? Link to existing project? [y/N] </code><br>
+            Desktop\11aki2358 のサイトはデプロイ済みなので、yesと回答
+          </li>
+          <li>
+            <code class="lang-powershell">? What’s the name of your existing project?</code><br>
+            プロジェクトの名前(サイトのurlの部分)を入力
+          </li>
+        </ul>
+
+        ディレクトリの中身を確認してみる(ファイル・ディレクトリ数が多いので、一部省略)。
+        <pre>
+          <code class="lang-powershell">
+            PS C:\Users\私の氏名\Desktop\11aki2358> ls
+
+                ディレクトリ: C:\Users\私の名前\Desktop\11aki2358
+
+            Mode                 LastWriteTime         Length Name
+            ----                 -------------         ------ ----
+            d-----        2022/03/09     18:03                .vercel
+            d-----        2022/03/09     14:16                backyard
+            d-----        2022/03/03      9:43                css
+            d-----        2022/03/03      9:43                images
+            d-----        2022/03/03      9:43                js
+            d-----        2022/03/04     15:48                public
+            d-----        2022/03/02     16:43                works
+            -a----        2022/03/09     18:03              9 .gitignore
+            -a----        2022/03/03      9:45           2409 404.html
+            -a----        2022/03/03      9:43           2523 index.html
+            -a----        2022/03/03      9:43           5613 top.html
+          </code>
+        </pre>
+
+        .vercelという名前のディレクトリが出来ている。
+        このディレクトリには、README.txtとproject.jsonというファイルが入っていた。<br>
+        README.txt曰く
+        <ul>
+          <li>
+            project.jsonには、プロジェクトとユーザのidが入っているよ
+          </li>
+          <li>
+            このフォルダの中身は<b>絶対に</b>誰にも見せないでね。
+            ディレクトリ.vercelは、.gitignoreに書き込まれているよ。
+          </li>
+        </ul>
+        なんか、このディレクトリはいじったらマズそう。触らぬ神に祟りなし。<br>
+        なお、.gitignoreというのは、「gitに加えないファイル・ディレクトリの一覧」のこと。
+        このリストに加えられているファイルは、公に出ない(ローカル環境、自分のPC以外からはアクセスできない)。
+      </div>
+
+      <h3>Vercel CLIを使う</h3>
+      <div>
+        面倒な初期設定は終わったぞ!
+      </div>
+
+      <h4>Vercel CLIからデプロイ</h4>
+      <div>
+        普段はgit経由でVercelにデプロイしている。
+        でも、Vercel CLIがあれば、git無しで直にデプロイできる。<br>
+
+        ターミナル上でルートディレクトリにいる前提で...
+
+        <ul>
+          <li>
+            コマンド<code class="lang-powershell">vercel</code><br>
+            ブラウザでVercelの管理画面に行き、<b>Deployments</b>を開けば、デプロイされたことを確認できる。<br>
+            ただし、サイト本来のurl(このサイトの場合、<a>https://marlboro-bambi.vercel.app/</a>)からアクセスできるのは、gitHub経由でデプロイしたサイトの方らしい。
+            CLIからデプロイした内容はPreview扱い、直近にgitHub経由でデプロイした内容がProduction(Current)となる。<br>
+            なお、Previewや過去にデプロイした古いサイトも、独自のurl(<a href="https://marlboro-bambi-8bwsbhq5o-11aki2358.vercel.app/"
+              target="_blank">https://marlboro-bambi-8bwsbhq5o-11aki2358.vercel.app/</a>など)から見ることが出来る。
+          </li>
+          <li>
+            コマンド<code class="lang-powershell">vercel --prod</code><br>
+            こちらのコマンドでデプロイしたサイトは、Previwではなく、本サイトとしてデプロイされる。<br>
+            でも、gitでバージョン管理する方が安全だろうから、このコマンドじゃなくて
+            <pre><code class="lang-powershell">
+              > git add .
+              > git commit -m "memo"
+              > git push origin main
+            </code></pre>
+            でgitにプッシュ & Vercelにデプロイ、の方がいいと思う...
+          </li>
+        </ul>
+      </div>
+
+      <h4>ローカル環境を使う</h4>
+      <div>
+        やっとこさ本題。
+        <pre><code class="lang-powershell">
+          > vercel dev
+        </code></pre>
+        警告のポップアップウィンドウが出た!
+        <blockquote>
+          <b>このアプリの機能のいくつかがWindown Defender ファイアウォールでブロックされています</b><br>
+          ...略...<br>
+          Nodes.js, javascript runtimeにこれらのネットワーク上での通信を許可してする<br>
+          <input type="checkbox">プライベートネットワーク<br>
+          <input type="checkbox">パブリックネットワーク(非推奨)<br>
+        </blockquote>
+        プライベートネットワークにだけチェックマークを付けて<b>アクセスを許可する</b>をクリック。
+        コンソールには
+        <pre><code class="lang-powershell">
+          > Ready! Available at http://localhost:3000
+        </code></pre>
+        と出力された。さっそく http://localhost:3000 にアクセスしてみる(コンソール上でリンクを <kbd>Ctr</kbd> + クリック)。
+        ブラウザで、サイトのindex.htmlページが開く。やったぁ!<br>
+        ついでに、Vercel CLIのローカル環境でなければ確認できないことを試してみる。とりあえずお手軽に、404.htmlのチェックを。<br>
+        このページの下の方<a href="#menu-4">link</a>で、Vercelでの404エラーページの作り方を紹介している。
+        この機能は、普通のブラウザとか、VS Codeの拡張機能Live Serverでは確認できない
+        (ただ、「そのURLは存在しません」と表示されるだけ)。
+        でも、Vercel CLIで仮想サーバを開いている場合、存在しないページのURLを入力すると、ちゃんと404.htmlに飛べる。よし!<br>
+        
+        コンソール上で<code class="lang-powershell">Ctr-C</code>をクリックすれば、仮想サーバを閉じれる。<br>
+
+        Vercel CLIで仮想サーバを起動すると、phpとかのプログラミング言語をインストールしていなくても、ページの動作を確認できる。まじ感謝。
+      </div>
+
+    </article>
+
+    <!-- コンテンツ4 -->
+    <article id="menu-4">
+      <h2><span class="font-thin">404 Error Page</span></h2>
+      <div>
+        リンク切れを表す404エラー。
+        デフォルトでは地味なエラーページに飛ばされるが、自分で404エラーページを用意することが出来る。<br>
+        ルートディレクトリ直下に404.htmlの名前で作成したページ(.\404.html)が、エラーページとしていざというときに呼び出される。
+      </div>
+    </article>
+
+    <!-- コンテンツ5 -->
+    <article id="menu-5">
+      <h2><span class="font-thin"></span></h2>
+      <div>
+
+      </div>
+    </article>
+
+    <!-- コンテンツ6 -->
+    <article id="menu-6">
+      <h2><span class="font-thin"></span></h2>
+      <div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <button id="back-to-top"></button>
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="btn-flat"><span>index</span></a></li>
+        <li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+        <li><a href="./start.html" class="btn-flat"><span>start</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <!-- script -->
+  <script src="../js/general.js"></script>
+  <script src="../js/prism.js"></script>
+</body>
+
+</html>
+marlboro-bambi – Deployment Source

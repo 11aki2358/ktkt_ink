@@ -1,0 +1,67 @@
+[
+
+  {
+    "genre": ["Led-Zeppelin"],
+    "year": 2022,
+    "warn": ["B", "C"],
+    "info": {
+      "id": "0007",
+      "title": "#0007, 2022, B C, LZ",
+      "comment": "コメント! <br><span style=\"color:cadetblue;\">コメント</span>だよ!!<br><i>json</i>でも、<b>html</b>と同じようにデコれる!<br><code>#0007</code>"
+    }
+  }, {
+    "genre": ["Jeff-Beck", "Led-Zeppelin"],
+    "year": 2021,
+    "warn": ["C"],
+    "info": {
+      "id": "0006",
+      "title": "#0006, 2021, C, JB LZ",
+      "comment": "コメント! <br>コメントだよ!!<br>#0006"
+    }
+  }, {
+    "genre": ["the-Beatles"],
+    "year": 2022,
+    "warn": [],
+    "info": {
+      "id": "0005",
+      "title": "#0005, 2022, -, Beatles",
+      "comment": "コメント! <br>コメントだよ!!<br>#0005"
+    }
+  }, {
+    "genre": ["Queen"],
+    "year": 2021,
+    "warn": ["B"],
+    "info": {
+      "id": "0004",
+      "title": "#0004, 2021, B, Queen",
+      "comment": "コメント! <br>コメントだよ!!<br>#0004"
+    }
+  }, {
+    "genre": ["Jeff-Beck", "Led-Zeppelin"],
+    "year": 2020,
+    "warn": [],
+    "info": {
+      "id": "0003",
+      "title": "#0003, 2020, -, JB LZ",
+      "comment": "コメント! <br>コメントだよ!!<br>#0003"
+    }
+  }, {
+    "genre": ["Jeff-Beck"],
+    "year": 2020,
+    "warn": ["A"],
+    "info": {
+      "id": "0002",
+      "title": "#0002, 2020, A, JB",
+      "comment": "コメント! <br>コメントだよ!!<br>#0002"
+    }
+  }, {
+    "genre": ["Led-Zeppelin"],
+    "year": 2021,
+    "warn": [],
+    "info": {
+      "id": "0001",
+      "title": "#0001, 2021, -, LZ",
+      "comment": "コメント! <br>コメントだよ!!<br>#0001"
+    }
+  }
+]

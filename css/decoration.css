@@ -1,0 +1,157 @@
+/********************************:
+  @decoration.css : 文字の装飾全般
+**********************************/
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  見出しについて  
+* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/* font: KanitのExtra-bold 800 */
+
+h1,
+h2 {
+  font-family: 'Kanit', sans-serif;
+  text-transform: uppercase;
+  transform: scale(1, 1.2);
+}
+
+
+/* h1のフォントサイズはheader.cssに合わせている */
+
+h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 7.5vw;
+  transform: scale(1, 1.2);
+}
+
+h1 a {
+  color: var(--type1-link-color1);
+  font-family: 'Kanit', sans-serif;
+}
+
+h1 a:hover {
+  color: var(--type1-link-color1);
+  background-color: white;
+  font-weight: bold;
+}
+
+h2 {
+  border-bottom: dotted 2px black;
+  color: var(--type1-main-color);
+  position: relative;
+  z-index: -1;
+}
+
+h3 {
+  padding: 0.5rem 1rem;
+  border-left: dashed 3px black;
+}
+
+
+/* https://saruwakakun.com/html-css/reference/h-design */
+
+h4 {
+  position: relative;
+  display: block;
+  padding: 0 3rem;
+  z-index: -1;
+}
+
+h4:before,
+h4:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 2rem;
+  height: 1px;
+  background-color: black;
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+h4:before {
+  left: 0;
+}
+
+h4:after {
+  right: 0;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  箇条書き
+* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+ul,
+ol {
+  padding-left: 1.2rem;
+}
+
+
+/* 中央寄せの番号付き箇条書き */
+
+.center-list {
+  counter-reset: line-number;
+  text-align: center;
+}
+
+.center-list span {
+  counter-increment: line-number;
+  display: list-item;
+  line-height: 1.1em;
+}
+
+.center-list span::before {
+  content: counter(line-number) " - ";
+}
+
+.center-list span::marker {
+  content: "";
+}
+
+
+/* 入れ子式の定義リスト */
+
+dd dl {
+  margin-top: 1px;
+  margin-bottom: 0;
+}
+
+
+/* https://metrograph.jp/text_selection_style/ */
+
+::selection {
+  color: var(--type1-main-color);
+  background-color: black;
+}
+
+/* 表 */
+
+table{
+  display: block;
+  white-space: nowrap;
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+  overflow-x: scroll;
+}
+
+
+th{
+  background-color: var(--type1-main-color);
+  color: black;
+  font-weight: bold;
+}
+
+th, td{
+  border: solid 2px black;
+  padding: 0.3rem;
+}

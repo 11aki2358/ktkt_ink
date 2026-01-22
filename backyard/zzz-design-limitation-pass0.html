@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+  <title>pass0</title>
+  <link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <nav>
+      <div class="header-logo-menu">
+        <div class="logo-area">
+          <h1><a href="./backyard.html">backyard</a></h1>
+        </div>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content-record"></div>
+          <div id="nav-content-jacket">
+            <div class="nav-content-text center-list">
+              <!-- ここ記入しろ -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- メイン -->
+  <main>
+    <script>
+      var password = prompt('パスワードは key\nこれ以外のパスワードを入力するとbackyardにとぶ');
+      if (password != "key") {
+        window.location.replace('./design-limitation.html#menu-2');
+      }
+    </script>
+    <div>
+      ここがPassword Page兼秘密ページ。<br>
+    </div>
+
+    <div>
+      <hr>
+      javaScriptの部分は、
+      <pre><code class="language-js">
+var password = prompt('パスワードは key\nこれ以外のパスワードを入力するとbackyardにとぶ');
+if(password != "key"){
+  window.location.replace('./design-limitation.html#menu-2');
+}  
+      </code></pre>
+
+      <input type="button" value="「検索除け」に戻る" id="backButton">
+
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="btn-flat"><span>index</span></a></li>
+        <li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+        <li><a href="./design.html" class="btn-flat"><span>design</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <!-- script -->
+  <script src="../js/general.js"></script>
+  <script src="../js/prism.js"></script>
+  <script>
+    document.getElementById("backButton").onclick = function() {
+      window.location.replace('./design-limitation.html#menu-2');
+    };
+  </script>
+
+</body>
+
+</html>

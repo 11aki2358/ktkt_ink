@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="pinterest" content="nopin">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+<title>backyard</title>
+<link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+</head>
+<body>
+<header>
+<nav>
+<div class="header-logo-menu">
+<div class="logo-area">
+<h1><a href="./backyard.html">backyard</a></h1>
+</div>
+<div id="nav-drawer">
+<input id="nav-input" type="checkbox" class="nav-unshown">
+<label id="nav-open" for="nav-input"><span></span></label>
+<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+<div id="nav-content-record"></div>
+<div id="nav-content-jacket">
+<div class="nav-content-text center-list"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!-- CSS : prism -->
+<!-- genre : design -->
+<h2 id="markdown-to-html">Markdown to html</h2>
+<p>最小限のMarkdownを書くだけで、ヘッダーとかフッターとかCSS, javaScriptの読み込みまで全部込み込みのhtmlを作れるやつ。</p>
+<p>スマホで使うのは非推奨。ページ全体のレイアウトは、私物PCで問題なく使えるか、というのが基準になっている(ページの拡大率は90%～100%)。
+ほかのデバイスから見たら配置ひどいかも。</p>
+<p>この機能専用の<a href="../css/md-to-html.css" target="_blank">CSS</a>と<a href="../js/md-to-html.js" target="_blank">javaScript</a>を使用。<br>CSSもjsも、めっちゃ非効率な書き方をしている。
+今のところは、とりあえずちゃんと動けば満足...</p>
+<h2 id="md-html-">MD -&gt; HTML変換</h2>
+<p><a href="https://github.com/markedjs/marked" target="_blank">marked.js</a>を使用。</p>
+<p>使い方あれこれについては、</p>
+<ul>
+<li>オプション : <a href="https://marked.js.org/using_advanced#options" target="_blank">link</a></li>
+<li>アレンジ : <a href="https://www.suzu6.net/posts/38/" target="_blank">link</a></li>
+<li>アレンジ : <a href="https://qiita.com/tiwu_dev/items/4e56c833aff3dfb16231" target="_blank">link</a></li>
+<li>他のjsとの比較 : <a href="https://kannokanno.hatenablog.com/entry/2013/06/19/132042" target="_blank">link</a></li>
+</ul>
+<h2 id="how-to-use">how to use</h2>
+<p><strong>markdown text</strong>エリアに、Markdownを記入
+(例 : <a href="./md-to-html.md" target="_blank">このページのMD</a> )。<br>あるいは、<strong>UPLOAD MD</strong>ボタンを押して、マークダウンのファイルの内容を<strong>markdown text</strong>エリアに表示することもできる(参考... ファイルのアップロード機能 : <a href="https://www.sejuku.net/blog/32532" target="_blank">link</a>)</p>
+<ul>
+<li>入力サポート用のボタン<br>codeを記入する際はマークダウン記法だけだと物足りないので、html形式で記入。
+カーソルの位置、選択範囲の両端にhtmlタグを挿入できる。</li>
+<li>CSS, javaScript追加ボタン<br>全ページ共通で必要となるCSS, javaScript以外に必要となるファイルを選択。</li>
+<li>genre選択ボタン<br>フッターに貼るリンクに関連。</li>
+</ul>
+<p>プレビューは、<strong>preview</strong>タブ、<strong>simple</strong>タブ、<strong>full</strong>(ページ作成用)の3通り。</p>
+<ul>
+<li>preview<br>入力されたmarkdownをhtmlに変換したときの見栄え</li>
+<li>simple<br>入力されたmarkdownをそのままhtmlに変換したコード</li>
+<li>full<br>入力されたmarkdownをhtmlに変換し、それにヘッダ情報やCSS, javaScriptを仕込んだりしたコード。これをhtmlファイルにコピペすれば、そのまんまサイトに使える。</li>
+</ul>
+<p>previewタブ、simpleタブの内容は、markdownでキーを叩くごとに更新される(<code class="language-js">function convert()</code>)。<br>fullタブの内容は、&quot;full&quot;の字がクリックされるごとに更新される(<code class="language-js">function completeHTML()</code>)。</p>
+<p>いい感じの記事が出来上がったら、必要に応じてCSSやjavaScriptファイルの追加を行う(<strong>CSS AND JS</strong>のボタン)。また、記事のジャンルを<strong>GENRE</strong>ボタンから選択する。<br><strong>full</strong>タブをクリックしてからテキストエリアに表示されるhtmlをコピー&エディタ(VS Codeとか)に貼り付けて保存するか、<strong>DOWNLOAD FULL HTML</strong>ボタンを押してhtmlファイルをダウンロードする。<br>編集後のmarkdownは<strong>DOWNLOAD MARKDOWN</strong>ボタンからダウンロードできるので、記事を編集したくなった時のためにうまく活用するとよい。</p>
+<h3 id="-">コードの記入</h3>
+<p>入力サポート用のボタンを上手く使って。<br>ただし、htmlエスケープには注意が必要。  </p>
+<p>marked.jsを使ってmarkdownをhtmlに変換する際、markdownに書かれていたhtmlエスケープは解除されてしまう。</p>
+<p>markdown記法(<code class="language-html">&lt;</code>) 
+→ <em>marked.js</em> 
+→ html(<code class="language-html">&lt;</code>)</p>
+<p>だから、このシステムを使ってコードを記載するならば、htmlエスケープを二重に行う必要がある。</p>
+<p>html上で<code class="language-html">&lt;</code>を記述するならば、markdownには<code class="language-html">&lt;</code>と書いておく(それからmarked.jsに通す)必要がある。</p>
+<p>marked.jsを通すと、pre, codeタグ内以外にあるインデントはすべて消える。
+previewタブ<strong>full</strong>からコピペしたhtmlをVS Codeで整形すると、preやcodeのタグ内に勝手にインデントや改行を入れられることがある(→html上での配置がガタガタになる...)。
+このページのhtmlも例外ではないが、markdown使って楽して作ったhtmlファイルをわざわざ整形しようとかは考えない方がいい。</p>
+<h2 id="coding">Coding</h2>
+<ul>
+<li>markdown → htmlの変換(js)<br>(<code class="language-js">function convert()</code>, <code class="language-js">function completeHTML()</code>)
+marked.jsというjavaScriptを使用。CDN版をお借りしている。</li>
+<li>ページ全体の構成(css)<br>ボタン欄、markdown入力欄、プレビュー欄の3種類をflexにして設定。ウィンドウが800px以上ならば要素を横に、800px未満ならば要素を縦に並べる。<br>だが、previewの幅が安定しないことがあるので、gridレイアウトへの移行をしたい。</li>
+<li>プレビュータブ(css, js)<br><code class="language-js">function tabSwitch()</code><br>(<code class="language-css">#tab-wrap</code>の範囲内)<br>3種類のプレビューを、タブで切り替えられるようにしている。
+参考にしたリンクは<a href="https://hsmt-web.com/blog/tab-switching/" target="_blank">こちら</a></li>
+<li>htmlタグの入力補助(js)<br><code class="language-js">function helpBtn(text)</code> : 関数の引数(<code class="language-js">text</code>)は、ボタンのvalueの値(ボタンの内容を表す)。<br><a href="https://blog.ver001.com/javascript-textarea-selectionstartend/" target="_blank">こちら</a>を参考にした。textarea上のカーソルや選択範囲の両端にhtmlタグを書き足す。</li>
+</ul>
+<h2 id="problems">problems</h2>
+<ul>
+<li>preタグで囲まれた範囲に、prism.cssでの背景色やシンタックス・ハイライトが反映されない</li>
+</ul>
+<h2 id="plans">plans</h2>
+<ul>
+<li>htmlエスケープ(marked.jsを使用する場合は、<code class="language-html">&lt;</code>←<code class="language-html">&lt;</code>)</li>
+<li>コンテンツメニューの中身を自動で記入できるように(h2見出しへの内部リンクを自動作成)</li>
+<li>ファイルの読み込み・書き出し<a href="https://www.sejuku.net/blog/32532" target="_blank">link</a><ul>
+<li>出来上がったhtml(full)について  <ul>
+<li>Backyard Creatorの<strong>full</strong>タブからエディタにコピペする場合 : markdownにコードを入力する際は、二重にエスケープ<code class="language-html">&lt;</code>←<code class="language-html">&lt;</code></li>
+<li>ダウンロードする場合 : エスケープは1回で十分? (よく分からんけれど、ダウンロード用のJavaScriptで調整しているから、とりあえずは<code class="language-html">&lt;</code>←<code class="language-html">&lt;</code>のエスケープで行け)</li>
+<li>fullタブは無くても良い気がするな... simpleタブはあった方がいいだろうけれど(ちゃんとmd→htmlになっているかの確認)</li>
+<li>最終更新日時をページ上部に入れられるようにしたい(参考... アップロードしたマークダウンファイルの最終更新日を取得する方法: <a href="https://gray-code.com/javascript/get-file-information-when-file-selected/" target="_blank">link</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</main>
+<footer>
+<button id="back-to-top"></button>
+<nav><ul>
+<li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
+<li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+<li><a href="./start.html" class="btn-flat"><span>start</span></a></li>
+</ul></nav>
+</footer>
+<script src="../js/general.js"></script>
+</body>
+</html>

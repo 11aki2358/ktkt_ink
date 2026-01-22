@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="../../../images/favicon.svg" type="image/svg+xml">
+  <title>Katakata Inaka</title>
+  <link rel="stylesheet" href="../../../css/decoration.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../../css/footer.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../../css/image.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" id="style">
+  <link rel="stylesheet" href="./works-01-grid.css" type="text/css" id="style">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="header-logo-menu">
+        <div class="logo-area">
+          <h1><a href="">Katakata Inaka</a></h1>
+        </div>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content-record"></div>
+          <div id="nav-content-jacket">
+            <div class="nav-content-text center-list">
+              gridレイアウト
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- コンテンツのタグ検索 -->
+    <div id="contents-select">
+
+      <input type="checkbox" id="select-hide">
+      <label class="checkbox-label content-select-title center" for="select-hide">Select contents</label>
+
+      <div id="checkbox-area">
+        <div class="input-area">
+          <span class="select-area-name">genre :</span>
+          <div class="label-input">
+            <input type="checkbox" id="theBeatles" name="select-genre" checked>
+            <label class="checkbox-label" for="theBeatles">the Beatles</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" id="JeffBeck" name="select-genre" checked>
+            <label class="checkbox-label" for="JeffBeck">Jeff Beck</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" id="LedZep" name="select-genre" checked>
+            <label class="checkbox-label" for="LedZep">Led Zeppelin</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" id="Queen" name="select-genre" checked>
+            <label class="checkbox-label" for="Queen">Queen</label>
+          </div>
+        </div>
+
+        <div class="input-area">
+          <span class="select-area-name">year :</span>
+          <div class="label-input">
+            <input type="checkbox" id="y2020" name="select-year" checked>
+            <label class="checkbox-label" for="y2020">2020</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" id="y2021" name="select-year" checked>
+            <label class="checkbox-label" for="y2021">2021</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" id="y2022" name="select-year" checked>
+            <label class="checkbox-label" for="y2022">2022</label>
+          </div>
+        </div>
+        <div class="input-area">
+          <span class="select-area-name">warn :</span>
+          <div class="label-input">
+            <input type="checkbox" id="A" name="select-warn">
+            <label class="checkbox-label" for="A">A</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" id="B" name="select-warn">
+            <label class="checkbox-label" for="B">B</label>
+          </div>
+          <div class="label-input">
+            <input type="checkbox" id="C" name="select-warn">
+            <label class="checkbox-label" for="C">C</label>
+          </div>
+        </div>
+
+        <button id="button-select" onclick="selectContent()">select</button>
+        <label class="checkbox-label content-select-title center" for="select-hide">Hide tags</label>
+      </div>
+    </div>
+
+    <div id="content-box">
+
+      <!-- コンテンツの表示 -->
+      <div id="content-display">
+        <div id="content-display-title">
+        </div>
+        <div id="content-display-pic">
+        </div>
+        <div id="content-display-comment">
+        </div>
+        <div id="content-display-link">
+        </div>
+      </div>
+
+      <!-- 該当するコンテンツのリスト -->
+      <div id="content-list">
+        <div name="content-data" data-id="0021" data-genre="LedZep" data-year="y2022" data-warn="B">
+          #0021, 2022, B, LZ
+        </div>
+        <div name="content-data" data-id="0020" data-genre="JeffBeck LedZep" data-year="y2021" data-warn="C">
+          #0020, 2021, C, JB LZ
+        </div>
+        <div name="content-data" data-id="0019" data-genre="theBeatles" data-year="y2022" data-warn="">
+          #0019, 2022, -, Beatles
+        </div>
+        <div name="content-data" data-id="0018" data-genre="Queen" data-year="y2021" data-warn="B">
+          #0018, 2021, B, Queen
+        </div>
+        <div name="content-data" data-id="0017" data-genre="JeffBeck LedZep" data-year="y2020" data-warn="">
+          #0017, 2020, -, JB LZ
+        </div>
+        <div name="content-data" data-id="0016" data-genre="JeffBeck" data-year="y2020" data-warn="A">
+          #0016, 2020, A, JB
+        </div>
+        <div name="content-data" data-id="0015" data-genre="LedZep" data-year="y2021" data-warn="">
+          #0015, 2021, -, LZ
+        </div>
+        <div name="content-data" data-id="0014" data-genre="LedZep" data-year="y2022" data-warn="B">
+          #0014, 2022, B, LZ
+        </div>
+        <div name="content-data" data-id="0013" data-genre="JeffBeck LedZep" data-year="y2021" data-warn="C">
+          #0013, 2021, C, JB LZ
+        </div>
+        <div name="content-data" data-id="0012" data-genre="theBeatles" data-year="y2022" data-warn="">
+          #0012, 2022, -, Beatles
+        </div>
+        <div name="content-data" data-id="0011" data-genre="Queen" data-year="y2021" data-warn="B">
+          #0011, 2021, B, Queen
+        </div>
+        <div name="content-data" data-id="0010" data-genre="JeffBeck LedZep" data-year="y2020" data-warn="">
+          #0010, 2020, -, JB LZ
+        </div>
+        <div name="content-data" data-id="0009" data-genre="JeffBeck" data-year="y2020" data-warn="A">
+          #0009, 2020, A, JB
+        </div>
+        <div name="content-data" data-id="0008" data-genre="LedZep" data-year="y2021" data-warn="">
+          #0008, 2021, -, LZ
+        </div>
+        <div name="content-data" data-id="0007" data-genre="LedZep" data-year="y2022" data-warn="B">
+          #0007, 2022, B, LZ
+        </div>
+        <div name="content-data" data-id="0006" data-genre="JeffBeck LedZep" data-year="y2021" data-warn="C">
+          #0006, 2021, C, JB LZ
+        </div>
+        <div name="content-data" data-id="0005" data-genre="theBeatles" data-year="y2022" data-warn="">
+          #0005, 2022, -, Beatles
+        </div>
+        <div name="content-data" data-id="0004" data-genre="Queen" data-year="y2021" data-warn="B">
+          #0004, 2021, B, Queen
+        </div>
+        <div name="content-data" data-id="0003" data-genre="JeffBeck LedZep" data-year="y2020" data-warn="">
+          #0003, 2020, -, JB LZ
+        </div>
+        <div name="content-data" data-id="0002" data-genre="JeffBeck" data-year="y2020" data-warn="A">
+          #0002, 2020, A, JB
+        </div>
+        <div name="content-data" data-id="0001" data-genre="LedZep" data-year="y2021" data-warn="">
+          #0001, 2021, -, LZ
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <button id="back-to-top"></button>
+    <nav>
+      <ul>
+        <li><a href="" class="btn-flat"><span>home</span></a></li>
+        <li><a href="" class="btn-flat"><span>top</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="../../../js/general.js"></script>
+  <script src="./works-01-grid-selectContent.js"></script>
+  <script src="./works-01-grid-view.js"></script>
+</body>
+
+</html>

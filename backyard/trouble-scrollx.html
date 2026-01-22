@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="pinterest" content="nopin">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+<title>backyard</title>
+<link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+</head>
+<body>
+<header>
+<nav>
+<div class="header-logo-menu">
+<div class="logo-area">
+<h1><a href="./backyard.html">backyard</a></h1>
+</div>
+<div id="nav-drawer">
+<input id="nav-input" type="checkbox" class="nav-unshown">
+<label id="nav-open" for="nav-input"><span></span></label>
+<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+<div id="nav-content-record"></div>
+<div id="nav-content-jacket">
+<div class="nav-content-text center-list"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!-- CSS : prism -->
+<!-- genre : design --></p>
+<h2 id="fixed-scroll-bar">Fixed Scroll Bar</h2>
+<style>
+  .test {
+    position: relative !important;
+    z-index: -1;
+    overflow: auto !important;
+  }
+</style>
+
+<pre class="test" data-label="test.css"><code class="language-css">
+test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+横に長いpreで
+スクロールバーは表示されるが、
+バーが動かない
+このpreのCSSは
+.test {
+  position: relative !important;
+  z-index: -1;
+  overflow: auto !important;
+}
+</code></pre>
+
+<h2 id="situation">Situation</h2>
+<p>最初、headerタグ全体には<code class="language-css">z-index</code>の指定をしていなかった(レコードとかジャケットには<code class="language-css">z-index</code>指定していたけれど)。</p>
+<p>だけれど、prismを使ってコードを表示すると、コードの部分がヘッダーロゴよりも上に来てしまう。</p>
+<p>ここで、</p>
+<p><pre data-label=".css"><code class="language-css">
+.language-css, 
+.language-html{
+  position: relative;
+  z-index: -1;
+}
+</code></pre>
+という指定をした
+(<code class="language-css">z-index</code>の指定には、<code class="language-css">position</code>の設定も変える必要がある)。</p>
+<p>コードがヘッダーロゴに重ならなくなった。
+その一方、横に長いコードを表示するときに、スクロールバーが動かなくなってしまった(表示はされるが、バーが動かない)。</p>
+<h2 id="reason">Reason</h2>
+<p>原因を調べた結果...</p>
+<h3 id="-code-class-language-css-position-code-code-class-language-css-overflow-code-">同じクラスで<code class="language-css">position</code>と<code class="language-css">overflow</code>の設定をするのがマズい</h3>
+<p>という記述を見つけた。</p>
+<p>(親子関係の要素で、親だけ<code class="language-css">overflow</code>、子にだけ<code class="language-css">position</code>の設定をする、というのはOK。親だけ<code class="language-css">position</code>, 子だけ<code class="language-css">overflow</code>でもOK)</p>
+<p>今回、prismではデフォルトで<code class="language-css">.language-なんちゃら</code>に<code class="language-css">overflow</code>の設定がしてあった。
+この設定だと、自分で書いた<code class="language-css">position : relative</code>と競合してしまい、スクロールバーが動かなくなった。</p>
+<h3 id="-">ちょっと待って</h3>
+<p>でも、</p>
+<p><style>
+  .test2 {
+    position: relative !important;
+    z-index: 2;
+    overflow: auto !important;
+  }
+</style></p>
+<div>
+<pre class="test2" data-label="test2.css"><code class="language-css">
+test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+ここのCSSは
+.test2 {
+  position: relative !important;
+  z-index: 2;
+  overflow: auto !important;
+}
+で、positionとoverflowどっちも設定しているけれど、ちゃんとスクロールは動く
+</code></pre>
+</div>
+
+<p>スクロールバーが動かない原因は<code class="language-css">z-index</code>の値だった。<br>本文(<code class="language-css">z-index: 0</code>)よりも下の層にスクロールバーが表示されたから、バーを操作できなかった。</p>
+<p><code class="language-css">position</code>と<code class="language-css">overflow</code>を同時に設定するのもマズいのだろうけれど、今回はもっと初歩的なミスでつまづいていたようだ。</p>
+<h2 id="solution">Solution</h2>
+<p>よく考えなおしてみたら、コードやpreの<code class="language-css">z-index</code>をいじくってCSSをややこしくするよりも、headerの<code class="language-css">z-index</code>を手前に持ってくる方が楽じゃんね。</p>
+<p>自分で書いたコード</p>
+<p><div></p>
+<p><pre data-label=".css"><code class="language-css">
+.language-css, 
+.language-html{
+  position: relative;
+  z-index: -1;
+}
+</code></pre>
+</div>
+はばっさりカット。</p>
+<p>コードやpreの<code class="language-css">z-index</code>をマイナスにする代わりに、ヘッダーの<code class="language-css">z-index</code>をプラス(<code class="language-css">z-index: 10;</code>)にする。</p>
+<p>これで、prismで飾られたコードがヘッダーよりも下に来る & 横に長いコードで横スクロールが効くようになった。</p>
+<h2 id="memo">memo</h2>
+<p>なんだか長くなったが、最後にまとめ</p>
+<ul>
+<li>スクロールバーが動かないときは、<code class="language-css">z-index</code>の上下関係をチェック</li>
+<li>同じクラスに<code class="language-css">position</code>と<code class="language-css">overflow</code>を設定すると、マズくなることがあるらしい</li>
+</ul>
+</main>
+<footer>
+<button id="back-to-top"></button>
+<nav><ul>
+<li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
+<li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+<li><a href="./design.html" class="btn-flat"><span>design</span></a></li>
+</ul></nav>
+</footer>
+<script src="../js/prism.js"></script>
+<script src="../js/general.js"></script>
+</body>
+</html>

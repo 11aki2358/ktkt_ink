@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="pinterest" content="nopin">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+<title>backyard</title>
+<link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+</head>
+<body>
+<header>
+<nav>
+<div class="header-logo-menu">
+<div class="logo-area">
+<h1><a href="./backyard.html">backyard</a></h1>
+</div>
+<div id="nav-drawer">
+<input id="nav-input" type="checkbox" class="nav-unshown">
+<label id="nav-open" for="nav-input"><span></span></label>
+<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+<div id="nav-content-record"></div>
+<div id="nav-content-jacket">
+<div class="nav-content-text center-list"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!-- CSS : prism -->
+<!-- genre : start -->
+<h2 id="vs-code">VS Code</h2>
+<p>Visual Studio Codeを使うコツ。</p>
+<h2 id="extensions">Extensions</h2>
+<p>VS Codeの拡張機能。
+一度にいろいろインストールしすぎたせいで、どれが何に効いているのか分らない。</p>
+<ul>
+<li>HTML Snippets</li>
+<li>HTML CSS Support</li>
+<li>IntelliSense for CSS class names in HTML</li>
+<li>CSS Peek</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a><br>htmlの変更を、ローカルサーバーを通じてリアルタイムで確認できる。<ol>
+<li>作成中のサイトを、ディレクトリごと開く(Ctr-K Ctr-Oからルートディレクトリを選択)</li>
+<li>プレビューしたいhtmlファイルをVS Code上で開く</li>
+<li>VS Codeのウィンドウ右下(ステータスバー)にちっこく表示された「Go Live」をクリック</li>
+<li>ブラウザが開く。VS CodeでhtmlやCSSに変更を加えて「上書き保存(Ctr-S)」する度に、リアルタイムで変更点が反映される。</li>
+<li>サイト内外で貼られたリンクも自由に行き来できる。</li>
+<li>普通のブラウザで開きながら変更を確認するのもいいけれど、VS Code上で変更を保存する度にリロードしないと変更点を確認できないので面倒。</li>
+<li>VS CodeのSettings.jsonで
+<pre><code class="language-json">
+  "liveServer.settings.CustomBrowser": "chrome",
+</code></pre>
+と書き加えれば、htmlをChromeで確認できる。</li>
+</ol>
+</li>
+</ul>
+<h2 id="formatting">Formatting</h2>
+<ul>
+<li>html :<br><a href="https://marketplace.visualstudio.com/items?itemName=adrianwilczynski.format-selection-as-html" target="_blank">Format Selection As HTML</a>が便利(Ctr-K Ctr-H)<br>故意に改行したOR改行しなかった、というのは反映してくれるので良い。
+次に述べる拡張機能は改行の仕方が厳密すぎて、かえってわかりづらくなってしまうから。<br>デフォルトではショートカットキーが設定されていない。 コマンドパレットを開き(Shift-Ctr-P)、Format Selection As
+HTMLの右側の歯車のアイコンをクリックすれば、ショートカットを登録できる。
+とりあえずCtr-K Ctr-Hにしてみたけれど、他のショートカットキーと被っていたらヤだな(デフォルトの設定では大丈夫そうだった)。</li>
+<li>CSSとJavaScript:<br><a href="https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter" target="_blank">JS-CSS-HTML Formatter</a>が便利(Alt-Shift-F)<br>デフォルトでは、「タブ1個=スペース4個」だが、jsonをいじれば、「タブ1個=スペース2個」にできる。<br>onSaveはfalseにすること。<br>htmlファイルの整形もできるが、改行とかインデントとかが厳密すぎて不便。</li>
+</ul>
+<h2 id="git-">git関連</h2>
+<p>gitやgitHubと絡んだ操作。まだまだ模索中。</p>
+<h3 id="-git-history">拡張機能 git history</h3>
+<p>Alt + Hで、gitへのプッシュの履歴を確認できる。</p>
+</main>
+<footer>
+<button id="back-to-top"></button>
+<nav><ul>
+<li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
+<li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+<li><a href="./start.html" class="btn-flat"><span>start</span></a></li>
+</ul></nav>
+</footer>
+<script src="../js/prism.js"></script>
+<script src="../js/general.js"></script>
+</body>
+</html>

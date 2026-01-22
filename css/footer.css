@@ -1,0 +1,102 @@
+/***************************************
+  footer.css
+*/
+
+footer,
+footer nav {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: black;
+}
+
+footer {
+  grid-row: 3/3;
+  grid-column: 1/1;
+  width: 100%;
+  height: 10vh;
+  bottom: 0;
+}
+
+footer nav {
+  position: relative;
+  width: 90%;
+  height: 8vh;
+  margin: 1vh;
+}
+
+
+/* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu */
+
+footer nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+footer nav li {
+  float: left;
+}
+
+footer nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2vh;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Kanit', sans-serif;
+  transform: scale(1, 1.2);
+}
+
+
+/* https://jajaaan.co.jp/css/button/#furattonabotan */
+
+footer nav li a.btn-flat {
+  overflow: hidden;
+  color: #fff;
+  border-radius: 0;
+  background: #000;
+}
+
+footer nav li a.btn-flat span {
+  position: relative;
+}
+
+footer nav li a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-96%);
+  transform: translateX(-96%);
+  background: var(--type1-link-color1);
+}
+
+footer nav li a.btn-flat:hover {
+  color: black;
+}
+
+footer nav li a.btn-flat:hover:before {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+
+/* back to topボタン */
+
+footer #back-to-top {
+  display: block;
+  background-image: url(../images/toTop.svg);
+  background-size: 100%;
+  width: 12vh;
+  height: 8vh;
+  position: fixed;
+  bottom: 1vh;
+  right: 5vw;
+  z-index: 9;
+}

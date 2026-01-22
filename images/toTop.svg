@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="60px"
+   height="40px"
+   viewBox="0 0 60 40"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="toTop.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview842"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="10.248373"
+     inkscape:cx="62.107419"
+     inkscape:cy="33.712668"
+     inkscape:window-width="1920"
+     inkscape:window-height="1121"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid949" />
+  </sodipodi:namedview>
+  <defs
+     id="defs837">
+    <rect
+       x="0"
+       y="0"
+       width="60"
+       height="40"
+       id="rect19833" />
+    <rect
+       x="0"
+       y="0"
+       width="60"
+       height="40"
+       id="rect15779" />
+    <rect
+       x="1"
+       y="3"
+       width="48"
+       height="31"
+       id="rect11065" />
+    <rect
+       x="4"
+       y="10"
+       width="52"
+       height="14"
+       id="rect5185" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.5;fill-opacity:1;opacity:1"
+       id="rect951"
+       width="60"
+       height="40"
+       x="0"
+       y="0" />
+    <text
+       xml:space="preserve"
+       id="text5183"
+       style="font-size:28px;line-height:1.25;font-family:'Agency FB';-inkscape-font-specification:'Agency FB';white-space:pre;shape-inside:url(#rect5185);fill:#000000;fill-opacity:1" />
+    <text
+       xml:space="preserve"
+       id="text11063"
+       style="font-size:28px;line-height:1.25;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT';white-space:pre;shape-inside:url(#rect11065);font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal" />
+    <text
+       xml:space="preserve"
+       id="text15777"
+       style="line-height:1.25;font-family:'Agency FB';font-size:0.66666667px;-inkscape-font-specification:'Agency FB';white-space:pre;shape-inside:url(#rect15779)" />
+    <text
+       xml:space="preserve"
+       id="text19831"
+       style="line-height:1.25;font-family:'Agency FB';font-size:0.66666667px;-inkscape-font-specification:'Agency FB';white-space:pre;shape-inside:url(#rect19833)" />
+    <rect
+       style="opacity:1;fill:#ffb380;fill-opacity:1;stroke:#000000;stroke-width:0.5"
+       id="rect1306"
+       width="60"
+       height="40"
+       x="0"
+       y="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;line-height:0.85;font-family:'Agency FB';-inkscape-font-specification:'Agency FB'"
+       x="10.990157"
+       y="18.357651"
+       id="text20411"><tspan
+         sodipodi:role="line"
+         id="tspan20409"
+         x="10.990157"
+         y="18.357651"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi'">TO</tspan><tspan
+         sodipodi:role="line"
+         x="10.990157"
+         y="35.549011"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi'"
+         id="tspan24343">TOP</tspan></text>
+  </g>
+</svg>

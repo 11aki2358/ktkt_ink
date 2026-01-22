@@ -1,0 +1,46 @@
+[
+
+  {
+    "genre": ["LedZep"],
+    "id": "0007",
+    "title": "#0007, 2022, B C, LZ",
+    "warn": ["B", "C"],
+    "year": 2022
+  }, {
+    "genre": ["JeffBeck", "LedZep"],
+    "id": "0006",
+    "title": "#0006, 2021, C, JB LZ",
+    "warn": ["C"],
+    "year": 2021
+  }, {
+    "genre": ["theBeatles"],
+    "id": "0005",
+    "title": "#0005, 2022, -, Beatles",
+    "warn": [],
+    "year": 2022
+  }, {
+    "genre": ["Queen"],
+    "id": "0004",
+    "title": "#0004, 2021, B, Queen",
+    "warn": ["B"],
+    "year": 2021
+  }, {
+    "genre": ["JeffBeck", "LedZep"],
+    "id": "0003",
+    "title": "#0003, 2020, -, JB LZ",
+    "warn": [],
+    "year": 2020
+  }, {
+    "genre": ["JeffBeck"],
+    "id": "0002",
+    "title": "#0002, 2020, A, JB",
+    "warn": ["A"],
+    "year": 2020
+  }, {
+    "genre": ["LedZep"],
+    "id": "0001",
+    "title": "#0001, 2021, -, LZ",
+    "warn": [],
+    "year": 2021
+  }
+]

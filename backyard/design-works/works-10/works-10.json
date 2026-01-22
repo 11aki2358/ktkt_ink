@@ -1,0 +1,85 @@
+[
+
+  {
+    "genre": ["the-Beatles", "Queen"],
+    "year": 2022,
+    "warn": [],
+    "info": {
+      "id": "0008",
+      "title": "#0008, 2022, -, Beatles Queen, F",
+      "comment": "コメント! <br>コメントだよ!!<br>#0006",
+      "modal": false
+    }
+  },
+  {
+    "genre": ["Led-Zeppelin"],
+    "year": 2022,
+    "warn": ["B", "C"],
+    "info": {
+      "id": "0007",
+      "title": "#0007, 2022, B C, LZ, T",
+      "comment": "コメント! <br><span style=\"color:cadetblue;\">コメント</span>だよ!!<br><i>json</i>でも、<b>html</b>と同じようにデコれる!<br><code>#0007</code>",
+      "modal": true
+    }
+  }, {
+    "genre": ["Jeff-Beck", "Led-Zeppelin"],
+    "year": 2021,
+    "warn": ["C"],
+    "info": {
+      "id": "0006",
+      "title": "#0006, 2021, C, JB LZ, F",
+      "comment": "コメント! <br>コメントだよ!!<br>#0006",
+      "modal": false
+    }
+  }, {
+    "genre": ["the-Beatles"],
+    "year": 2022,
+    "warn": [],
+    "info": {
+      "id": "0005",
+      "title": "#0005, 2022, -, Beatles, F",
+      "comment": "コメント! <br>コメントだよ!!<br>#0005",
+      "modal": false
+    }
+  }, {
+    "genre": ["Queen"],
+    "year": 2021,
+    "warn": ["B"],
+    "info": {
+      "id": "0004",
+      "title": "#0004, 2021, B, Queen, T",
+      "comment": "コメント! <br>コメントだよ!!<br>#0004",
+      "modal": true
+    }
+  }, {
+    "genre": ["Jeff-Beck", "Led-Zeppelin"],
+    "year": 2020,
+    "warn": [],
+    "info": {
+      "id": "0003",
+      "title": "#0003, 2020, -, JB LZ, T",
+      "comment": "コメント! <br>コメントだよ!!<br>#0003",
+      "modal": true
+    }
+  }, {
+    "genre": ["Jeff-Beck"],
+    "year": 2020,
+    "warn": ["A"],
+    "info": {
+      "id": "0002",
+      "title": "#0002, 2020, A, JB, F",
+      "comment": "コメント! <br>コメントだよ!!<br>#0002",
+      "modal": false
+    }
+  }, {
+    "genre": ["Led-Zeppelin"],
+    "year": 2021,
+    "warn": [],
+    "info": {
+      "id": "0001",
+      "title": "#0001, 2021, -, LZ, F",
+      "comment": "コメント! <br>コメントだよ!!<br>#0001",
+      "modal": false
+    }
+  }
+]

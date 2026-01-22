@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="pinterest" content="nopin">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+<title>backyard</title>
+<link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
+<link rel="stylesheet" href="../css/style.css" type="text/css" id="style">
+</head>
+<body>
+<header>
+<nav>
+<div class="header-logo-menu">
+<div class="logo-area">
+<h1><a href="./backyard.html">backyard</a></h1>
+</div>
+<div id="nav-drawer">
+<input id="nav-input" type="checkbox" class="nav-unshown">
+<label id="nav-open" for="nav-input"><span></span></label>
+<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+<div id="nav-content-record"></div>
+<div id="nav-content-jacket">
+<div class="nav-content-text center-list"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!-- genre : design -->
+<h2 id="works">works</h2>
+<p>Worksの実装の記録。書き途中で中止したコードもあるけれど、削除するのはもったいないので。</p>
+<p>git履歴でのコード管理がままならないポンコツ。</p>
+<p>冗長なコードが山ほどありそうだけれど、とりあえず動けばいい。</p>
+<h2 id="about">about</h2>
+<p>概要 </p>
+<p>ページ遷移しても、同じタブ上では</p>
+<ul>
+<li>Select Contentの選択状況</li>
+<li>フォーカス中のコンテンツはどれか</li>
+</ul>
+<p>がSession Storageに保存される(Local Storageを使うのは大げさな感じ)。</p>
+<p>状態遷移とか挙動の条件のあれこれに関するメモはこっち : <a href="design-works-memo.html">link</a><br>編集中のWorksページの最新版とは対応していないかもしれない。</p>
+<h2 id="12-modal-click-event-">12. Modal(click event)</h2>
+<ul>
+<li><a href="./design-works/works-12/works-12.html" target="_blank">link</a></li>
+</ul>
+<p>変更点</p>
+<ul>
+<li>モーダルウィンドウを、矢印キーだけでなくクリックでも移動できるようにした(モーダルの右側、左側でクリック)</li>
+</ul>
+<p>そろそろ完成かな。
+あと必要な機能は</p>
+<ul>
+<li>WARNボタンの表示・非表示</li>
+<li>ヤバいサムネにぼかしを入れる</li>
+<li>ROUGHボタンの追加(スケッチとか練習とか)</li>
+<li><strong>サムネ画像は200px, モーダルではオリジナルサイズ、的なやつ</strong></li>
+</ul>
+<p>だけれど、</p>
+<ul>
+<li>WARNタグが付けられるコンテンツを置くならばPHPのあれこれを完了しなければならない。今はやりたくない。</li>
+<li>コンテンツが少ないうちは、真面目に描いた絵もROUGHもごちゃまぜで十分かな...  </li>
+</ul>
+<p>なかんじ。</p>
+<ul>
+<li>WARNボタンはとりあえずコメントアウト</li>
+<li>今後のためにjsonファイルの検索用key値に<code class="lang-json">rough</code>を入れて置く</li>
+<li>jsonのinfo欄に、各SNSへの投稿状況をメモ(管理用)</li>
+</ul>
+<p>これだけやっとけば本始動できるかな。</p>
+<p>あと、サムネを取っ払えば、この機能は更新履歴にも日記にも使えそう。
+サイト作りが一気に進むわ～～</p>
+<h2 id="11-modal">11. Modal</h2>
+<ul>
+<li><a href="./design-works/works-11/works-11.html" target="_blank">link</a></li>
+</ul>
+<p>変更点</p>
+<ul>
+<li>チェックボックスのidが紛らわしかったので、<code class="lang-css">#select-hide</code> → <code class="lang-css">#show-display</code>に変更。</li>
+<li>イベント(<code class="lang-js">addEventListner</code>使うやつ)を呼ぶ変数について。
+グローバルなのに扱いが雑だたため、こちらもグローバル変数用オブジェクト<code class="lang-js">globalEvent</code>に格納。
+初期値は<code class="lang-js">undefinied</code>にしてある。</li>
+<li><code class="lang-css">#content-display</code>のコメント欄に、モーダルか否かを表すタグを追加。</li>
+<li>モーダルウィンドウを開いた状態でもフォーカスを移動できるようにした(キーボード操作時のみ)。
+それに伴い、<code class="lang-json">&quot;modal&quot; : false</code>なコンテンツ(ページ遷移が要るコンテンツ)の情報も、モーダルウィンドウで表示できるようにした。</li>
+</ul>
+<h2 id="10-edit-structure">10. edit structure</h2>
+<p>08版のコードの編集(09版での変更は無視)</p>
+<ul>
+<li><a href="./design-works/works-10/works-10.html" target="_blank">link</a></li>
+</ul>
+<p>コード全体を整理した。
+改善の余地は山ほどあるが、以前よりはすっきりしたコードになったと思う。</p>
+<ul>
+<li>二つのファイルに分けていたjavascriptを、一つに統合</li>
+<li>グローバル変数の扱い(必要最小限のグローバル変数を、オブジェクト<code class="lang-js">globalVar</code>に格納)</li>
+<li>個別の作品ページがある場合、ページ遷移できるようにした</li>
+</ul>
+<p>今後のコーディングでも役に立ちそうなメモ。
+理解しきっている訳ではない。適宜調べなおすこと。</p>
+<ul>
+<li>オブジェクトのコピー : 
+(参照ではなく)値、中身の値そのものをコピーする場合は、<code class="lang-js">objectA = objectB</code>では不完全。
+<code class="lang-js">Object.assign(objectA, objectB)</code>を使う。</li>
+<li>オブジェクトの比較 : 
+二つのオブジェクトの(参照ではなく)値、中身が一致するか否かを判定するとき。
+<code class="lang-js">objectA == objectB</code>では不完全。<br><code class="lang-js">function checkContentsClick</code>では、id値によってのみオブジェクトの一致・不一致を判定している(<code class="lang-js">obj.info.id == newFocusId</code>)。場合によっては、idとかを使った判定もアリだと思う(比較する各オブジェクトの特性に依る!!)</li>
+<li>配列の何番目? : <ul>
+<li><code class="lang-js">array.indexOf(a)</code>によって、aは配列arrayの何番目の要素であるかを知れる。</li>
+<li>細かい条件を指定したい場合は、<code class="lang-js">array.findIndex(条件)</code>が役に立つ。
+配列に格納されているのがオブジェクトである場合など(例 : <code class="lang-js">function checkContentsClick</code>)。</li>
+</ul>
+</li>
+</ul>
+<p><strong>問題点</strong></p>
+<ul>
+<li>selectボタンを押した直後だと、いくつかのイベント(コンテンツリストのクリックによるフォーカスの移動など)が実行されない</li>
+</ul>
+<h2 id="-09-without-global-variable-"><del>09. Without Global variable</del></h2>
+<ul>
+<li><a href="./design-works/works-09/works-09.html" target="_blank">link</a></li>
+</ul>
+<p>javascriptの苦手なところ : グローバル変数・グローバル関数を使わないと実装が難しいところ。</p>
+<p>なんとかして局所変数のみでプログラム全体を回せないか試行錯誤...</p>
+<blockquote>
+<p>window.onload()内で変数を定義し、各関数に引数として渡す。
+この変数を書きかえる関数は、ちゃんとreturnを使って値を戻す。</p>
+</blockquote>
+<p>頑張ってみたが、どうにも限界がある。分らない。同期・非同期でつまづいた。</p>
+<p>諦めてグローバル変数使う。またいつか再挑戦するかも。</p>
+<h2 id="08-key-events">08. key events</h2>
+<ul>
+<li><a href="./design-works/works-08/works-08.html" target="_blank">link</a></li>
+</ul>
+<p>キーボードイベントを追加。</p>
+<p>キーを1回たたいた場合は、そのキーに関する機能1つのみが動作する
+(1つのキーに複数の機能が割り当てられている場合、上に書かれているものが優先的に実行される)。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">key</th>
+<th style="text-align:left">条件</th>
+<th style="text-align:left">動作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">left, up</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">フォーカスを1個戻す</td>
+</tr>
+<tr>
+<td style="text-align:center">right, down</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">フォーカスを1個進める</td>
+</tr>
+<tr>
+<td style="text-align:center">Enter</td>
+<td style="text-align:left">#select-contentsが開いている</td>
+<td style="text-align:left">#select-contentsと表示切り替え</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:left">モーダルが開いている</td>
+<td style="text-align:left">モーダルを閉じる</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:left">モーダルが閉じている</td>
+<td style="text-align:left">モーダルを開く</td>
+</tr>
+<tr>
+<td style="text-align:center">Escape</td>
+<td style="text-align:left">モーダルが開いている</td>
+<td style="text-align:left">モーダルを閉じる</td>
+</tr>
+<tr>
+<td style="text-align:center">[</td>
+<td style="text-align:left">#content-displayが開いている</td>
+<td style="text-align:left">#select-contentsと表示切り替え</td>
+</tr>
+</tbody>
+</table>
+<p>モーダルウィンドウをスマホで見たときの100vh問題も解決。</p>
+<h2 id="07-content-display-icons-json-ver-4-modal-window">07. #content-display : icons, json(ver. 4), modal window</h2>
+<ul>
+<li><a href="./design-works/works-07/works-07.html" target="_blank">link</a></li>
+</ul>
+<p>変更点は3つ</p>
+<h3 id="-">コンテンツ情報を表すタグを追加</h3>
+<p><code class="lang-css">#content-comment</code>に、genreやwarnをタグみたいに表示。
+描いた年は、コメント欄の末尾に表示。
+(03版のpropetyに書きたいと思っていたもの)。</p>
+<h3 id="json-ver-4-">json (ver. 4)</h3>
+<p>jsonファイルに、key値<code class="lang-json">modal</code>を追加。</p>
+<p>サムネ画像<code class="lang-css">#content-img</code>をクリックした際...</p>
+<ul>
+<li><code class="lang-json">&quot;modal&quot;: true</code> :
+コンテンツをモーダルウィンドウで表示
+(絵が1枚だけ・注釈不要の場合)。</li>
+<li><code class="lang-json">&quot;modal&quot;: false</code> :
+コンテンツは新しいページで開く
+(複数枚の絵でひとつのコンテンツとなっている場合)</li>
+</ul>
+<p>各コンテンツのタイトルに書かれた&#39;T&#39;, &#39;F&#39;が、このキーの真偽値を示している。</p>
+<h3 id="-">モーダルウィンドウの実装</h3>
+<p>なるべくチェックボックスやCSSを使って実装した。
+いい感じだと思う。</p>
+<h3 id="-">問題点</h3>
+<ul>
+<li>100vh問題 : モーダルの高さ。スマホで観たときに特にズレが顕著。</li>
+</ul>
+<h2 id="06-content-display-json-ver-3-">06. #content-display, json (ver. 3)</h2>
+<ul>
+<li><a href="./design-works/works-06/works-06.html" target="_blank">link</a></li>
+</ul>
+<p>変更点は二つ</p>
+<h3 id="-content-display">#content-display</h3>
+<p>レイアウトを変えた。
+コメントと各種タグは、同じエリアに書き込む。
+この方が、レスポンシブを実装しやすい。</p>
+<p>「コンテンツ固有のページに飛ぶためのリンク」は、文字やボタン状でなく、
+画像リンク(一枚のみならばモーダルウィンドウ)にすればよいだろう(未実装)。</p>
+<h3 id="json-">jsonファイル</h3>
+<p>コンテンツの検索に必要ないデータ(id, title, commentなど)は、infoというオブジェクトに納めた。
+このほうが検索が速くなるはず。</p>
+<pre data-label="version3.json"><code class="lang-json">
+{
+  "genre": ["Jeff-Beck", "Led-Zeppelin"],
+  "year": 2021,
+  "warn": ["C"],
+  "info": {
+    "id": "0006",
+    "title": "#0006, 2021, C, JB LZ",
+    "comment": "コメント! #0006"
+  }
+}
+</code></pre>
+
+<h2 id="05-filter-function">05. filter function</h2>
+<p>今更だが、selectContent.js内で配列にフィルターを掛ける部分を、関数として独立させた。
+<code class="lang-js">function filterNoData</code>,
+<code class="lang-js">function filterSingle</code>,
+<code class="lang-js">function filterMulti</code>
+の部分。</p>
+<ul>
+<li><a href="./design-works/works-05/works-05.html" target="_blank">フィルター部分を改良</a></li>
+</ul>
+<h2 id="04-json-ver-2-">04. json (ver. 2)</h2>
+<p>ちょっと後戻りするが、jsonファイルのデータ構造を少し変えた
+(genreやwarnなど、複数通り登録される可能性がある項目を、配列形式に変更)。</p>
+<ul>
+<li><a href="./design-works/works-04/works-04.html" target="_blank">jsonの形式を変更</a></li>
+</ul>
+<pre data-label="version2.json"><code class="lang-json">
+{
+  "genre": ["JeffBeck", "LedZep"],
+  "id": "0017",
+  "title": "#0017, 2020, -, JB LZ",
+  "warn": [],
+  "year": 2020
+}
+</code></pre>
+
+<h2 id="03-content-display">03. #content-display</h2>
+<p>さらにgridレイアウト。</p>
+<ul>
+<li><a href="./design-works/works-03/works-03.html" target="_blank">#content-displayにもgrid</a></li>
+</ul>
+<p>背景を黒ドットにすると、LZ Iぽくなる</p>
+<h2 id="02-json-ver-1-">02. json (ver. 1)</h2>
+<p>各コンテンツのデータをjsonファイルに納めている場合。</p>
+<ul>
+<li><a href="./design-works/works-02/works-02.html" target="_blank">jsonファイルにデータを格納</a></li>
+</ul>
+<p>コンテンツリストのスクロール機能(フォーカスが当たっているコンテンツを表示できるように)も追加。</p>
+<h2 id="01-layout">01. layout</h2>
+<p>レイアウトのCSSをどう実装しようかな、というテスト。</p>
+<ul>
+<li><a href="./design-works/works-01-flex/works-01-flex.html" target="_blank">flexレイアウト</a></li>
+<li><a href="./design-works/works-01-grid/works-01-grid.html" target="_blank">gridレイアウト</a></li>
+</ul>
+<p>いずれも、各コンテンツのデータはhtmlファイル内に格納されている。
+コンテンツが増えすぎた場合、読み込みや処理に時間がかかるかも...</p>
+<p>コンテンツの選別や、session storageの様子のチェックの為だけなので、コンテンツ情報については、タイトルとidしか表示できない。</p>
+<p>今後はgridレイアウトで実装しよう。</p>
+</main>
+<footer>
+<button id="back-to-top"></button>
+<nav><ul>
+<li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
+<li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
+<li><a href="./design.html" class="btn-flat"><span>design</span></a></li>
+</ul></nav>
+</footer>
+<script src="../js/prism.js"></script>
+<script src="../js/general.js"></script>
+</body>
+</html>

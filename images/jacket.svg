@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="jacket.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="45.254834"
+     inkscape:cx="20.85965"
+     inkscape:cy="15.412718"
+     inkscape:window-width="1687"
+     inkscape:window-height="1025"
+     inkscape:window-x="64"
+     inkscape:window-y="64"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     inkscape:snap-global="false"
+     showguides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;stroke:#000000"
+       id="rect55"
+       width="120"
+       height="120"
+       x="0"
+       y="0" />
+    <rect
+       style="fill:#ffd5d5;stroke:#000000"
+       id="rect651"
+       width="100"
+       height="110"
+       x="10"
+       y="5" />
+    <path
+       style="fill:#ffccaa;stroke:#000000;stroke-width:0.166898"
+       d="M 10.514604,60 V 5.5076495 H 60 109.4854 V 60 114.49235 H 60 10.514604 Z"
+       id="path1095" />
+    <rect
+       style="fill:#ffaaaa;stroke:#000000"
+       id="rect1178"
+       width="15"
+       height="10"
+       x="15"
+       y="10" />
+    <path
+       style="fill:#cccccc;stroke:#000000;stroke-width:0.0456356"
+       d="m 15,15 v -5 h 7.5 7.5 v 5 5 H 22.5 15 Z"
+       id="path2596" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 15,18 c 15,0 15,0 15,0"
+       id="path2771" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.33333px;line-height:1.25;font-family:'Agency FB';-inkscape-font-specification:'Agency FB'"
+       x="15"
+       y="15"
+       id="text9615"><tspan
+         sodipodi:role="line"
+         id="tspan9613"
+         x="15"
+         y="15" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 14.849242,17.810252 c 6.231379,-7.9549512 6.231379,-7.9549512 6.231379,-7.9549512 v 0"
+       id="path19903" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 21.522563,9.8553008 c 0,7.9549512 0,7.9549512 0,7.9549512"
+       id="path19905" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 16.30765,15.998291 c 5.170719,0.04419 5.170719,0.04419 5.170719,0.04419"
+       id="path19907" />
+    <ellipse
+       style="opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path19931"
+       cx="26.030367"
+       cy="13.87697"
+       rx="3.4913397"
+       ry="3.4471455" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.0110485"
+       d="m 15.026019,19.11398 v -0.850738 h 7.468815 7.468816 v 0.850738 0.850738 h -7.468816 -7.468815 z"
+       id="path4914" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.66667px;line-height:1.25;font-family:'Franklin Gothic Medium Cond';-inkscape-font-specification:'Franklin Gothic Medium Cond'"
+       x="18.133942"
+       y="19.74712"
+       id="text11665"><tspan
+         sodipodi:role="line"
+         x="18.133942"
+         y="19.74712"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.66667px;font-family:'Microsoft YaHei';-inkscape-font-specification:'Microsoft YaHei'"
+         id="tspan18961">11AKI2358</tspan></text>
+  </g>
+</svg>
