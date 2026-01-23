@@ -1,235 +1,257 @@
-[{
-    "genre": ["Led-Zeppelin"],
+[
+  {
+    "genre": [
+      "2ji"
+    ],
     "year": 2020,
     "rough": false,
+    "warn": [
+      "Spoiler",
+      "黒字はWARNING"
+    ],
     "info": {
-      "comment": "テルミン弾くペイジ、ミステリアスで大好き",
+      "comment": "こめんと<br>こめんと<br>漫画",
       "editDate": 20200914,
-      "id": "a20200914-00",
+      "id": "a0000",
       "modal": true,
       "postDate": 20200914,
-      "title": "Jimmy Page"
-    }
-  },
-  
-  {
-    "genre": ["the-Struts"],
-    "year": 2020,
-    "rough": false,
-    "info": {
-      "comment": "お誕生日イラスト",
-      "editDate": 20200604,
-      "id": "a20200604-01",
-      "modal": true,
-      "postDate": 20200604,
-      "title": "Gethin Davies"
-    }
-  }, {
-    "genre": ["the-Struts"],
-    "year": 2020,
-    "rough": false,
-    "info": {
-      "comment": "お誕生日イラスト",
-      "editDate": 20200604,
-      "id": "a20200604-00",
-      "modal": true,
-      "postDate": 20200604,
-      "title": "Gethin Davies"
+      "title": "a0000, 2020, T, 2ji, Spoiler/WARN"
     }
   },
   {
-    "genre": ["Led-Zeppelin"],
+    "genre": [
+      "rock"
+    ],
+    "year": 2021,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "ロック",
+      "editDate": 20210604,
+      "id": "a0001",
+      "modal": true,
+      "postDate": 20210604,
+      "title": "a0001, 2021, T, 2ji"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2022,
+    "rough": false,
+    "warn": [
+      "B",
+      "C"
+    ],
+    "info": {
+      "comment": "ろっくんろーる",
+      "editDate": 20200604,
+      "id": "a0002",
+      "modal": false,
+      "postDate": 20200604,
+      "title": "a0002, 2022, F, rock, B/C"
+    }
+  },
+  {
+    "genre": [
+      "2ji"
+    ],
     "year": 2020,
     "rough": false,
+    "warn": [],
     "info": {
-      "comment": "お誕生日イラスト<br>まじで神",
+      "comment": "コメント! <br><span style=\"color:cadetblue;\">コメント</span>だよ!!<br><i>json</i>でも、<b>html</b>と同じようにデコれる!<br><code>a0003</code>",
       "editDate": 20200531,
-      "id": "a20200531-00",
+      "id": "a0003",
       "modal": true,
       "postDate": 20200531,
-      "title": "John Bonham"
+      "title": "a0003, 2020, T, 2ji"
     }
   },
   {
-    "genre": ["the-Struts"],
+    "genre": [
+      "rock"
+    ],
     "year": 2020,
     "rough": false,
+    "warn": [
+      "A"
+    ],
     "info": {
-      "comment": "お誕生日イラスト",
+      "comment": "コメント! <br><span style=\"color:cadetblue;\">コメント</span>だよ!!<br><i>json</i>でも、<b>html</b>と同じようにデコれる!<br><code>a0004</code>",
       "editDate": 20200507,
-      "id": "a20200513-00",
+      "id": "a0004",
+      "modal": false,
+      "postDate": 20200507,
+      "title": "a0004, 2020, F, rock, A"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2022,
+    "rough": false,
+    "warn": [
+      "B"
+    ],
+    "info": {
+      "comment": "こめこめこめんと",
+      "editDate": 20200507,
+      "id": "a0005",
       "modal": true,
       "postDate": 20200507,
-      "title": "Gethin Davies"
+      "title": "a0005, 2022, T, rock, B"
     }
   },
   {
-    "genre": ["the-Struts"],
-    "year": 2020,
+    "genre": [
+      "rock"
+    ],
+    "year": 2021,
     "rough": false,
+    "warn": [],
     "info": {
-      "comment": "お誕生日イラスト",
+      "comment": "コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006",
       "editDate": 20200507,
-      "id": "a20200507-01",
+      "id": "a0006",
       "modal": true,
       "postDate": 20200507,
-      "title": "Jed Elliott"
+      "title": "a0006, 2021, T, rock, "
     }
   },
   {
-    "genre": ["the-Struts"],
+    "genre": [
+      "zatta"
+    ],
     "year": 2020,
     "rough": false,
+    "warn": [],
     "info": {
-      "comment": "お誕生日イラスト",
-      "editDate": 20200507,
-      "id": "a20200507-00",
-      "modal": true,
-      "postDate": 20200507,
-      "title": "Jed Elliott"
-    }
-  },
-  {
-    "genre": ["X-JAPAN"],
-    "year": 2020,
-    "rough": false,
-    "info": {
-      "comment": "ばかでかいクリスタルドラム最強かっこいい",
+      "comment": "こめーーーんと",
       "editDate": 20200429,
-      "id": "a20200429-00",
+      "id": "a0007",
       "modal": true,
       "postDate": 20200429,
-      "title": "YOSHIKIさん"
+      "title": "a0007, 2020, T, zatta"
     }
   },
   {
-    "genre": ["the-Struts"],
-    "year": 2020,
+    "genre": [
+      "rock"
+    ],
+    "year": 2021,
     "rough": false,
+    "warn": [
+      "B",
+      "C"
+    ],
     "info": {
-      "comment": "お誕生日イラスト<br>2019年来日時の写真から。ミスあるけれどお気に入りの絵。",
+      "comment": "またまだコメント! a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>",
       "editDate": 20200424,
-      "id": "a20200424-00",
-      "modal": true,
+      "id": "a0008",
+      "modal": false,
       "postDate": 20200424,
-      "title": "Jed Elliott"
+      "title": "a0008, 2021, F, rock, B/C"
     }
   },
   {
-    "genre": ["Queen"],
-    "year": 2020,
+    "genre": [
+      "films"
+    ],
+    "year": 2022,
     "rough": false,
+    "warn": [],
     "info": {
-      "comment": "伏し目、好き",
+      "comment": "こめん",
       "editDate": 20200422,
-      "id": "a20200422-00",
+      "id": "a0009",
       "modal": true,
       "postDate": 20200422,
-      "title": "Brian May"
+      "title": "a0009, 2022, T, films"
     }
   },
   {
-    "genre": ["Queen"],
+    "genre": [
+      "films"
+    ],
     "year": 2020,
     "rough": false,
+    "warn": ["A"],
     "info": {
       "comment": "",
       "editDate": 20200407,
-      "id": "a20200407-00",
+      "id": "a0010",
       "modal": true,
       "postDate": 20200407,
-      "title": "Brian May"
+      "title": "a0010, 2020, T, films, A"
     }
   },
   {
-    "genre": ["the-Struts"],
-    "year": 2020,
+    "genre": [
+      "rock"
+    ],
+    "year": 2021,
     "rough": false,
+    "warn": [],
     "info": {
-      "comment": "お誕生日イラスト",
+      "comment": "testes",
       "editDate": 20200322,
-      "id": "a20200322-00",
+      "id": "a0011",
       "modal": true,
       "postDate": 20200322,
-      "title": "Jed Elliott"
+      "title": "a0011, 2021, T, rock, "
     }
   },
   {
-    "genre": ["Queen"],
-    "year": 2020,
+    "genre": [
+      "films"
+    ],
+    "year": 2021,
     "rough": false,
+    "warn": [
+      "A"
+    ],
     "info": {
-      "comment": "プリティ・メイ",
+      "comment": "ttteeesssttt",
       "editDate": 20200321,
-      "id": "a20200321-00",
+      "id": "a0012",
       "modal": true,
       "postDate": 20200321,
-      "title": "Brian May"
+      "title": "a0012, 2021, T, films, A"
     }
   },
   {
-    "genre": ["Queen"],
-    "year": 2020,
+    "genre": [
+      "films"
+    ],
+    "year": 2022,
     "rough": false,
+    "warn": [],
     "info": {
-      "comment": "青年メイ",
+      "comment": "ねむい",
       "editDate": 20200312,
-      "id": "a20200312-00",
+      "id": "a0013",
       "modal": true,
       "postDate": 20200312,
-      "title": "Brian May"
+      "title": "a0013, 2022, T, films, "
     }
   },
   {
-    "genre": ["Queen"],
-    "year": 2020,
+    "genre": [
+      "zatta"
+    ],
+    "year": 2021,
     "rough": false,
+    "warn": [],
     "info": {
-      "comment": "まっ正面メイ",
-      "editDate": 20200306,
-      "id": "a20200306-00",
+      "comment": "こめーーんと",
+      "editDate": 20200429,
+      "id": "a0014",
       "modal": true,
-      "postDate": 20200306,
-      "title": "Brian May"
-    }
-  },
-  {
-    "genre": ["the-Struts"],
-    "year": 2020,
-    "rough": false,
-    "info": {
-      "comment": "お誕生日イラスト",
-      "editDate": 20200223,
-      "id": "a20200223-00",
-      "modal": true,
-      "postDate": 20200223,
-      "title": "Adam Slack"
-    }
-  },
-  {
-    "genre": ["the-Struts"],
-    "year": 2020,
-    "rough": false,
-    "info": {
-      "comment": "お誕生日イラスト<br>虎のタトゥーがかっこよかったので、Addoと背中合わせにしました",
-      "editDate": 20200222,
-      "id": "a20200222-00",
-      "modal": true,
-      "postDate": 20200222,
-      "title": "Adam Slack"
-    }
-  },
-  {
-    "genre": ["the-Struts"],
-    "year": 2020,
-    "rough": false,
-    "info": {
-      "comment": "お誕生日イラスト<br>Adamoo",
-      "editDate": 20200221,
-      "id": "a20200221-00",
-      "modal": true,
-      "postDate": 20200221,
-      "title": "Adam Slack"
+      "postDate": 20200429,
+      "title": "a0014, 2021, T, zatta"
     }
   }
 ]

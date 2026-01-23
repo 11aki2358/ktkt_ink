@@ -24,6 +24,10 @@ window.onload = onLoadAction();
 function onLoadAction() {
   setVhMax();
   document.getElementById('content-display').style.display = "none";
+  
+  //  from: 20260123
+  document.getElementById('show-display').checked = false;
+  //  to: 20260123
 
   if (sessionStorage.getItem('firstVisit-work') != '1') {
     // このセッションで初めてworksを訪れた場合は...
@@ -548,7 +552,15 @@ function showFocusedComment(focusObj) {
   let year = addCommentInfoSingle(fcsObj, 'year', 'comment-year');
   let modal = addCommentInfoBool(fcsObj.info, 'modal', 'comment-modal', 'Modal', 'Full-Page');
 
-  focusedComment = `${genres} / ${modal}<br>${fcsObj.info.comment}<br>${year}`;
+  //  20260123  
+  if (fcsObj.warn != '') {
+    let warns = addCommentInfoMulti(fcsObj, 'warn', 'comment-warn');
+    focusedComment = `${genres} / ${warns} / ${modal}<br>${fcsObj.info.comment}<br>${year}`;
+  } else {
+    focusedComment = `${genres} / ${modal}<br>${fcsObj.info.comment}<br>${year}`;
+  }
+  //focusedComment = `${genres} / ${modal}<br>${fcsObj.info.comment}<br>${year}`;
+  //  20260123
 
   document.getElementById('content-comment').innerHTML = focusedComment;
 }
