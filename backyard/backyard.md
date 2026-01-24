@@ -50,15 +50,15 @@ html, CSS, javaScriptのあれこれに関するメモ。
 * 画像について : [link](design-images.html)
 * インライン要素の装飾について : [link](design-inlineDeco.html)
 * 検索除けについて : [link](./design-escSearch.html)
-* 閲覧制限について(一部未実装) : [link](design-limitation.html)
+<!-- * 閲覧制限について(一部未実装) : [link](design-limitation.html) -->
 * Worksの実装について : [link](./design-works.html)
-* メモ : [link](memo.html)
-
+<!-- * メモ : [link](memo.html) -->
+<!-- 
 ### trouble
 
 トラブった内容、エラーのうち、解決に時間がかかった内容
 
-* スクロールバーが表示されるのに動かない : [link](./trouble-scrollx.html)
+* スクロールバーが表示されるのに動かない : [link](./trouble-scrollx.html) -->
 
 ### Example
 

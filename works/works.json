@@ -15,7 +15,7 @@
       "id": "a0000",
       "modal": true,
       "postDate": 20200914,
-      "title": "a0000, 2020, T, 2ji, Spoiler/WARN"
+      "title": "a0000, 2020, T, 2ji, WARN"
     }
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "genre": [
-      "rock"
+      "rock", "films"
     ],
     "year": 2020,
     "rough": false,
@@ -79,7 +79,7 @@
       "A"
     ],
     "info": {
-      "comment": "コメント! <br><span style=\"color:cadetblue;\">コメント</span>だよ!!<br><i>json</i>でも、<b>html</b>と同じようにデコれる!<br><code>a0004</code>",
+      "comment": "コメント!",
       "editDate": 20200507,
       "id": "a0004",
       "modal": false,
@@ -139,7 +139,7 @@
   },
   {
     "genre": [
-      "rock"
+      "rock", "2ji"
     ],
     "year": 2021,
     "rough": false,
@@ -153,7 +153,7 @@
       "id": "a0008",
       "modal": false,
       "postDate": 20200424,
-      "title": "a0008, 2021, F, rock, B/C"
+      "title": "a0008, 2021, F, rock, 2ji, B/C"
     }
   },
   {
@@ -235,7 +235,7 @@
       "id": "a0013",
       "modal": true,
       "postDate": 20200312,
-      "title": "a0013, 2022, T, films, "
+      "title": "a0013, 2022, T, films, タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い"
     }
   },
   {

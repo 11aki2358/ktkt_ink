@@ -9,7 +9,6 @@
 <meta name="theme-color" content="#000000">
 <link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
 <title>backyard</title>
-<link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
 <link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
 <link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
 <link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
@@ -50,6 +49,14 @@
 </ul>
 <p>がSession Storageに保存される(Local Storageを使うのは大げさな感じ)。</p>
 <p>状態遷移とか挙動の条件のあれこれに関するメモはこっち : <a href="design-works-memo.html">link</a><br>編集中のWorksページの最新版とは対応していないかもしれない。</p>
+<h2 id="13-minor-change">13. minor change</h2>
+<p>2026年 微編集</p>
+<ul>
+<li>WARN内容の表示の仕方</li>
+<li>検索KEY(html)</li>
+</ul>
+<p>javascriptの方はきちんと編集できていない。
+冗長なコードが残ったままかも</p>
 <h2 id="12-modal-click-event-">12. Modal(click event)</h2>
 <ul>
 <li><a href="./design-works/works-12/works-12.html" target="_blank">link</a></li>
@@ -61,23 +68,9 @@
 <p>そろそろ完成かな。
 あと必要な機能は</p>
 <ul>
-<li>WARNボタンの表示・非表示</li>
-<li>ヤバいサムネにぼかしを入れる</li>
-<li>ROUGHボタンの追加(スケッチとか練習とか)</li>
 <li><strong>サムネ画像は200px, モーダルではオリジナルサイズ、的なやつ</strong></li>
-</ul>
-<p>だけれど、</p>
-<ul>
-<li>WARNタグが付けられるコンテンツを置くならばPHPのあれこれを完了しなければならない。今はやりたくない。</li>
-<li>コンテンツが少ないうちは、真面目に描いた絵もROUGHもごちゃまぜで十分かな...  </li>
-</ul>
-<p>なかんじ。</p>
-<ul>
-<li>WARNボタンはとりあえずコメントアウト</li>
-<li>今後のためにjsonファイルの検索用key値に<code class="lang-json">rough</code>を入れて置く</li>
 <li>jsonのinfo欄に、各SNSへの投稿状況をメモ(管理用)</li>
 </ul>
-<p>これだけやっとけば本始動できるかな。</p>
 <p>あと、サムネを取っ払えば、この機能は更新履歴にも日記にも使えそう。
 サイト作りが一気に進むわ～～</p>
 <h2 id="11-modal">11. Modal</h2>
@@ -300,10 +293,9 @@
 <nav><ul>
 <li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
 <li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
-<li><a href="./design.html" class="btn-flat"><span>design</span></a></li>
+<li><a href="./start.html" class="btn-flat"><span>start</span></a></li>
 </ul></nav>
 </footer>
-<script src="../js/prism.js"></script>
 <script src="../js/general.js"></script>
 </body>
 </html>

@@ -296,7 +296,8 @@ input[type="checkbox"]:checked+.checkbox-label {
   display: inline;
 }
 
-#modal-link {
+#modal-link,
+#comment-link {
   font-size: 1.5rem;
 }
 

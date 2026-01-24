@@ -70,12 +70,12 @@ lightboxやサムネについて。<br>
   spanで囲われた範囲に、数字を付けて箇条書きにする、疑似的な箇条書き :
   <a href="https://qiita.com/suin/items/209a1211892c142da882" target="_blank">link</a><br>
   コンテンツメニューの、中心寄せの箇条書きに...
-
+<!-- 
 ##  Access limitation
 未実装。<br>
 Netlifyでデプロイする静的サイトでは、Basic認証や.htaccessによる制限ができない。<br>
 それでもなんとかして夢腐血薬イラストに閲覧制限をかける方法を模索...<br>
-詳細はここ : <a href="./design-limitation.html">link</a>
+詳細はここ : <a href="./design-limitation.html">link</a> -->
 
 ##  Footer
 短い記事のページでもフッターがページ最下部に固定するように : <a href="https://www.nxworld.net/css-sticky-footer.html" target="_blank">link</a>

@@ -24,7 +24,7 @@ window.onload = onLoadAction();
 function onLoadAction() {
   setVhMax();
   document.getElementById('content-display').style.display = "none";
-  
+
   //  from: 20260123
   document.getElementById('show-display').checked = false;
   //  to: 20260123
@@ -61,7 +61,7 @@ function selectContent() {
       newFunction(selectData, data);
     })
 
-   
+
 }
 
 // fetchしてきたjsonデータと、ボタンの入力状態の比較とか
@@ -101,12 +101,12 @@ function newFunction(selectData, contentListData) {
  * content display, contents listをいい感じに表示
  ***************************************/
 
-document.getElementById('show-display').addEventListener('change', function() {
+document.getElementById('show-display').addEventListener('change', function () {
   arrangeContentBox(globalVar.glFocusObj);
   scrollToFocus(globalVar.glFocusObj);
 }, false);
 
-window.onresize = function() {
+window.onresize = function () {
   setVhMax();
   arrangeContentBox(globalVar.glFocusObj);
   scrollToFocus(globalVar.glFocusObj);
@@ -550,14 +550,21 @@ function showFocusedComment(focusObj) {
 
   let genres = addCommentInfoMulti(fcsObj, 'genre', 'comment-genre');
   let year = addCommentInfoSingle(fcsObj, 'year', 'comment-year');
-  let modal = addCommentInfoBool(fcsObj.info, 'modal', 'comment-modal', 'Modal', 'Full-Page');
 
   //  20260123  
+  let modal = addCommentInfoBool(fcsObj.info, 'modal', 'comment-modal', 'Modal', 'Full-Page');
   if (fcsObj.warn != '') {
     let warns = addCommentInfoMulti(fcsObj, 'warn', 'comment-warn');
-    focusedComment = `${genres} / ${warns} / ${modal}<br>${fcsObj.info.comment}<br>${year}`;
+    focusedComment = `${genres} / ${warns}<br>${fcsObj.info.comment}<br>${year}`;
   } else {
-    focusedComment = `${genres} / ${modal}<br>${fcsObj.info.comment}<br>${year}`;
+    focusedComment = `${genres}<br>${fcsObj.info.comment}<br>${year}`;
+  }
+
+  //  リンクの表示の仕方が汚い。modalのときとうまく両立したい
+  if(document.getElementById('show-modal').checked == false) {
+    if (fcsObj.info.modal == false) {
+      focusedComment += `<br><a href="work-${fcsObj.info.id}.html" id="comment-link">Visit Page→</a>`;
+    }
   }
   //focusedComment = `${genres} / ${modal}<br>${fcsObj.info.comment}<br>${year}`;
   //  20260123
