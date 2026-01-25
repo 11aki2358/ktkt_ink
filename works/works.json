@@ -164,7 +164,7 @@
     "rough": false,
     "warn": [],
     "info": {
-      "comment": "こめん",
+      "comment": "ちなみに : 2400px × 1800pxのpng画像で、ファイルサイズは112KB<br>GitHubでは、50 MiBより大きいファイルを追加または更新しようとすると、警告が表示される(<a href=\"https://docs.github.com/ja/repositories/working-with-files/managing-large-files/about-large-files-on-github\", target=\"_blank\">link</a>)",
       "editDate": 20200422,
       "id": "a0009",
       "modal": true,
@@ -180,7 +180,7 @@
     "rough": false,
     "warn": ["A"],
     "info": {
-      "comment": "",
+      "comment": "ちなみに : MediBangでA4(縦) 600dpiで作ったキャンバスを、pngに変換する(→4960px × 7015px)。ファイルサイズは741KB<br>GitHubでは、50 MiBより大きいファイルを追加または更新しようとすると、警告が表示される(<a href=\"https://docs.github.com/ja/repositories/working-with-files/managing-large-files/about-large-files-on-github\", target=\"_blank\">link</a>)<br>これくらいのファイルサイズならば、問題なくデプロイまでもっていけるはず...",
       "editDate": 20200407,
       "id": "a0010",
       "modal": true,
