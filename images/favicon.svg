@@ -8,7 +8,7 @@
    version="1.1"
    id="SVGRoot"
    sodipodi:docname="favicon.svg"
-   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,13 +23,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:zoom="10.535589"
-     inkscape:cx="18.081572"
-     inkscape:cy="31.654615"
-     inkscape:window-width="1687"
-     inkscape:window-height="1025"
-     inkscape:window-x="215"
-     inkscape:window-y="78"
+     inkscape:zoom="5.2677945"
+     inkscape:cx="-1.6135785"
+     inkscape:cy="37.112306"
+     inkscape:window-width="1920"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      showguides="false"
@@ -65,8 +65,8 @@
        id="rect9594"
        width="64"
        height="64"
-       x="0"
-       y="0" />
+       x="0.5"
+       y="0.5" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
@@ -77,17 +77,28 @@
          x="2.3691907"
          y="27.764946"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.6667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi';fill:#ffffff"
-         id="tspan2">KT2</tspan></text>
+         id="tspan2" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
-       x="2.154747"
-       y="59.999805"
+       style="font-style:normal;font-weight:normal;font-size:42.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="5.5852485"
+       y="31.999472"
        id="text9972-9"><tspan
          sodipodi:role="line"
-         x="2.154747"
-         y="59.999805"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.6667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi';fill:#ffffff"
-         id="tspan2-4">INK</tspan></text>
+         x="5.5852485"
+         y="31.999472"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.6667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi';fill:#ffffff"
+         id="tspan2-4">R:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:42.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="32.171471"
+       y="62.688034"
+       id="text9972-9-5"><tspan
+         sodipodi:role="line"
+         x="32.171471"
+         y="62.688034"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.6667px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi';fill:#ffffff"
+         id="tspan2-4-7">R</tspan></text>
   </g>
 </svg>

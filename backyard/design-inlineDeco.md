@@ -78,7 +78,7 @@ htmlファイルのインデントがそのまま反映されるから、ブラ�
 
 ## .font-thin
 
-HeaderのKatakata InakaやOPENなど。
+HeaderのRyko: RykoやOPENなど。
 太くするときも、細くするときも、x, y方向の倍率を示して
 <code class="language-css">transform: scale(x, y)</code>
 
