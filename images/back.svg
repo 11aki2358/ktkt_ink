@@ -26,15 +26,15 @@
      inkscape:snap-center="true"
      inkscape:lockguides="false"
      showguides="false"
-     inkscape:zoom="0.6405233"
-     inkscape:cx="-42.153033"
-     inkscape:cy="99.137689"
+     inkscape:zoom="1.2810466"
+     inkscape:cx="316.53806"
+     inkscape:cy="154.17082"
      inkscape:window-width="1902"
      inkscape:window-height="1103"
-     inkscape:window-y="5"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1"
-     inkscape:window-x="-2"
+     inkscape:current-layer="text17162"
+     inkscape:window-x="0"
      units="mm">
     <inkscape:grid
        type="xygrid"
@@ -70,18 +70,24 @@
        transform="scale(0.26458333)"
        id="text16098"
        style="line-height:1.25;font-family:'Agency FB';font-size:0.66666667px;-inkscape-font-specification:'Agency FB';white-space:pre;shape-inside:url(#rect16100)" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:92.7801px;line-height:1;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold';letter-spacing:-7.9375px;stroke-width:0.231952"
-       x="-5.1488285"
-       y="92.554893"
+    <g
+       aria-label="BACK"
+       transform="scale(1.1859714,0.84319064)"
        id="text17162"
-       transform="scale(1.1859714,0.84319064)"><tspan
-         sodipodi:role="line"
-         id="tspan17160"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:92.7801px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold';stroke-width:0.231952"
-         x="-5.1488285"
-         y="92.554893">BACK</tspan></text>
+       style="font-weight:bold;font-size:92.7801px;line-height:1;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold';letter-spacing:-7.9375px;stroke-width:0.231952">
+      <path
+         d="M 6.1973853,92.554893 V 80.594959 H 27.217877 q 4.258462,0 6.568904,-2.038625 2.355745,-2.083928 2.355745,-5.798756 v -0.135909 q 0,-3.760131 -2.355745,-5.798756 -2.310442,-2.083928 -6.568904,-2.083928 H 6.1973853 V 52.779051 H 27.217877 q 3.850737,0 5.934665,-1.94802 2.129231,-1.94802 2.129231,-5.481637 v 0 q 0,-3.216497 -2.129231,-4.938003 -2.083928,-1.766808 -5.934665,-1.766808 H 6.1973853 V 26.684648 H 27.625602 q 9.60419,0 14.859313,4.666187 5.300426,4.666186 5.300426,13.183109 v 0 q 0,5.753454 -3.397709,9.513585 -3.352406,3.714828 -9.513584,4.756792 6.568903,0.906055 10.147823,5.028609 3.624222,4.07725 3.624222,10.646153 v 0.135909 q 0,8.562226 -5.300425,13.273715 -5.300426,4.666186 -14.949918,4.666186 z m -5.43633389,0 V 26.684648 H 13.174015 v 65.870245 z"
+         id="path1654" />
+      <path
+         d="M 46.35092,92.554893 71.539267,26.684648 h 7.882684 L 104.6103,92.554893 H 91.245977 L 75.480609,47.569231 59.715241,92.554893 Z M 58.446763,81.999345 V 70.039411 h 34.656628 v 11.959934 z"
+         id="path1656" />
+      <path
+         d="m 123.67325,93.234435 q -7.56556,0 -12.91129,-2.854075 -5.30043,-2.899378 -8.1092,-8.381015 -2.808772,-5.526939 -2.808772,-13.319018 v -18.07581 q 0,-7.837381 2.808772,-13.319018 2.80877,-5.481636 8.1092,-8.381015 5.34573,-2.899378 12.91129,-2.899378 6.25179,0 11.09918,2.672865 4.8927,2.672864 8.0639,7.746775 3.2165,5.073912 4.43967,12.322357 v 0 h -12.86599 v 0 q -0.72484,-3.307103 -2.26514,-5.572242 -1.49499,-2.310442 -3.66952,-3.533617 -2.12923,-1.223175 -4.8021,-1.223175 -5.20982,0 -8.1092,3.216497 -2.85407,3.171195 -2.85407,8.969951 v 18.07581 q 0,5.798756 2.85407,8.969951 2.89938,3.171195 8.1092,3.171195 4.07725,0 6.88602,-2.672864 2.80878,-2.718167 3.85074,-7.65617 v 0 H 147.276 v 0 q -1.26848,7.203142 -4.48497,12.322356 -3.1712,5.073912 -8.0186,7.746776 -4.84739,2.672864 -11.09918,2.672864 z"
+         id="path1658" />
+      <path
+         d="m 158.8187,82.950704 -1.5856,-16.127791 26.41152,-40.138265 h 15.62946 z m -9.06056,9.604189 V 26.684648 h 12.41296 v 65.870245 z m 37.55601,0 -19.11778,-33.342847 10.69146,-6.750115 23.14972,40.092962 z"
+         id="path1660" />
+    </g>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
