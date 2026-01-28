@@ -93,10 +93,17 @@ footer #back-to-top {
   display: block;
   background-image: url(../images/toTop.svg);
   background-size: 100%;
+  border: none;
+  outline: none;
   width: 12vh;
   height: 8vh;
   position: fixed;
   bottom: 1vh;
   right: 5vw;
   z-index: 9;
+}
+
+footer #back-to-top:hover{
+   transform: translateY(0.2vh);
+   /* transform: translateX(0.2vh); */
 }
