@@ -252,11 +252,13 @@ function showModal(focusObj) {
 
   //  モーダルで画像(img id="modal-img" )を表示
   if (fcsObj.info.modal == true) {
+    //  loadingアニメーションの表示
+    document.getElementById("loader").style.display='block';
     modalComment.style.display = 'none';
     modalImg.src = `./images/work-${fcsObj.info.id}.png`;
     modalImg.style.display = 'inline-block';
 
-    //  loading
+    //  loadingが完了したら、アニメーションを非表示
     modalImg.addEventListener('load', (e)=>{
       document.getElementById("loader").style.display='none';
     } );
