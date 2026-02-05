@@ -15,7 +15,7 @@
   width: fit-content;
   margin: auto;
   padding: auto;
-  height: 20vh;
+  height: 15vh;
 }
 
 .thumb{
@@ -24,7 +24,7 @@
   margin: auto;
   padding: .2vh;
   background-color: black;
-  height: 19vh;
+  height: 14vh;
   filter: grayscale(90);
 }
 
