@@ -218,7 +218,7 @@ function helpBtn(val, nam) {
 
 const head1 =
   '<!DOCTYPE html>\n' +
-  '<html lang="ja">\n' +
+  '<html lang="ja" prefix="og: http://ogp.me/ns#">\n' +
   '<head>\n' +
   '<meta name="robots" content="noindex,nofollow">\n' +
   '<meta name="googlebot" content="noindex,nofollow">\n' +
