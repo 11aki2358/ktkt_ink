@@ -1,24 +1,24 @@
-#show-works{
+#show-works {
   width: 100%;
-  text-align:center;
+  text-align: center;
 }
 
 #show-modal-1,
 #show-modal-2,
-#show-modal-3
-{
+#show-modal-3 {
   display: none;
 }
 
-.thumb-soto{
+.thumb-soto {
   display: inline-block;
   width: fit-content;
   margin: auto;
   padding: auto;
   height: 15vh;
+  position: relative;
 }
 
-.thumb{
+.thumb {
   display: inline;
   width: fit-content;
   margin: auto;
@@ -28,32 +28,54 @@
   filter: grayscale(90);
 }
 
-.thumb:hover{
+.thumb:hover {
   background-color: var(--type1-main-color);
   cursor: pointer;
 }
 
+.thumb-new{
+  display: none;
+}
+
+
+.thumb:hover~.thumb-new {
+  display: block;
+  position: absolute;
+  top: 0; /*画像の左上に配置*/
+  left: 0;
+  margin: 0;  /*余計な隙間を除く*/
+  color: white;
+  /*文字を白に*/
+  background: var(--type1-main-color);
+  /*背景色*/
+  font-size: 2vh;
+  line-height: 1;
+  /*行高は1に*/
+  padding: .25vh .25vh;
+  /*文字周りの余白*/
+}
+
 #show-modal-1:checked~#modal-1,
 #show-modal-2:checked~#modal-2,
-#show-modal-3:checked~#modal-3{
+#show-modal-3:checked~#modal-3 {
   display: block;
 }
 
 
 #show-modal-1:not(:checked)~#modal-1,
 #show-modal-2:not(:checked)~#modal-2,
-#show-modal-3:not(:checked)~#modal-3{
+#show-modal-3:not(:checked)~#modal-3 {
   display: none;
 }
 
-.content-block{
+.content-block {
   display: block;
   height: 50vh;
   margin: auto;
   padding: auto;
 }
 
-.content-image{
+.content-image {
   display: block;
   height: 100%;
   width: fit-content;
