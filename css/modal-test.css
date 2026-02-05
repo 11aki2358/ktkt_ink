@@ -16,6 +16,11 @@
   padding: auto;
   height: 15vh;
   position: relative;
+  background-color: black;
+}
+
+.thumb-soto:hover{
+  background-color: var(--type1-main-color);
 }
 
 .thumb {
@@ -23,13 +28,11 @@
   width: fit-content;
   margin: auto;
   padding: .2vh;
-  background-color: black;
-  height: 14vh;
+  height: 14.6vh;
   filter: grayscale(90);
 }
 
 .thumb:hover {
-  background-color: var(--type1-main-color);
   cursor: pointer;
 }
 
