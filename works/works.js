@@ -249,11 +249,19 @@ function showModal(focusObj) {
   let fcsObj = focusObj;
   let modalComment = document.getElementById('modal-comment');
   let modalImg = document.getElementById('modal-img');
+
+  //  モーダルで画像(img id="modal-img" )を表示
   if (fcsObj.info.modal == true) {
     modalComment.style.display = 'none';
     modalImg.src = `./images/work-${fcsObj.info.id}.png`;
-
     modalImg.style.display = 'inline-block';
+
+    //  loading
+    modalImg.addEventListener('load', (e)=>{
+      document.getElementById("loader").style.display='none';
+    } );
+
+
   } else {
     modalComment.style.display = 'inline-block';
     document.getElementById('modal-title').innerHTML = fcsObj.info.title;

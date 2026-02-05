@@ -23,3 +23,26 @@ img {
 .banner a:hover {
   background-color: var(--type1-base-color);
 }
+
+
+/* https://css-loaders.com/hypnotic/ */
+/* HTML: <div class="loader"></div> */
+#loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: repeating-conic-gradient(var(--type1-main-color),var(--type1-main-color) 1deg 18deg,#0000 20deg 36deg);
+  animation: l9 4s infinite linear;
+  position: relative;
+}
+#loader::before{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset:0;
+  background: inherit;
+  animation: inherit;
+}
+@keyframes l9{
+  100% {transform:rotate(.5turn)}
+}

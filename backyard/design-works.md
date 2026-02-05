@@ -21,6 +21,21 @@ git履歴でのコード管理がままならないポンコツ。
 状態遷移とか挙動の条件のあれこれに関するメモはこっち : [link](design-works-memo.html)  
 編集中のWorksページの最新版とは対応していないかもしれない。
 
+##  14. Loading
+
+モーダルの画像(`img src="" id="modal-img"`)に、ローディング時のアニメーションを追加した。
+
+* html変更点:
+
+  <code class="lang-html">img src="" id="modal-img"</code>要素の近くに<code class="lang-html">div class="loader"</code>を追加
+
+* CSS変更点
+
+  img.cssファイル : <code class="lang-css">.loader</code>の記述を追記(ローディングのアニメーション部分)
+
+* javascript変更点
+
+
 ##  13. minor change
 
 2026年 微編集
