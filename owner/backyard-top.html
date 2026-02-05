@@ -57,7 +57,8 @@
     <div>
       <ul>
         <li>プレースホルダ画像をつくれるやつ : <a href="https://placehold.jp/" target="_blank">link</a></li>
-        <li>手持ちの画像を、好みのサイズに変更できるやつ : <a href="https://www.shutterstock.com/ja/image-resizer" target="_blank">link</a></li>
+        <li>手持ちの画像を、好みのサイズに変更できるやつ : <a href="https://www.shutterstock.com/ja/image-resizer" target="_blank">link</a>
+        </li>
       </ul>
     </div>
 
@@ -84,6 +85,129 @@
         </li>
       </ul>
     </div>
+
+    <h3>詳細 : WORKS更新手順のメモ</h3>
+    <h4>works.jsonをいじる</h4>
+    <div>
+      <a href="../works/works.json" target="_blank" class="code-file">link</a><br>
+      頑張ってベタ打ちする。いつか入力フォームを作りたいね
+      <ul>
+        <li>フォーマット<br>
+          <pre data-label="json"><code class="language-json">
+                {
+                  "genre": [
+                    "rock", "films"
+                  ],
+                  "year": 2026,
+                  "rough": false,
+                  "warn": [
+                    "Spoiler",
+                    "黒字はWARNING"
+                  ],
+                  "info": {
+                    "comment": "適当なコメントをここに書く",
+                    "editDate": 20260206,
+                    "id": "a0000",
+                    "modal": true,
+                    "postDate": 20260205,
+                    "title": "絵のタイトル"
+                  }
+                }
+              </code></pre>
+        </li>
+        <li><em>genre</em>: 文字列<br>
+          複数選択可。検索キー。<br>
+          今のところ
+          <p>
+          <ul>
+            <li>
+              <code class="language-json">"rock"</code> : 音楽系
+            </li>
+            <li>
+              <code class="language-json">"2ji"</code> : 二次元。漫画、アニメ、ゲーム、その他もろもろ
+            </li>
+            <li>
+              <code class="language-json">"films"</code> : 映画系
+            </li>
+            <li>
+              <code class="language-json">"zatta"</code> : その他、雑多
+            </li>
+          </ul>
+          </p>
+          のみ選択可
+        </li>
+        <li><em>year</em>: 数字<br>
+          制作年。<br>
+          検索キーとしても使える(が、今のところyear検索は無効としている)。コメントの下の方に表示される。</li>
+        <li><em>rough</em>: bool<br>
+          雑な絵を描きました、という言い訳のために用意したプロパティ(今のところ使っていない)。</li>
+        <li><em>warn</em>: 文字列<br>
+          警告<br>
+          ネタバレとか血とか薬とかの絵を描いた時用。記入した場合のみ、コメント欄に記載される。
+        </li>
+        <li><b>info</b>
+          <ul>
+            <li><em>comment</em>: 文字列<br>
+              何かしらのコメント。<br>
+              長文でもOK。htmlタグを埋め込んでもOK。
+            </li>
+            <li><em>editDate</em>: 数字<br>
+              更新日時。<br>
+              年月日、十進数8桁で記入
+            </li>
+            <li><em>id</em>: 文字列<br>
+              コンテンツのID。<br>
+              各コンテンツに一意な文字列であること!!<br>
+              英数字とシンプルな記号のみで設定すること!!<br>
+              何かしら規則性ある文字列だといいなぁ(考え中)
+            </li>
+            <li><em>modal</em>: bool<br>
+              コンテンツの表示の仕方。<br>
+              TRUE: モーダルウィンドウで表示する。一枚絵。<br>
+              FALSE: コンテンツ固有のページに飛ぶ。複数枚の絵から成る場合、ワンクッション必要な内容の場合など。
+            </li>
+            <li><em>postDate</em>: 数字<br>
+              投稿日時。<br>
+              年月日、十進数8桁で記入
+            </li>
+            <li><em>title</em>: 文字列<br>
+              タイトル。<br>
+              長くてもいいけど、長すぎるとレイアウトが汚くなる。
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <h4>画像やコンテンツ用のページを用意する</h4>
+    <div>
+      <ul>
+        <li><code class="language-json">"modal": true</code>
+          <ul>
+            <li>サムネ画像<br>
+              ファイル名 : works/images/<em>work-<code>id</code>-thumb</em>.png<br>
+              画像サイズ : 400px × 400pxくらい(正方形)
+            </li>
+            <li>モーダル表示用の画像<br>
+              ファイル名 : works/images/<em>work-<code>id</code></em>.png<br>
+              画像サイズ : 50 MiBよりも小さければ問題ない。クソデカ画像の場合でも、長辺8000px以内に抑えておくのが無難かな
+            </li>
+          </ul>
+        </li>
+        <li><code class="language-json">"modal": false</code>
+          <ul>
+            <li>サムネ画像<br>
+              ファイル名 : works/images/<em>work-<code>id</code>-thumb</em>.png<br>
+              画像サイズ : 400px × 400pxくらい(正方形)
+            </li>
+            <li>コンテンツの個ページ<br>
+              ファイル名: works/<em>work-<code>id</code></em>.html<br>
+              テンプレート : 後で作る
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
   </main>
   <footer>
     <button id="back-to-top"></button>

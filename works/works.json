@@ -1,6 +1,70 @@
 [
   {
     "genre": [
+      "rock"
+    ],
+    "year": 2026,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "暴動クラブ/マツシマライズ<br>大女優ハット、大優勝",
+      "editDate": 20260205,
+      "id": "20260205d",
+      "modal": true,
+      "postDate": 20260205,
+      "title": "マツシマくん"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2026,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "暴動クラブ/鈴木壱歩<br>代官山UNITでは「鈴木<セクシー>壱歩」を名乗っていました",
+      "editDate": 20260205,
+      "id": "20260205c",
+      "modal": true,
+      "postDate": 20260205,
+      "title": "いっぽくん"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2026,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "暴動クラブ/ROSIE<br>2026/2/3のライヴ(@代官山UNIT)ではフワフワウェーブヘアで登場。",
+      "editDate": 20260205,
+      "id": "20260205b",
+      "modal": true,
+      "postDate": 20260205,
+      "title": "ROSIEさん"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2026,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "暴動クラブ/釘屋玄<br>マジでサイコーだぜ",
+      "editDate": 20260205,
+      "id": "20260205a",
+      "modal": true,
+      "postDate": 20260205,
+      "title": "クギヤ"
+    }
+  },
+  {
+    "genre": [
       "2ji"
     ],
     "year": 2020,
@@ -71,7 +135,8 @@
   },
   {
     "genre": [
-      "rock", "films"
+      "rock",
+      "films"
     ],
     "year": 2020,
     "rough": false,
@@ -139,7 +204,8 @@
   },
   {
     "genre": [
-      "rock", "2ji"
+      "rock",
+      "2ji"
     ],
     "year": 2021,
     "rough": false,
@@ -178,7 +244,9 @@
     ],
     "year": 2020,
     "rough": false,
-    "warn": ["A"],
+    "warn": [
+      "A"
+    ],
     "info": {
       "comment": "ちなみに : MediBangでA4(縦) 600dpiで作ったキャンバスを、pngに変換する(→4960px × 7015px)。ファイルサイズは741KB<br>GitHubでは、50 MiBより大きいファイルを追加または更新しようとすると、警告が表示される(<a href=\"https://docs.github.com/ja/repositories/working-with-files/managing-large-files/about-large-files-on-github\", target=\"_blank\">link</a>)<br>これくらいのファイルサイズならば、問題なくデプロイまでもっていけるはず...",
       "editDate": 20200407,

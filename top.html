@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="./css/image.css" type="text/css" id="style">
   <link rel="stylesheet" href="./css/style.css" type="text/css" id="style">
   <link rel="stylesheet" href="./css/lightbox.css" type="text/css">
+  <link rel="stylesheet" href="./css/modal-test.css" type="text/css">
+
 </head>
 
 <body>
@@ -61,27 +63,42 @@
     <article id="menu-1">
       <h2>Works</h2>
       <div>
-        <div class="image-set center">
-          <a class="example-image-link" href="./images/sample-600x600.png" data-lightbox="example-set"
-            data-title="Click the right half of the image to move forward.">
-            <img class="example-image medium" src="./images/sample-150x150.png"
-              alt="xxx">
-          </a>
-          <a class="example-image-link" href="./images/sample-600x800.png" data-lightbox="example-set"
-            data-title="Or press the right arrow on your keyboard.">
-            <img class="example-image medium" src="./images/sample-150x180.png"
-              alt="yyy">
-          </a>
-          <a class="example-image-link" href="./images/sample-800x600.png" data-lightbox="example-set"
-            data-title="The next image in the set is preloaded as you're viewing.">
-            <img class="example-image medium" src="./images/sample-180x150.png"
-              alt="zzz">
-          </a>
+
+        <div id="show-works">
+          <label for="show-modal-1" class="thumb-soto">
+            <img src="./works/images/work-20260205d-thumb.png" class="thumb" loading="lazy">
+          </label>
+          <input type="radio" id="show-modal-1" name="thumb" checked>
+
+          <label for="show-modal-2" class="thumb-soto">
+            <img src="./works/images/work-20260205c-thumb.png" class="thumb" loading="lazy">
+          </label>
+          <input type="radio" id="show-modal-2" name="thumb">
+
+          <label for="show-modal-3" class="thumb-soto">
+            <img src="./works/images/work-20260205b-thumb.png" class="thumb" loading="lazy">
+          </label>
+          <input type="radio" id="show-modal-3" name="thumb">
+
+          <div id="modal-1" class="content-block">
+            <img src="./works/images/work-20260205d.png" class="content-image">
+            <!-- <div id="loader"></div> -->
+          </div>
+
+          <div id="modal-2" class="content-block">
+            <img src="./works/images/work-20260205c.png" class="content-image">
+            <!-- <div id="loader"></div> -->
+          </div>
+
+          <div id="modal-3" class="content-block">
+            <img src="./works/images/work-20260205b.png" class="content-image">
+            <!-- <div id="loader"></div> -->
+          </div>
         </div>
+
         <p>
           <br>
-        お絵描きLOG : <a href="./works/works.html">WORKS</a><br>
-        <!-- <a href="./works/works-back.html">works (secret)</a> -->
+          お絵描きLOG : <a href="./works/works.html">WORKS</a><br>
         </p>
       </div>
     </article>
@@ -103,8 +120,9 @@
       <h2>Update</h2>
       <div>
         <ul>
-          <li>2021年 ~ 2022年 : このサイトのテンプレートを作成</li>
+          <li>2026.02.05 : WORKS更新(暴動クラブのファンアートを4点追加)</li>
           <li>2026.01.xx : サイトいじりを再開</li>
+          <li>2021年 ~ 2022年 : このサイトのテンプレートを作成</li>
         </ul>
       </div>
     </article>
@@ -125,7 +143,7 @@
     <article id="menu-5">
       <h2>Profile</h2>
       <div>
-        <img src="./images/profile-サイズ変更済み-400x400.jpeg" class="medium">
+        <img src="./images/profile-サイズ変更済み-400x400.jpeg" class="medium" style="filter: grayscale(0.9);">
         <p>
           音楽と映画が好きです。
         </p>
@@ -176,6 +194,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/general.js"></script>
   <script src="js/lightbox.js"></script>
+  <script src="js/modal-test.js"></script>
 
 </body>
 
