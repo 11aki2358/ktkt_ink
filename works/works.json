@@ -44,7 +44,7 @@
       "id": "20260205b",
       "modal": true,
       "postDate": 20260205,
-      "title": "ROSIEさん"
+      "title": "ROSIEさま"
     }
   },
   {
@@ -63,6 +63,26 @@
       "title": "クギヤ"
     }
   },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2024,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "お誕生日に描いた",
+      "editDate": 20240831,
+      "id": "20240831",
+      "modal": true,
+      "postDate": 20240831,
+      "title": "Robert Plant"
+    }
+  },
+
+
+
+
   {
     "genre": [
       "2ji"
