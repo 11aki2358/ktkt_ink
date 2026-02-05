@@ -23,7 +23,11 @@ git履歴でのコード管理がままならないポンコツ。
 
 ##  14. Loading
 
-モーダルの画像(`img src="" id="modal-img"`)に、ローディング時のアニメーションを追加した。
+* <a href="./design-works/works-14/works-14.html" target="_blank">link</a>
+
+
+
+### モーダルの画像(`img src="" id="modal-img"`)に、ローディング時のアニメーションを追加した。
 
 * html変更点:
 
@@ -31,11 +35,23 @@ git履歴でのコード管理がままならないポンコツ。
 
 * CSS変更点
 
-  img.cssファイル : <code class="lang-css">.loader</code>の記述を追記(ローディングのアニメーション部分)
+  * img.cssファイル : <code id="lang-css">.loader</code>の記述を追記(ローディングのアニメーション部分)
+  * 参考にしたCSS : <a href="https://css-loaders.com/hypnotic/" target="_blank">link</a>
 
 * javascript変更点
 
   works.js / `showmodal`関数 : フォーカスが移動し、モーダルの表示設定が変わる&画像リンクが変わるたびに、loadingアニメーションの表示・非表示を切り替える
+
+### year検索をなくした
+
+検索が要るほど絵を描いていないので；；
+
+* html : 
+
+  該当する<code class="lang-html">div class="input-area"</code>をコメントアウト
+* javascript変更点
+
+  works.js / `let arrayYear`の設定をいじった
 
 ##  13. minor change
 

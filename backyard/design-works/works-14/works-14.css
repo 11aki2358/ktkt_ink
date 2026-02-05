@@ -1,0 +1,348 @@
+html,
+body {
+  height: 100vh;
+  height: calc( var(--vh, 1vh) * 100);
+  /* なぜかスクロールバーが表示されることがある */
+  /* わずかしかスクロールしないから、コレで対応できるかな... */
+  overflow: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr;
+  height: 98%;
+  height: calc(( var(--vh, 1vh) * 90 - 12vw) * 0.98);
+}
+
+@media screen and (min-width:450px) {
+  main {
+    height: calc( (var(--vh, 1vh) * 90 - 62px) * 0.98);
+  }
+}
+
+
+/* main下のgrid 1個め */
+
+#contents-select {
+  display: block;
+  grid-area: 1/1/2/1;
+  padding-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+
+#show-display:checked~#checkbox-area {
+  display: none;
+}
+
+.content-select-title {
+  display: block;
+  font-weight: bold;
+}
+
+#checkbox-area {
+  flex: auto;
+}
+
+#checkbox-area .input-area {
+  display: block;
+}
+
+#checkbox-area .input-area .select-area-name {
+  display: block;
+  margin: 0.1rem;
+}
+
+#checkbox-area .input-area .label-input {
+  display: inline-block;
+  margin: 0.4rem 0;
+}
+
+#checkbox-area #button-select {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+  margin: 0.2rem auto 0.5rem auto;
+  padding: .2rem;
+  width: 60%;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.checkbox-label {
+  padding: 0.2rem;
+  font-weight: bold;
+  border: 2px solid var(--type1-main-color);
+}
+
+.checkbox-label:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked+.checkbox-label {
+  background-color: var(--type1-main-color);
+}
+
+#checkbox-area #button-select:hover {
+  cursor: pointer;
+}
+
+
+/* main下のgrid 2個め */
+
+
+/* 以下、gridで配置 */
+
+#content-box {
+  grid-area: 2/1/2/1;
+  display: grid;
+  grid-template-rows: 65% 35%;
+  grid-template-columns: 60% 40%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+#content-display,
+#content-list {
+  background-image: radial-gradient(black 20%, transparent 20%), radial-gradient(black 20%, transparent 20%);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+}
+
+
+/* #content-box :    grid 1個め */
+
+#content-display {
+  margin: 0;
+  box-sizing: border-box;
+  /* 中身はgrid(後述) */
+}
+
+
+/* #content-box :    grid 2個め */
+
+#content-list {
+  grid-area: 1/1/3/3;
+  overflow-y: auto;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#content-list #content-ul {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+#content-list #content-ul li {
+  padding: 0.7rem;
+  display: block;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+}
+
+#content-list #content-ul li:hover {
+  cursor: pointer;
+}
+
+.focus {
+  background-color: var(--type1-main-color);
+}
+
+
+/* 
+#content-displayの中身のgridレイアウト
+*/
+
+#content-display {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 6fr 5fr;
+  grid-auto-flow: dense;
+}
+
+#content-display>* {
+  padding: 0.2rem;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  grid-row: span 1;
+  background-color: white;
+}
+
+#content-title {
+  grid-column: span 2;
+  text-align: center;
+}
+
+#content-image {
+  margin: auto auto;
+}
+
+#content-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#content-img:hover {
+  cursor: pointer;
+}
+
+#content-comment {
+  overflow-y: scroll;
+  /* min-heightの指定 : ちょっとリスクあるかも */
+  min-height: 6rem;
+}
+
+.comment-genre {
+  font-weight: bold;
+  padding: 0 0.2rem;
+  background-color: var(--type1-main-color);
+  line-height: 1.5em;
+}
+
+.comment-year::before {
+  content: '(';
+}
+
+.comment-year::after {
+  content: ')';
+}
+
+.comment-year {
+  display: block;
+  text-align: right;
+}
+
+.comment-warn {
+  background-color: black;
+  color: white;
+  padding: 0 0.2rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.comment-modal {
+  font-weight: bold;
+  padding: 0 0.2rem;
+  background-color: var(--type1-main-color);
+  color: white;
+  line-height: 1.5rem;
+}
+
+#modal-back {
+  display: none;
+  height: 100vh;
+  height: calc( var(--vh, 1vh) * 100);
+  width: 100vw;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  background-color: #ffffffee;
+}
+
+#modal-back::before {
+  display: block;
+  position: relative;
+  right: 1.2rem;
+  top: 0.2rem;
+  font-size: 2rem;
+  text-align: right;
+  content: "x";
+  color: var(--type1-main-color);
+  font-weight: bold;
+  z-index: 50;
+}
+
+#modal-img,
+#modal-comment {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  object-fit: contain;
+}
+
+#modal-img {
+  max-height: calc(95 * var(--vh, 1vh));
+  margin: 0 2.5%;
+  max-width: 95vw;
+}
+
+#modal-comment {
+  max-height: calc(78 * var(--vh));
+  margin: 0 15vw;
+  width: 70vw;
+  text-align: center;
+  background-color: white;
+  padding: 5% 1vw;
+  line-height: 1.8rem;
+  overflow-y: scroll;
+}
+
+#modal-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+
+#modal-comment .comment-year {
+  display: inline;
+}
+
+#modal-link,
+#comment-link {
+  font-size: 1.5rem;
+}
+
+#show-modal {
+  display: none;
+}
+
+#show-modal:checked~#modal-back,
+#show-modal:checked~#modal-content,
+#show-modal:checked~#modal-left,
+#show-modal:checked~#modal-right {
+  display: block;
+}
+
+#modal-left,
+#modal-right {
+  opacity: 0;
+  display: none;
+  height: 2rem;
+  width: 1rem;
+  position: absolute;
+  top: calc( (60 * var(--vh) - 2rem) / 2);
+  z-index: 20;
+  font-size: 3rem;
+  color: var(--type1-main-color);
+}
+
+#modal-left {
+  padding: calc(20 * var(--vh) - 1rem) 8vw calc(20 * var(--vh) + 1rem) 5vw;
+  left: 0;
+}
+
+#modal-right {
+  padding: calc(20 * var(--vh) - 1rem) 5vw calc(20 * var(--vh) + 1rem) 8vw;
+  right: 0;
+  direction: rtl;
+}
+
+#modal-left::after,
+#modal-right::after {
+  content: '<';
+}
+
+#modal-left:hover,
+#modal-right:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

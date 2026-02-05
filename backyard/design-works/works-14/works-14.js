@@ -52,7 +52,7 @@ function selectContent() {
 
   // jsonファイルから、コンテンツのリストを引っ張ってくる
   // ローカルの場合、LiveServer起動しないとエラーになる
-  fetch('./works.json')
+  fetch('./works-14.json')
     .then(response => {
       return response.json();
     })
@@ -258,7 +258,7 @@ function showModal(focusObj) {
     //  loadingアニメーションの表示
     document.getElementById("loader").style.display='block';
     modalComment.style.display = 'none';
-    modalImg.src = `./images/work-${fcsObj.info.id}.png`;
+    modalImg.src = `./../images/work-${fcsObj.info.id}.png`;
     modalImg.style.display = 'inline-block';
 
     //  loadingが完了したら、アニメーションを非表示
@@ -553,7 +553,7 @@ function showFocusedImage(focusObj) {
   conetntImage.style.width = `${conetntImageSize}px`;
 
   // サムネ画像
-  document.getElementById('content-img').src = `./images/work-${fcsObj.info.id}-thumb.png`;
+  document.getElementById('content-img').src = `./../images/work-${fcsObj.info.id}-thumb.png`;
 }
 
 // フォーカス中のコンテンツのコメントを表示

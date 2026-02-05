@@ -9,6 +9,7 @@
 <meta name="theme-color" content="#000000">
 <link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
 <title>backyard</title>
+<link rel="stylesheet" href="../css/prism.css" type="text/css" id="style">
 <link rel="stylesheet" href="../css/decoration.css" type="text/css" id="style">
 <link rel="stylesheet" href="../css/footer.css" type="text/css" id="style">
 <link rel="stylesheet" href="../css/image.css" type="text/css" id="style">
@@ -49,6 +50,35 @@
 </ul>
 <p>がSession Storageに保存される(Local Storageを使うのは大げさな感じ)。</p>
 <p>状態遷移とか挙動の条件のあれこれに関するメモはこっち : <a href="design-works-memo.html">link</a><br>編集中のWorksページの最新版とは対応していないかもしれない。</p>
+<h2 id="14-loading">14. Loading</h2>
+<ul>
+<li><a href="./design-works/works-14/works-14.html" target="_blank">link</a></li>
+</ul>
+<h3 id="-img-src-id-modal-img-">モーダルの画像(<code>img src=&quot;&quot; id=&quot;modal-img&quot;</code>)に、ローディング時のアニメーションを追加した。</h3>
+<ul>
+<li><p>html変更点:</p>
+<p><code class="lang-html">img src=&quot;&quot; id=&quot;modal-img&quot;</code>要素の近くに<code class="lang-html">div class=&quot;loader&quot;</code>を追加</p>
+</li>
+<li><p>CSS変更点</p>
+<ul>
+<li>img.cssファイル : <code id="lang-css">.loader</code>の記述を追記(ローディングのアニメーション部分)</li>
+<li>参考にしたCSS : <a href="https://css-loaders.com/hypnotic/" target="_blank">link</a></li>
+</ul>
+</li>
+<li><p>javascript変更点</p>
+<p>works.js / <code>showmodal</code>関数 : フォーカスが移動し、モーダルの表示設定が変わる&画像リンクが変わるたびに、loadingアニメーションの表示・非表示を切り替える</p>
+</li>
+</ul>
+<h3 id="year-">year検索をなくした</h3>
+<p>検索が要るほど絵を描いていないので；；</p>
+<ul>
+<li><p>html : </p>
+<p>該当する<code class="lang-html">div class=&quot;input-area&quot;</code>をコメントアウト</p>
+</li>
+<li><p>javascript変更点</p>
+<p>works.js / <code>let arrayYear</code>の設定をいじった</p>
+</li>
+</ul>
 <h2 id="13-minor-change">13. minor change</h2>
 <p>2026年 微編集</p>
 <ul>
@@ -293,9 +323,10 @@
 <nav><ul>
 <li><a href="../index.html" class="btn-flat"><span>home</span></a></li>
 <li><a href="./backyard.html" class="btn-flat"><span>backyard</span></a></li>
-<li><a href="./start.html" class="btn-flat"><span>start</span></a></li>
+<li><a href="./design.html" class="btn-flat"><span>design</span></a></li>
 </ul></nav>
 </footer>
+<script src="../js/prism.js"></script>
 <script src="../js/general.js"></script>
 </body>
 </html>
