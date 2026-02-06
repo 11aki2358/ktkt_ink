@@ -129,6 +129,22 @@
   },
   {
     "genre": [
+      "rock"
+    ],
+    "year": 2024,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "",
+      "editDate": 20240728,
+      "id": "20240728",
+      "modal": true,
+      "postDate": 20240728,
+      "title": "ペイジさん"
+    }
+  },
+  {
+    "genre": [
       "2ji"
     ],
     "year": 2024,
@@ -156,42 +172,23 @@
       "id": "20240106",
       "modal": false,
       "postDate": 20240106,
-      "title": "Syd"
-    }
-  },
-  {
-    "genre": [
-      "2ji"
-    ],
-    "year": 2020,
-    "rough": false,
-    "warn": [
-      "Spoiler",
-      "黒字はWARNING"
-    ],
-    "info": {
-      "comment": "こめんと<br>こめんと<br>漫画",
-      "editDate": 20200914,
-      "id": "a0000",
-      "modal": true,
-      "postDate": 20200914,
-      "title": "a0000, 2020, T, 2ji, WARN"
+      "title": "Syd Barrett"
     }
   },
   {
     "genre": [
       "rock"
     ],
-    "year": 2021,
+    "year": 2023,
     "rough": false,
     "warn": [],
     "info": {
-      "comment": "ロック",
-      "editDate": 20210604,
-      "id": "a0001",
+      "comment": "ボーイング",
+      "editDate": 20230219,
+      "id": "20230219",
       "modal": true,
-      "postDate": 20210604,
-      "title": "a0001, 2021, T, 2ji"
+      "postDate": 20230219,
+      "title": "ペイジさん"
     }
   },
   {
@@ -200,52 +197,14 @@
     ],
     "year": 2022,
     "rough": false,
-    "warn": [
-      "B",
-      "C"
-    ],
-    "info": {
-      "comment": "ろっくんろーる",
-      "editDate": 20200604,
-      "id": "a0002",
-      "modal": false,
-      "postDate": 20200604,
-      "title": "a0002, 2022, F, rock, B/C"
-    }
-  },
-  {
-    "genre": [
-      "2ji"
-    ],
-    "year": 2020,
-    "rough": false,
     "warn": [],
     "info": {
-      "comment": "コメント! <br><span style=\"color:cadetblue;\">コメント</span>だよ!!<br><i>json</i>でも、<b>html</b>と同じようにデコれる!<br><code>a0003</code>",
-      "editDate": 20200531,
-      "id": "a0003",
+      "comment": "Thunderthief<br>アルバムジャケットのペンギン(?)をジョーンズさんにしてみた。",
+      "editDate": 20221204,
+      "id": "20221204",
       "modal": true,
-      "postDate": 20200531,
-      "title": "a0003, 2020, T, 2ji"
-    }
-  },
-  {
-    "genre": [
-      "rock",
-      "films"
-    ],
-    "year": 2020,
-    "rough": false,
-    "warn": [
-      "A"
-    ],
-    "info": {
-      "comment": "コメント!",
-      "editDate": 20200507,
-      "id": "a0004",
-      "modal": false,
-      "postDate": 20200507,
-      "title": "a0004, 2020, F, rock, A"
+      "postDate": 20221204,
+      "title": "JPJ/Thunderthief"
     }
   },
   {
@@ -254,168 +213,14 @@
     ],
     "year": 2022,
     "rough": false,
-    "warn": [
-      "B"
-    ],
-    "info": {
-      "comment": "こめこめこめんと",
-      "editDate": 20200507,
-      "id": "a0005",
-      "modal": true,
-      "postDate": 20200507,
-      "title": "a0005, 2022, T, rock, B"
-    }
-  },
-  {
-    "genre": [
-      "rock"
-    ],
-    "year": 2021,
-    "rough": false,
     "warn": [],
     "info": {
-      "comment": "コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006<br>コメント! <br>コメントだよ!!<br>a0006",
-      "editDate": 20200507,
-      "id": "a0006",
+      "comment": "お姐さま!!!",
+      "editDate": 20221026,
+      "id": "20221026",
       "modal": true,
-      "postDate": 20200507,
-      "title": "a0006, 2021, T, rock, "
-    }
-  },
-  {
-    "genre": [
-      "zatta"
-    ],
-    "year": 2020,
-    "rough": false,
-    "warn": [],
-    "info": {
-      "comment": "こめーーーんと",
-      "editDate": 20200429,
-      "id": "a0007",
-      "modal": true,
-      "postDate": 20200429,
-      "title": "a0007, 2020, T, zatta"
-    }
-  },
-  {
-    "genre": [
-      "rock",
-      "2ji"
-    ],
-    "year": 2021,
-    "rough": false,
-    "warn": [
-      "B",
-      "C"
-    ],
-    "info": {
-      "comment": "またまだコメント! a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>a0008<br>",
-      "editDate": 20200424,
-      "id": "a0008",
-      "modal": false,
-      "postDate": 20200424,
-      "title": "a0008, 2021, F, rock, 2ji, B/C"
-    }
-  },
-  {
-    "genre": [
-      "films"
-    ],
-    "year": 2022,
-    "rough": false,
-    "warn": [],
-    "info": {
-      "comment": "ちなみに : 2400px × 1800pxのpng画像で、ファイルサイズは112KB<br>GitHubでは、50 MiBより大きいファイルを追加または更新しようとすると、警告が表示される(<a href=\"https://docs.github.com/ja/repositories/working-with-files/managing-large-files/about-large-files-on-github\", target=\"_blank\">link</a>)",
-      "editDate": 20200422,
-      "id": "a0009",
-      "modal": true,
-      "postDate": 20200422,
-      "title": "a0009, 2022, T, films"
-    }
-  },
-  {
-    "genre": [
-      "films"
-    ],
-    "year": 2020,
-    "rough": false,
-    "warn": [
-      "A"
-    ],
-    "info": {
-      "comment": "ちなみに : MediBangでA4(縦) 600dpiで作ったキャンバスを、pngに変換する(→4960px × 7015px)。ファイルサイズは741KB<br>GitHubでは、50 MiBより大きいファイルを追加または更新しようとすると、警告が表示される(<a href=\"https://docs.github.com/ja/repositories/working-with-files/managing-large-files/about-large-files-on-github\", target=\"_blank\">link</a>)<br>これくらいのファイルサイズならば、問題なくデプロイまでもっていけるはず...",
-      "editDate": 20200407,
-      "id": "a0010",
-      "modal": true,
-      "postDate": 20200407,
-      "title": "a0010, 2020, T, films, A"
-    }
-  },
-  {
-    "genre": [
-      "rock"
-    ],
-    "year": 2021,
-    "rough": false,
-    "warn": [],
-    "info": {
-      "comment": "testes",
-      "editDate": 20200322,
-      "id": "a0011",
-      "modal": true,
-      "postDate": 20200322,
-      "title": "a0011, 2021, T, rock, "
-    }
-  },
-  {
-    "genre": [
-      "films"
-    ],
-    "year": 2021,
-    "rough": false,
-    "warn": [
-      "A"
-    ],
-    "info": {
-      "comment": "ttteeesssttt",
-      "editDate": 20200321,
-      "id": "a0012",
-      "modal": true,
-      "postDate": 20200321,
-      "title": "a0012, 2021, T, films, A"
-    }
-  },
-  {
-    "genre": [
-      "films"
-    ],
-    "year": 2022,
-    "rough": false,
-    "warn": [],
-    "info": {
-      "comment": "ねむい",
-      "editDate": 20200312,
-      "id": "a0013",
-      "modal": true,
-      "postDate": 20200312,
-      "title": "a0013, 2022, T, films, タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い タイトル長い"
-    }
-  },
-  {
-    "genre": [
-      "zatta"
-    ],
-    "year": 2021,
-    "rough": false,
-    "warn": [],
-    "info": {
-      "comment": "こめーーんと",
-      "editDate": 20200429,
-      "id": "a0014",
-      "modal": true,
-      "postDate": 20200429,
-      "title": "a0014, 2021, T, zatta"
+      "postDate": 20221026,
+      "title": "Patti Smith"
     }
   }
 ]
