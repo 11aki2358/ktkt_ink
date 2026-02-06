@@ -222,5 +222,22 @@
       "postDate": 20221026,
       "title": "Patti Smith"
     }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2020,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "2019-2020年にかけて描いていた諸々",
+      "editDate": 20201231,
+      "id": "20201231",
+      "modal": false,
+      "postDate": 20201231,
+      "title": "the Struts詰"
+    }
   }
+
 ]
