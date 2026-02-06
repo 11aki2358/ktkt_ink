@@ -192,7 +192,6 @@
               </li>
             </ul>
           </li>
-
         </ul>
       </div>
     </article>
@@ -201,33 +200,75 @@
     <article id="menu-6">
       <h2>Contact</h2>
       <div>
-        連絡先フォームは、いずれ実装する予定。<br>
-        何か用事のある方は、上記SNSのDMからご連絡ください。
-        <br><br><br>
-        <!-- test -->
-        <!-- https://docs.google.com/forms/u/0/d/e/1FAIpQLSfu8M-9-TKfDen7_Edum1iLD8klnQNsxEsBLvi5KxyouvNSzQ/formResponse  -->
+        Web拍手(もどき)です。
 
 
-        <!-- test -->
+        <div class="clap-form">
+
+          <p>
+            <!-- https://medium.com/@yonemoto/google%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%82%92%E8%87%AA%E7%94%B1%E3%81%AB%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95-f91a617b402b -->
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+              onload="if(submitted) {window.location='./thanks.html';}"></iframe>
+
+          <form class="p-form"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfu8M-9-TKfDen7_Edum1iLD8klnQNsxEsBLvi5KxyouvNSzQ/formResponse"
+            target="hidden_iframe" onsubmit="submitted=true;">
+
+            <!-- 拍手 セレクトボックス -->
+            <p>
+              <label for="contactType" class="select-box-clap">
+                <select name="entry.2082572372" id="contactType">
+                  <option data-value="拍手！" value="拍手！" label="拍手！">拍手！</option>
+                  <option data-value="サイトを見に来たよ！" value="サイトを見に来たよ！" label="サイトを見に来たよ！">サイトを見に来たよ！</option>
+                  <option data-value="絵を見たよ！" value="絵を見たよ！">絵を見たよ！</option>
+                  <!-- <option data-value="ブログ読んだよ！" value="ブログ読んだよ！">ブログ読んだよ！</option> -->
+                  <option data-value="その他" value="その他">その他</option>
+                </select>
+              </label>
+            </p>
+            <!--//End 拍手 セレクトボックス -->
+
+            <!-- メッセージ テキスト入力 -->
+            <label for="message"></label>
+            <textarea id="message" name="entry.1369083859" rows="5" cols="33" class="textarea-clap"
+              placeholder="メッセージも送れます"></textarea>
+            <!--//END メッセージ テキスト入力 -->
+
+            <!-- 送信 -->
+            <div class="p-form__btn">
+              <input type="submit" value="送信する" class="submit-clap">
+            </div>
+            <!--//End 送信 -->
+          </form>
+          <ul>
+            <li>誤字脱字・リンク切れ等の指摘・報告はこちらにお願いします。</li>
+            <li>現在(2026.02.07)返信に応じることは出来ません。近々、返信用のページを用意します。</li>
+          </ul>
+          </p>
+        </div>
+
       </div>
+
     </article>
+
+    <!-- 
 
     <article class="naisho">
       <h2>Owner: BACKYARD</h2>
       <div>
         <a href="./owner/backyard-top.html">管理人の部屋</a>
-        <!-- 
           ソースコード見られるの恥しいワ...  （*゜ー゜*）
           気付かなかったふりしてスルーしてください...
 
           ちなみに、隠しページ要素はここ以外には仕込んでいないです
-          -->
         <br>
         <br>
         <br>
         <br>
       </div>
     </article>
+          -->
+
 
   </main>
 
@@ -241,10 +282,14 @@
     </nav>
   </footer>
 
-  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
   <script src="js/general.js"></script>
-  <script src="js/lightbox.js"></script>
   <script src="js/modal-test.js"></script>
+
+  <script type="text/javascript">
+    var submitted = false;
+    var currentURL = window.location.href;
+  </script>
 
 </body>
 
