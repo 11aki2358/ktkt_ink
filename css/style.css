@@ -346,6 +346,10 @@ a[target="_blank"]::after {
   content: "↗";
 }
 
+a[target="_blank"]:has(.banner)::after{
+  content: "";
+}
+
 a[target="_blank"].code-file {
   color: black;
   background: linear-gradient(transparent 90%, var(--type1-main-color) 50%);
@@ -389,4 +393,8 @@ pre code {
 ::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 5px;
+}
+
+.naisho{
+  opacity: 0.01;
 }
