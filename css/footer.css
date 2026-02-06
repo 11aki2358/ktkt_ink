@@ -103,7 +103,7 @@ footer #back-to-top {
   z-index: 9;
 }
 
-footer #back-to-top:hover{
-   transform: translateY(0.2vh);
-   /* transform: translateX(0.2vh); */
+footer #back-to-top:hover {
+  transform: translateY(0.2vh);
+  /* transform: translateX(0.2vh); */
 }

@@ -10,6 +10,7 @@
 *****************************************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Teko:wght@600&display=swap');
+
 :root {
   --type1-main-color: #f78e1e;
   --type1-base-color: #ffffff;
@@ -274,28 +275,35 @@ header nav a {
   body {
     grid-template-rows: 62px auto 10vh;
   }
+
   header,
   header nav {
     height: 62px;
   }
+
   .header-logo-menu {
     height: 62px;
   }
+
   .logo-area {
     height: 62px;
   }
+
   h1 {
     font-size: 38px;
   }
+
   #nav-drawer {
     width: 48px;
     height: 60px;
   }
+
   #nav-open {
     margin-top: 10px;
     width: 48px;
     height: 25px;
   }
+
   #nav-content-jacket {
     bottom: 8vmin;
     right: -10vmin;
@@ -346,7 +354,7 @@ a[target="_blank"]::after {
   content: "↗";
 }
 
-a[target="_blank"]:has(.banner)::after{
+a[target="_blank"]:has(.banner)::after {
   content: "";
 }
 
@@ -395,6 +403,6 @@ pre code {
   border-radius: 5px;
 }
 
-.naisho{
+.naisho {
   opacity: 0.01;
 }

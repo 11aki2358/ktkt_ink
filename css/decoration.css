@@ -135,7 +135,7 @@ dd dl {
 
 /* 表 */
 
-table{
+table {
   display: block;
   white-space: nowrap;
   width: 100%;
@@ -145,13 +145,13 @@ table{
 }
 
 
-th{
+th {
   background-color: var(--type1-main-color);
   color: black;
   font-weight: bold;
 }
 
-th, td{
+th, td {
   border: solid 2px black;
   padding: 0.3rem;
 }

@@ -19,7 +19,7 @@
   background-color: black;
 }
 
-.thumb-soto:hover{
+.thumb-soto:hover {
   background-color: var(--type1-main-color);
 }
 
@@ -36,7 +36,7 @@
   cursor: pointer;
 }
 
-.thumb-new{
+.thumb-new {
   display: none;
 }
 
@@ -44,9 +44,11 @@
 .thumb:hover~.thumb-new {
   display: block;
   position: absolute;
-  top: 0; /*画像の左上に配置*/
+  top: 0;
+  /*画像の左上に配置*/
   left: 0;
-  margin: 0;  /*余計な隙間を除く*/
+  margin: 0;
+  /*余計な隙間を除く*/
   color: white;
   /*文字を白に*/
   background: var(--type1-main-color);

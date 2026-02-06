@@ -33,25 +33,29 @@ img {
   width: 10vw;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: repeating-conic-gradient(var(--type1-main-color),var(--type1-main-color) 1deg 18deg,#0000 20deg 36deg);
+  background: repeating-conic-gradient(var(--type1-main-color), var(--type1-main-color) 1deg 18deg, #0000 20deg 36deg);
   animation: l9 4s infinite linear;
   /* position: relative; */
   display: block;
-  position:absolute;
+  position: absolute;
   z-index: 999;
   margin-top: 40vh;
   margin-bottom: 40vh;
   margin-left: 45vw;
   margin-right: 45vw;
 }
-#loader::before{
+
+#loader::before {
   content: "";
   position: absolute;
   border-radius: 50%;
-  inset:0;
+  inset: 0;
   background: inherit;
   animation: inherit;
 }
-@keyframes l9{
-  100% {transform:rotate(.5turn)}
+
+@keyframes l9 {
+  100% {
+    transform: rotate(.5turn)
+  }
 }

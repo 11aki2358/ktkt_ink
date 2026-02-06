@@ -256,15 +256,15 @@ function showModal(focusObj) {
   //  モーダルで画像(img id="modal-img" )を表示
   if (fcsObj.info.modal == true) {
     //  loadingアニメーションの表示
-    document.getElementById("loader").style.display='block';
+    document.getElementById("loader").style.display = 'block';
     modalComment.style.display = 'none';
     modalImg.src = `./images/work-${fcsObj.info.id}.png`;
     modalImg.style.display = 'inline-block';
 
     //  loadingが完了したら、アニメーションを非表示
-    modalImg.addEventListener('load', (e)=>{
-      document.getElementById("loader").style.display='none';
-    } );
+    modalImg.addEventListener('load', (e) => {
+      document.getElementById("loader").style.display = 'none';
+    });
 
 
   } else {
@@ -574,7 +574,7 @@ function showFocusedComment(focusObj) {
   }
 
   //  リンクの表示の仕方が汚い。modalのときとうまく両立したい
-  if(document.getElementById('show-modal').checked == false) {
+  if (document.getElementById('show-modal').checked == false) {
     if (fcsObj.info.modal == false) {
       focusedComment += `<br><a href="work-${fcsObj.info.id}.html" id="comment-link">Visit Page→</a>`;
     }

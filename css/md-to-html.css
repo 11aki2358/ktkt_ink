@@ -8,6 +8,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
 html {
   padding-bottom: 0vh;
   height: 100vh;
@@ -41,6 +42,7 @@ h2 {
   body {
     grid-template-rows: 62px auto;
   }
+
   header,
   header nav {
     height: 62px;
@@ -258,38 +260,48 @@ input:checked~label {
   .contents3 {
     flex-direction: column;
   }
+
   #button-area {
     flex: 1;
     margin-bottom: 1em;
   }
+
   .label-input {
     display: inline-block;
   }
+
   .button-exp {
     display: inline-block;
   }
+
   #txtarea-md {
     flex: 1;
     margin-bottom: 1em;
   }
+
   .txtarea-md-wrap {
     height: 25vh;
   }
+
   #txtarea-md .txtarea-md-wrap textarea {
     width: 100%;
   }
+
   #wrap-tab {
     flex: 1;
   }
+
   .tab-content.active {
     height: 25vh;
   }
+
   #outHTML-show pre,
   #outHTML-show pre code {
     max-width: 100%;
     white-space: pre;
     overflow-x: auto;
   }
+
   #wrap-tab .wrap-tab-content .tab-content .txtarea-html textarea,
   #wrap-tab .wrap-tab-content .tab-content .txtarea-complete textarea {
     width: 100%;
