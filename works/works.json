@@ -63,7 +63,40 @@
       "title": "クギヤ"
     }
   },
+ 
   {
+    "genre": [
+      "zatta"
+    ],
+    "year": 2025,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "オスカーワイルド<br>E. A. ポー<br>ハリークラーク<br>アンディーウォーホル",
+      "editDate": 20250626,
+      "id": "20250626",
+      "modal": false,
+      "postDate": 20250626,
+      "title": "推したちのお顔"
+    }
+  },
+  {
+    "genre": [
+      "2ji"
+    ],
+    "year": 2025,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "夢野幻太郎",
+      "editDate": 20250307,
+      "id": "20250307",
+      "modal": false,
+      "postDate": 20250307,
+      "title": "嘘つきのパラドックス"
+    }
+  },
+   {
     "genre": [
       "rock"
     ],
@@ -77,6 +110,22 @@
       "modal": true,
       "postDate": 20240831,
       "title": "Robert Plant"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2024,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "シドバレットお誕生日イラスト",
+      "editDate": 20240106,
+      "id": "20240106",
+      "modal": false,
+      "postDate": 20240106,
+      "title": "Syd"
     }
   },
 
