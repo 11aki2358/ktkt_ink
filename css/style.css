@@ -425,6 +425,7 @@ pre code {
 
 .select-box-clap {
   position: relative;
+  background-color: white;
 }
 
 .select-box-clap::before,
@@ -467,12 +468,19 @@ pre code {
   border-radius: 25px;
   color: #333333;
   font-size: 1em;
+  background-color: white;
   cursor: pointer;
 }
 
 .select-box-clap select:focus {
   outline: 1px solid black;
 }
+
+.select-box-clap select option{
+  background-color: white;
+}
+
+
 
 .textarea-clap {
   padding: 8px 19px;
