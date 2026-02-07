@@ -9,6 +9,7 @@
   display: none;
 }
 
+
 .thumb-soto {
   display: inline-block;
   width: fit-content;
@@ -18,6 +19,7 @@
   position: relative;
   background-color: black;
 }
+
 
 .thumb-soto:hover {
   background-color: var(--type1-main-color);
@@ -72,6 +74,7 @@
 #show-modal-3:not(:checked)~#modal-3 {
   display: none;
 }
+
 
 .content-block {
   display: block;
