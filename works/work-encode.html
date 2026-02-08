@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="Ryko: Ryko" />
+  <meta property="og:description" content="オタクのサイト。" />
+  <meta property="og:image" content="https://ryko-ryko.vercel.app/images/OGP.png" />
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="../../images/favicon.svg" type="image/svg+xml">
+  <title>Ryko: Ryko</title>
+  <link rel="stylesheet" href="../../css/decoration.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../css/footer.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../css/image.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" id="style">
+</head>
+
+
+<body>
+  <header>
+    <nav>
+      <div class="header-logo-menu">
+        <div class="logo-area">
+          <h1><a href="../../top.html">Ryko: Ryko</a></h1>
+        </div>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content-record"></div>
+          <div id="nav-content-jacket">
+            <div class="nav-content-text center-list">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h2 id="coding">hash & encoding</h2>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+    <label for="">秘密のID</label><br>
+    各秘密ページで、固有の値を使うこと!
+    <p>
+      <input type="text" name="data" id="data" placeholder="">
+    </p>
+
+    <hr>
+    <label for="">パスワード</label><br>
+    サイト内で共通の文字列
+    <p><input type="text" name="pass_phrase" id="pass_phrase"></p>
+
+    <hr>
+    <input type="submit" id="execute" value="実行">
+
+    <div id="output"></div>
+
+    <hr>
+    <p>AES暗号については、<a href="https://chakkari.org/blog/2020/05/03/aes-encrypt-with-javascript/"
+        target="_blank">こちら</a>のリンクからコピペした
+    </p>
+
+    <h2>Example</h2>
+    <p>
+    <ul>
+      <li>
+        ログインページ : <a href="./work-20260208.html">link</a>
+      </li>
+      <li>
+        ログインできた時のページ : <a href="./work-20260208-apple.html">link</a>
+      </li>
+    </ul>
+    </p>
+
+    <script>
+      window.onload = () => {
+        let buttonExecute = document.getElementById('execute')
+        buttonExecute.addEventListener('click', () => {
+          execute()
+        });
+      }
+
+
+      async function digestMessage(message) {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(message);
+        const hash = await crypto.subtle.digest('SHA-256', data);
+        // return hash;
+
+        const hashArray = Array.from(new Uint8Array(hash)); // バッファーをバイト列に変換する
+        const hashHex = hashArray
+          .map((b) => b.toString(16).padStart(2, "0"))
+          .join(""); // バイト列を 16 進文字列に変換する
+        return hashHex;
+      }
+
+      function execute() {
+        (async () => {
+
+          // パスフレーズ（暗号鍵）
+          let passPhrase = document.getElementById('pass_phrase').value;
+
+          const pass_hash = await digestMessage(passPhrase);
+
+
+          // 暗号化したい元のデータ
+          let data = document.getElementById('data').value;
+          let utf8_plain = CryptoJS.enc.Utf8.parse(data);
+
+          // 暗号化
+          let encrypted = CryptoJS.AES.encrypt(utf8_plain, passPhrase);
+
+          // 復号化(確認用)
+          let decrypted = CryptoJS.AES.decrypt(encrypted, passPhrase);
+          let txt_dexrypted = decrypted.toString(CryptoJS.enc.Utf8);
+
+          // 表示
+          document.getElementById("output").innerHTML =
+            "秘密ID : " + data + "<br />" +
+            "パスワード : " + passPhrase + "<br />" +
+            "パスワードのハッシュ値(<code>test_hash</code>) : " + pass_hash + "<br />" +
+            "暗号化(<code>encrypted</code>) : " + encrypted + "<br /><br>" +
+            "復号化(<code>txt_decrypted</code>) : " + txt_dexrypted + "<br />" +
+            "秘密ページのパス : work-(ページのID)-" + data + ".html";
+        })();
+      }
+    </script>
+  </main>
+  <footer>
+    <button id="back-to-top"></button>
+    <nav>
+      <ul>
+        <li><a href="../../index.html" class="btn-flat"><span>home</span></a></li>
+        <li><a href="../../top.html" class="btn-flat"><span>top</span></a></li>
+        <li><a href="./works.html" class="btn-flat"><span>works</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="../js/general.js"></script>
+</body>
+
+</html>
