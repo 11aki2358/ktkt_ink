@@ -476,7 +476,7 @@ pre code {
   outline: 1px solid black;
 }
 
-.select-box-clap select option{
+.select-box-clap select option {
   background-color: white;
 }
 
@@ -484,7 +484,6 @@ pre code {
 
 .textarea-clap {
   padding: 8px 19px;
-  margin: 2em 0;
   color: #2c2c2f;
   background: white;
   border-top: solid 5px black;

@@ -192,6 +192,7 @@
               </li>
             </ul>
           </li>
+
         </ul>
       </div>
     </article>
@@ -205,10 +206,9 @@
 
         <div class="clap-form">
 
-          <p>
-            <!-- https://medium.com/@yonemoto/google%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%82%92%E8%87%AA%E7%94%B1%E3%81%AB%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95-f91a617b402b -->
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-              onload="if(submitted) {window.location='./thanks.html';}"></iframe>
+          <!-- https://medium.com/@yonemoto/google%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%82%92%E8%87%AA%E7%94%B1%E3%81%AB%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95-f91a617b402b -->
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+            onload="if(submitted) {window.location='./thanks.html';}"></iframe>
 
           <form class="p-form"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfu8M-9-TKfDen7_Edum1iLD8klnQNsxEsBLvi5KxyouvNSzQ/formResponse"
@@ -228,11 +228,27 @@
             </p>
             <!--//End 拍手 セレクトボックス -->
 
-            <!-- メッセージ テキスト入力 -->
-            <label for="message"></label>
-            <textarea id="message" name="entry.1369083859" rows="5" cols="33" class="textarea-clap"
-              placeholder="メッセージも送れます"></textarea>
-            <!--//END メッセージ テキスト入力 -->
+            <div>
+              <!-- メッセージ テキスト入力 -->
+              <label for="message"></label>
+              <textarea id="message" name="entry.1369083859" rows="5" cols="33" class="textarea-clap"
+                placeholder="メッセージも送れます"></textarea>
+              <!--//END メッセージ テキスト入力 -->
+
+              <p>
+              <ul>
+                <li>誤字脱字・リンク切れ等の指摘・報告はこちらにお願いします。</li>
+                <li>メッセージへの返信は、<a href="./reply.html">こちら</a>にて行います。</li>
+                <li>
+                  <input type="checkbox" name="entry.1934653987" value="返信不要の方は、チェックを入れてください" id="reply-check" class="checkbox-clap">
+                  <label for="reply-check">
+                    返信不要の方は、チェックを入れてください。
+                  </label>
+                </li>
+              </ul>
+              <br>
+              </p>
+            </div>
 
             <!-- 送信 -->
             <div class="p-form__btn">
@@ -240,12 +256,13 @@
             </div>
             <!--//End 送信 -->
           </form>
-          <ul>
-            <li>誤字脱字・リンク切れ等の指摘・報告はこちらにお願いします。</li>
-            <li>現在(2026.02.07)返信に応じることは出来ません。近々、返信用のページを用意します。</li>
-          </ul>
-          </p>
+
         </div>
+        <p>
+          <br>
+          <br>
+          <br>
+        </p>
 
       </div>
 
