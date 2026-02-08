@@ -46,8 +46,10 @@
     <p>
       ログイン成功!
     </p>
-
-
+    <p>
+      このページにもjavascriptを仕込んでいる。<br>
+      <code>referrer</code>プロパティを使用し、このページへリンクしていたページのURLを調べている。所定のログインページを経ずにこのページにアクセスした場合には、強制的にログインページに遷移させる。
+    </p>
 
   </main>
   <footer>
@@ -61,6 +63,20 @@
     </nav>
   </footer>
   <script src="../../js/general.js"></script>
+  <script>
+    var checkPrevLink = checkPrevLink();
+
+    function checkPrevLink() {
+      let prevLink = document.referrer;
+      var result = prevLink.indexOf('work-20260208.html');
+
+      if (result == -1) {
+        //  ログインページを経ずにこのページのURLを踏んだ場合は
+        //  ログインページに遷移する
+        window.location.replace('./work-20260208.html');
+      }
+    };
+  </script>
 </body>
 
 </html>
