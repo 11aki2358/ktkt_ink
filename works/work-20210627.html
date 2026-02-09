@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow">
+  <meta name="pinterest" content="nopin">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="Ryko: Ryko" />
+  <meta property="og:description" content="オタクのサイト。" />
+  <meta property="og:image" content="https://ryko-ryko.vercel.app/images/OGP.png" />
+  <meta name="theme-color" content="#000000">
+  <link rel="shortcut icon" href="../../images/favicon.svg" type="image/svg+xml">
+  <title>Ryko: Ryko</title>
+  <link rel="stylesheet" href="../../css/decoration.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../css/footer.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../css/image.css" type="text/css" id="style">
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" id="style">
+  <style type="text/css">
+    #enter {
+      display: block;
+      margin: 1rem;
+    }
+
+    #enter a {
+      font-size: 2rem;
+    }
+
+    #passwordAreaAES {
+      background: white;
+      border: black 2px solid;
+      padding: .4em .6em;
+      font-size: 1.2em;
+      border-radius: 6px;
+    }
+
+    #checkPasswordAES {
+      background: white;
+      color: black;
+      border: black 2px solid;
+      padding: .4em .6em;
+      height: 2.4em;
+      font-size: 1.2em;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #checkPasswordAES:hover {
+      cursor: pointer;
+      background: var(--type1-main-color);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="header-logo-menu">
+        <div class="logo-area">
+          <h1><a href="../../top.html">Ryko: Ryko</a></h1>
+        </div>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content-record"></div>
+          <div id="nav-content-jacket">
+            <div class="nav-content-text center-list">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h2>Password</h2>
+    <div>
+      <label>パスワードを入れてください<br><br>
+        <input type="text" id="passwordAreaAES">
+      </label>
+
+      <input type="button" value="Check" id="checkPasswordAES">
+    </div>
+    <div id="enter"></div>
+
+  </main>
+  <footer>
+    <button id="back-to-top"></button>
+    <nav>
+      <ul>
+        <li><a href="../../index.html" class="btn-flat"><span>home</span></a></li>
+        <li><a href="../../top.html" class="btn-flat"><span>top</span></a></li>
+        <li><a href="./works.html" class="btn-flat"><span>works</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="../../js/general.js"></script>
+
+  <!-- AES暗号 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+  <script>
+    let checkPasswordAES = document.getElementById('checkPasswordAES');
+    checkPasswordAES.addEventListener('click', buttonClickAES);
+
+    async function digestMessage(message) {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(message);
+      const hash = await crypto.subtle.digest('SHA-256', data);
+      // return hash;
+
+      const hashArray = Array.from(new Uint8Array(hash)); // バッファーをバイト列に変換する
+      const hashHex = hashArray
+        .map((b) => b.toString(16).padStart(2, "0"))
+        .join(""); // バイト列を 16 進文字列に変換する
+      return hashHex;
+    }
+
+    function buttonClickAES() {
+
+      (async () => {
+
+        //  passwordの確認(ハッシュ関数を使用)
+
+        let passwordAreaAES = document.getElementById('passwordAreaAES');
+
+        const pass_hash = await digestMessage(passwordAreaAES.value);
+
+        const test_hash = 'c4beddcf557f06a5d8f4761b653b9a430a29b8f8aa574c1b5095b9075bd99209'; //  正しいパスワードをSHA-256でハッシュ化したやつ
+
+        if (pass_hash == test_hash) {
+          // document.getElementById('pass-check-result').textContent += 'ok: ';
+
+          let encrypted = "U2FsdGVkX1+60gBg6LI0ZU+dnyARI/s91cR4f5N/6m4="; //  秘密ページのIDを、パスワードで暗号化したやつ
+
+          let decrypted = CryptoJS.AES.decrypt(encrypted, passwordAreaAES.value);
+          //  暗号化したやつを、入力されたパスワードで復号する
+
+          let txt_decrypted = decrypted.toString(CryptoJS.enc.Utf8);
+          //  復号された秘密ID
+
+          let secret_page = 'work-20210627-' + txt_decrypted + '.html';
+
+          document.getElementById('enter').innerHTML = '<a href="' + secret_page + '">ENTER →</a>'
+
+        } else {
+          document.getElementById('enter').innerHTML = 'パスワードが違います';
+          document.getElementById('passwordAreaAES').value = '';
+        }
+      })();
+
+    }
+  </script>
+</body>
+
+</html>
