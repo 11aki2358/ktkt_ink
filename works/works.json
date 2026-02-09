@@ -239,6 +239,54 @@
       "title": "Robert Plant"
     }
   },
+   {
+    "genre": [
+      "films"
+    ],
+    "year": 2021,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "消しゴムはんこのクリフ",
+      "editDate": 20210319,
+      "id": "20210319",
+      "modal": true,
+      "postDate": 20210319,
+      "title": "ワンハリ"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2021,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "",
+      "editDate": 20210305,
+      "id": "20210305",
+      "modal": true,
+      "postDate": 20210305,
+      "title": "Brian May"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2021,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "",
+      "editDate": 20210302,
+      "id": "20210302",
+      "modal": true,
+      "postDate": 20210302,
+      "title": "Palaye Royale"
+    }
+  },
   {
     "genre": [
       "rock"
@@ -253,6 +301,22 @@
       "modal": false,
       "postDate": 20210228,
       "title": "Jimmy Page詰"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2021,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "リッケンとジョージ。いつかのギタマガの表紙の模写",
+      "editDate": 20210225,
+      "id": "20210225",
+      "modal": true,
+      "postDate": 20210225,
+      "title": "George Harrrrisssson"
     }
   },
   {
