@@ -115,6 +115,22 @@
     "genre": [
       "rock"
     ],
+    "year": 2025,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "似てないって言わないで",
+      "editDate": 20250115,
+      "id": "20250115",
+      "modal": false,
+      "postDate": 20250115,
+      "title": "落書きエマさん"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
     "year": 2024,
     "rough": false,
     "warn": [],
@@ -232,11 +248,43 @@
     "warn": [],
     "info": {
       "comment": "",
+      "editDate": 20221005,
+      "id": "20221005",
+      "modal": true,
+      "postDate": 20221005,
+      "title": "Jimmy Page"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2022,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "",
       "editDate": 20220819,
       "id": "20220819",
       "modal": true,
       "postDate": 20220819,
       "title": "Robert Plant"
+    }
+  },
+  {
+    "genre": [
+      "zatta"
+    ],
+    "year": 2022,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "スターも一般人も、みんなかわいかった時代",
+      "editDate": 20220705,
+      "id": "20220705",
+      "modal": true,
+      "postDate": 20220705,
+      "title": "ファッション: 1967"
     }
   },
   {
