@@ -119,7 +119,7 @@
     "rough": false,
     "warn": [],
     "info": {
-      "comment": "お誕生日に描いた",
+      "comment": "お誕生日に描いた絵",
       "editDate": 20240831,
       "id": "20240831",
       "modal": true,
@@ -151,7 +151,7 @@
     "rough": false,
     "warn": [],
     "info": {
-      "comment": "雑な落書き&映画・音楽パロディー多めです",
+      "comment": "ラフな落書き & 映画・音楽パロディー多めです",
       "editDate": 20240714,
       "id": "20240714",
       "modal": false,
@@ -215,12 +215,28 @@
     "rough": false,
     "warn": [],
     "info": {
-      "comment": "お姐さま!!!",
+      "comment": "好!!!",
       "editDate": 20221026,
       "id": "20221026",
       "modal": true,
       "postDate": 20221026,
       "title": "Patti Smith"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2020,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "2020年に描いていた諸々<br>博士多め、ロジャいないです(ごめん)",
+      "editDate": 20201230,
+      "id": "20201230",
+      "modal": false,
+      "postDate": 20201230,
+      "title": "QUEEN詰"
     }
   },
   {
@@ -237,6 +253,54 @@
       "modal": false,
       "postDate": 20201231,
       "title": "the Struts詰"
+    }
+  },
+   {
+    "genre": [
+      "rock"
+    ],
+    "year": 2020,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "お誕生日イラスト",
+      "editDate": 20200625,
+      "id": "20200625",
+      "modal": true,
+      "postDate": 20200625,
+      "title": "Jeff Beck"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2020,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "お誕生日イラスト",
+      "editDate": 20200531,
+      "id": "20200531",
+      "modal": true,
+      "postDate": 20200531,
+      "title": "BONZOさん"
+    }
+  },
+  {
+    "genre": [
+      "rock"
+    ],
+    "year": 2020,
+    "rough": false,
+    "warn": [],
+    "info": {
+      "comment": "クリスタルドラム❧",
+      "editDate": 20200429,
+      "id": "20200429",
+      "modal": true,
+      "postDate": 20200429,
+      "title": "YOSHIKIさん"
     }
   }
 
