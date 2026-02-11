@@ -503,3 +503,38 @@ pre code {
   cursor: pointer;
   border: .2em solid black;
 }
+
+
+/* Reply */
+
+blockquote {
+  position: relative;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border: solid 2px black;
+  border-left-width: 50px;
+}
+
+
+blockquote:before {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: -2rem;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: ">";
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+blockquote .quote-source {
+  display: block;
+  background-color: var(--type1-main-color);
+  padding: .5rem;
+  font-weight: bold;
+  margin: 0 0 0 auto;
+  width: fit-content;
+}
