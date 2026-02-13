@@ -39,55 +39,45 @@
 <!-- CSS : prism -->
 <!-- genre : design -->
 <h2 id="access-limitation">Access Limitation</h2>
-<p>Netlifyでデプロイする静的サイトでは、Basic認証や.htaccessによる制限ができない。<br>それでもなんとかして夢腐血薬イラストに閲覧制限をかける方法を模索している記録。<br>どっかに「html, CSS, javaScriptだけで実装! 個人サイト閲覧制限入門書」的な専門書ないかなぁ。
-頑張ってみているけれど、車輪の再発明にすぎないんだろうな...</p>
+<p>Netlifyでデプロイする静的サイトでは、Basic認証や.htaccessによる制限ができない。<br>それでもなんとかして「ヤバいイラスト」に閲覧制限をかける方法を模索している記録。  </p>
+<p>頑張ってみているけれど、車輪の再発明にすぎないんだろうなぁ...</p>
 <h2 id="abstract">Abstract</h2>
-<p>幾重にもゴテゴテと張り巡らせる検索除け&閲覧制限の網...</p>
+<p>実装したい機能</p>
 <ul>
-<li>パスワード認証が出来る。複数の秘密ページで同じパスワードを使いまわせる。</li>
-<li>ソースコードを見ただけでは、秘密ページのurlが分らない。</li>
-<li>11aki2358以外のページ(ブクマや閲覧履歴など)から秘密ページのurlにアクセスすると、別ページに飛ばされる(未実装)。<br>javaScriptを無効にしているブラウザだったら、普通に内容が表示される。今日日、javaScript無効化している人はレアだろうけれど。</li>
-<li>秘密ページは閲覧履歴に残らない。</li>
+<li>パスワード認証が出来る。複数の秘密ページで、同じパスワードを使いまわせる。</li>
+<li>パスワードを入力しなければ、デベロッパツール等を使用しても秘密ページの中身を見ることは出来ない。</li>
+<li>パスワードを入力しなければ、秘密ページのURLを知ることは出来ない。</li>
+<li>パスワードが間違っていた場合でも、おかしな挙動をしない</li>
 </ul>
 <p>(DEMO-0の仕組みは、この全体像に当てはまらない)</p>
-<h3 id="-url-">「ソースコードを見ただけでは、秘密ページのurlが分らない」</h3>
+<h3 id="-url-">「パスワードを入力しなければ、秘密ページのURLを知ることは出来ない」</h3>
 <p>秘密ページのurlは秘密にする、ということ。
-パスワードが分らなくてもとりあえず秘密ページのURLにはアクセスできるという状態だと...<br>デベロッパーツールや「Ctr-U(ページのソースを表示)」を使って本文や画像を覗き見できる。
+パスワードが分らなくてもとりあえず秘密ページのURLにはアクセスできる、という状態だと...<br>デベロッパーツールや「Ctr-U(ページのソースを表示)」を使って本文や画像を覗き見できる。
 「パスワードがわかる人でなければ、秘密ページのURLが分らない」というのが必要。</p>
-<h3 id="works-html">works.html</h3>
-<p>健全イラストが並んだページworks.htmlに、こっそりパスワード入力ページへのリンクを貼る。  </p>
 <h3 id="password-page">Password Page</h3>
 <p>パスワード入力ページ。urlは任意。<br>秘密ページと一対一対応。
 パスワードが正しければ、秘密ページに飛ぶ。</p>
 <h3 id="secret-page">Secret Page</h3>
 <p>秘密ページ。ヤバいイラスト。秘密ページ毎のidがurlに使われている。idがバレたらurlがバレる。<br><a href="https://okwave.jp/qa/q4880306.html" target="_blank">こちら</a>の<br>『「main.html」に以下のJavaScriptを記載します』<br>以降の部分を使い <strong>このページに至るパスワード入力ページ</strong> 以外からのアクセスを弾く。  </p>
-<p>また、「メインページに戻る」ボタンを付けて、
-<a href="https://atmarkit.itmedia.co.jp/ait/articles/1604/20/news030.html" target="_blank">ブラウザの履歴に残さない</a>
-設定を付けることで、閲覧者の閲覧履歴に残らないようにする(このボタンを押すかは閲覧者の任意だけれど)</p>
 <h2 id="demo-0">DEMO-0</h2>
 <p><strong>prompt関数を使ってパスワードを入力</strong><br>prompt関数でパスワード入力ページを表示し、正しいパスワードだったらページの内容を表示する(パスワード入力ページ = 秘密ページ)</p>
 <p><a href="design-limitation-pass0.html">秘密ページ</a></p>
-<p>きちんと機能しているときには、真っ白な背景にパスワード入力枠だけが表示されるし、この状態でデベロッパーツールを起動しても何も表示されない。</p>
+<p>きちんと機能しているときには、真っ白な背景にパスワード入力枠だけが表示される。<br>この状態でデベロッパーツールを起動しても、何も表示されない。</p>
 <h3 id="-">難点</h3>
-<p>でも! <strong>Ctr-U</strong>(ソースの表示)を押すと、htmlが表示される。パスワードが分らなくても本文を読めてしまう(だから、秘密ページのURLを秘密にする必要がある)。<br>あと、パスワード入力枠の背景にページ本文が透けて見えてしまうことがたまにある。
+<p><strong>Ctr-U</strong>(ソースの表示)を押すと、htmlが表示される。パスワードが分らなくても本文を読めてしまう(だから、秘密ページのURLを秘密にする必要がある)。<br>あと、パスワード入力枠の背景にページ本文が透けて見えてしまうことがたまにある。
 とてもマズい。  </p>
 <h2 id="demo-1">DEMO-1</h2>
 <p><strong>パスワード入力ページと秘密ページは別</strong></p>
-<p>パスワードページのjavaScriptに秘密ページのURLが書いてあるので、Demo-0とどっこいどっこい。</p>
 <p><a href="design-limitation-pass1.html">パスワード入力ページ</a></p>
 <ul>
 <li>パスワード入力ページ : dsign-limitation-pass1.html</li>
-<li>秘密ページ : design-limitation-secret.html(idがdesign-limitation-secret)<br>ただし、「11aki2358以外からのアクセスを弾く」は実装していない。</li>
+<li>秘密ページ : design-limitation-secret.html(idがdesign-limitation-secret)<br>ただし、「パスワード入力ページ以外からのアクセスを弾く」は実装していない。</li>
 </ul>
-<p>なお、別の場合で「秘密ページのidが3776」ならば、「秘密ページのURLは3776.html」「パスワードページのURLは、3776と全然関係ない文字列」である。<em>秘密ページにidを割り当てるのは必須ではない</em>が、URLと紐づけた方が管理しやすいべ...(URL=idにする場合、idもバレちゃダメ!)    </p>
-<p>「このページ(design-limitation.html) → design-limitation-pass1.html → design-limitation-secret.html →
-このページ」と一周回ってきたが、閲覧履歴にはこのページしか残っていなかった。ばっちしOK!</p>
 <h3 id="-">難点</h3>
-<p>パスワード入力ページの下部に書かれたjavaScriptを見れば、秘密ページのurlが分かってしまう。
-パスワード入力ページのurl欄を秘密ページのurlに書きかえれば、「パスワード入力ページ以外からのアクセスを弾く」を実装しても秘密ページを閲覧されてしまう。</p>
+<p>パスワード入力ページの下部に書かれたjavaScriptを見れば、パスワードも、秘密ページのurlも分かってしまう。</p>
 <h2 id="demo-2">DEMO-2</h2>
 <p><strong>パスワード入力ページでAES暗号を使用</strong></p>
-<p>パスワード入力ページのソースコードを見ても、秘密ページのURLは分らない。</p>
+<p>パスワード入力ページのソースコードを見ても、秘密ページのURLは分らない(当然、パスワードも分からない)。</p>
 <p><a href="design-limitation-pass2.html">パスワード入力ページ(改)</a></p>
 <ul>
 <li>パスワード入力ページ : design-limitation-pass2.html</li>
@@ -107,64 +97,39 @@
 <ul>
 <li>パスワード入力ページ(改)に入力されたパスワードを使って、この長ったらしい暗号文を復号。</li>
 <li>復号した値を、変数txt_decryptedに格納</li>
-<li>txt_decrypted + ".html"にアクセス(閲覧履歴に残らないようにリンクする!)</li>
+<li>txt_decrypted + &quot;.html&quot;にアクセス</li>
 </ul>
-<p>この場合も、パスワード入力ページと秘密ページは閲覧履歴に残らなかった。</p>
-<h3 id="-1">難点1</h3>
-<p>デモ1とデモ2では、「パスワード入力ページ以外のリンクからの訪問は弾く」を実装していなかった。<br>以下の状況から訪問した場合だと、リンク元を参照できないことがあるらしい(リンク元urlが空になる)</p>
-<ul>
-<li>ローカル環境(テスト環境だし、まぁいいかぁ) :
-<a href="https://freemas.org/making/jquery/document-referrer-null" target="_blank">link</a></li>
-<li>ブクマ、閲覧履歴、urlベタ打ち(本望。万歳) :
-<a href="https://support.karte.io/post/2DEyT4M90B4QsIgOA9tfNR" target="_blank">link</a></li>
-<li><em>(Windows IEの場合)javaScriptのwindowオブジェクトを使ってページを訪れた</em>(パスワードページ2の原理だよ...) :
-<a href="http://www9.plala.or.jp/oyoyon/html/script/referrer.html" target="_blank">link</a></li>
-</ul>
-<p>「IEからは見ないで!」ていうのもアリかな。</p>
-<h3 id="-2">難点2</h3>
-<p>間違えたパスワードを入力した場合、存在しないurlに飛ばされる。
-エラー404ページまで飛ばされた後、パスワード再入力まで行くのが面倒。</p>
-<h4 id="-">対策</h4>
+<h3 id="-">難点</h3>
+<p>間違えたパスワードを入力した場合、存在しないurlに飛ばされる(AES暗号の復号に失敗するので)。<br>エラー404ページまで飛ばされた後、パスワード再入力まで行くのが面倒。</p>
+<h2 id="demo-3">DEMO-3</h2>
 <p>パスワードの正誤を確認するためのハッシュ化を行う</p>
 <p><em>準備</em></p>
 <ul>
-<li>'abc'(適当な文字列)にパスワード'key'をつなげた文字列'abckey'をハッシュ化。このハッシュ値を、定数hash1に格納</li>
-<li>id(秘密ページのURL)を、パスワード'key'を使って暗号化。暗号化した値を、定数encryptedに格納</li>
-<li>文字列'abc'とhash1, encryptedをパスワード認証ページに仕込む。</li>
+<li>パスワード&#39;key&#39;を事前にハッシュ化しておく。このハッシュ値を、定数<code>test_hash</code>に格納</li>
+<li>id(秘密ページのURL)を、パスワード&#39;key&#39;を使ってAES暗号化。暗号化した値を、定数<code>encrypted</code>に格納</li>
+<li>文字列<code>test_hash</code>, <code>encrypted</code>をパスワード認証ページに仕込む。</li>
+<li>ハッシュ化と暗号化のための仕掛け : <a href="../works/work-encode.html">リンク</a></li>
+<li>ログインページ : <a href="../works/work-20260208.html">リンク</a><br>詳しくは、上記リンク先に書かれたメモと、ページに仕込まれたjavascriptを参照。</li>
 </ul>
 <p><em>認証</em></p>
 <ul>
-<li>パスワード認証ページに入力された値を、文字列'abc'につなげてハッシュ化。ハッシュ値をhash2に格納</li>
-<li>hash1とhash2が一致 = 入力されたパスワードは正しい<ul>
-<li>入力されたパスワードを使ってencryptedを復号。</li>
-<li>この復号後を、変数txt_dexryptedに格納</li>
-<li>txt_dexrypted + ".html"にアクセス</li>
+<li>パスワード認証ページに入力された値をハッシュ化する。ハッシュ値を<code>pass_hash</code>に格納</li>
+<li><code>test_hash</code>と<code>pass_hash</code>が一致 = 入力されたパスワードは正しい<ul>
+<li>入力されたパスワードを使って<code>encrypted</code>を復号する。</li>
+<li>この復号語を、変数<code>txt_dexrypted</code>に格納</li>
+<li><code>txt_dexrypted</code> + &quot;.html&quot;にアクセス</li>
 </ul>
 </li>
-<li>hash1とhash2が一致しなかった<ul>
+<li><code>test_hash</code>と<code>pass_hash</code>が一致しなかった = パスワード間違えてる<ul>
 <li>入力フォームをクリア(パスワード再入力を促す)</li>
 </ul>
 </li>
 </ul>
-<h2 id="-">ハッシュ関数のみを使用</h2>
-<p>パスワードがkey, 秘密ページのidが3776だった場合...(idはバレてOK, URLはバレちゃダメ)</p>
-<ol>
-<li>"key3776"をハッシュ化した値をあらかじめ求めておいて、コレを秘密ページのURLに使う。</li>
-<li>パスワードの入力を促す。</li>
-<li>入力されたパスワードの末尾にidを付けて(key3776とか、pass3776とかになる)ハッシュ化する。
-これで得られたハッシュ値に".html"を付けて、秘密ページにアクセス。</li>
-</ol>
-<p>良い点</p>
-<ul>
-<li>秘密ページのURLがめっちゃ長くなる(ハッシュ値がURLになるから)。</li>
-<li>似たようなidとパスワードを使っても、秘密ページのURLは全然違うものになる。</li>
-<li>秘密ページのid管理が楽。秘密ページ(idが3776)に至るパスワードページを3776.htmlにしておく、とか。</li>
-</ul>
-<p>秘密ページのURLを特定のものにしたい! というこだわりがあるならばAES暗号を使った形式、
-idの管理を楽にしたい! というこだわりがあるならばハッシュ関数を使った形式。</p>
 <h2 id="-">もっと強固な方法</h2>
 <p>.htaccessによる制御や、BASICによる閲覧制限。<br>おそらくNetlifyでは使えない。<br>Vercel(GitHub連携可)ではBasic認証が使える??? :
 <a href="https://blog.kimizuka.org/entry/2021/06/09/231526" target="_blank">link</a></p>
+<p>javascriptによる閲覧制限は、しょせんはお遊びのようなものなので...<br>絶対に見られたらマズい諸々は、サーバ/ホスティングサービスの機能に合わせて閲覧制限しておくこと。</p>
+<p>以下、未実装</p>
 <h3 id="-">セッション認証(フォーム認証)</h3>
 <p>Netlifyでは使えない(php)</p>
 <ul>

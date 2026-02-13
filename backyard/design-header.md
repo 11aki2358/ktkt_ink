@@ -3,7 +3,7 @@
 
 ## Header
 
-headerタグの中身についてのメモ。
+headerタグの中身についてのメモ。  
 headerタグの中では、
 
 * サイトのタイトル   
@@ -18,7 +18,7 @@ headerタグの中では、
 を使用して、ハンバーガーメニューを実装。  
 主にheader.css, headline.cssが関与。  
 
-主に
+特に
 
 * <a href="../css/style.css" target="_blank" class="code-file">style.css</a> : header.cssと、ページ内リンクの飛び先について
 * <a href="../css/decoration.css" target="_blank" class="code-file">decoration.css</a> : (h1見出しについてのみ)
@@ -37,7 +37,7 @@ headerタグの中では、
 
 ページ上部で固定している部分(h1見出しとopenボタン)。
 
-* header.css : タイトル部分の範囲を指定したり
+* header.css : タイトル部分の範囲の指定など
 * design.css : h1見出しとh2見出しのフォントサイズなど
 
 htmlファイルの中身では
@@ -54,12 +54,12 @@ htmlファイルの中身では
   &amp;lt;label id="nav-open" for="nav-input">&amp;lt;span>&amp;lt;/span>&amp;lt;/label>
   </code></pre>
 
-ヘッダーのh1とopenボタン、h2の配置は、 使っているフォントに合わせて微調整している。
+ヘッダーのh1やh2の配置は、 使っているフォントに合わせて微調整している。
 下手にいじるとガッタガタな配置になるので注意。
 
 ##  Contents menu
 
-OPENボタンを押すと飛び出す、レコードみたいな部分。ページ内リンクが貼ってある。ハンバーガーぽく見えないけれど、ハンバーガーメニューの機能がコレ。
+OPENボタンを押すと飛び出す、レコードジャケットのような部分。ページ内リンクが貼ってある。ハンバーガーぽく見えないけれど、ハンバーガーメニューの機能がコレ。
 
 ### 仕組み(ざっくり)
 
@@ -68,7 +68,7 @@ OPENボタンを押すと飛び出す、レコードみたいな部分。ペー�
 * false(チェックされていない) : コンテンツメニューは表示しない
 * true(チェックされている) : コンテンツメニューを表示する
 
-という風にして、コンテンツメニューの表示・非表示を切り替える。  
+というようにして、コンテンツメニューの表示・非表示を切り替える。  
 このチェックボックスを定義しているのが
 
 <pre data-label=".html"><code class="language-html">
@@ -83,7 +83,7 @@ OPENボタンを押すと飛び出す、レコードみたいな部分。ペー�
 * コンテンツメニューの背景のモヤッとした部分(<code class="language-html">#nav-close</code>)
 * コンテンツメニューに貼られたリンク(<code class="language-html">class="nav-link"</code>)
 
-この3つのうち、2番目と3番目のは「チェックを外す(コンテンツメニューを閉じる)」のにしか使えない。
+この3つのうち、2番目と3番目のは「チェックを外す(コンテンツメニューを閉じる)」用途にしか使えない。
 
 ### チェックボックス(<code class="language-html">#nav-input</code>)にチェックする
 
@@ -139,9 +139,9 @@ OPENの範囲がクリックされた、つまりチェックボックス(<code 
 
 コンテンツメニューに貼られたリンク。ちょっとややこしい。  
 <code class="language-css">#nav-open</code>, <code class="language-css">#nav-close</code>のラベルがついた要素は、チェックボックス(<code class="language-css">#nav-input</code>)と兄弟関係だったから、ひねったことをしなくても<code class="language-css">~checked</code>を使えばCSSで操作できた。  
-でも、<code class="language-html">class="nav-link"</code>がついたこのリンクは、チェックボックスと兄弟関係でない。
+だが、<code class="language-html">class="nav-link"</code>がついたこのリンクは、チェックボックスと兄弟関係でない。
 だから、javaScriptを使ってチェックボックスのtrue→falseを実装しなければならない。  
-<a href="https://rui-log.com/css-hamburger-menu/#postscript01" target="_blank">こちら</a>のリンクで、javaScriptの書き方を説明している。でも、こちらのコードはjQueryを使用しているという条件が必要。  
+<a href="https://rui-log.com/css-hamburger-menu/#postscript01" target="_blank">こちら</a>のリンクで、javaScriptの書き方を説明している。でも、こちらのコードはjQueryを使用しているという条件のもと書かれている。  
 純粋なjavaScriptだけでチェックボックスの操作をしたい... 初めて自力でjavaScriptを書くよ、参考資料は
 
 * クリックイベント :

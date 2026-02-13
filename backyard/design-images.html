@@ -36,14 +36,19 @@
 </nav>
 </header>
 <main>
-<!--  -->
+<!--  CSS : prism-->
+<!-- genre : design -->
 <h2 id="images">Images</h2>
 <p>Lightboxの使い方や、サムネについて</p>
 <h2 id="thumbnails">thumbnails</h2>
 <p>準備中</p>
 <h2 id="lightbox">Lightbox</h2>
+<blockquote>
+<p>2026.02追記  </p>
+<p>現在、サイト内でLIGHTBOXは使用していない。<br>記録として、メモだけは残しておく</p>
+</blockquote>
 <p>画像がフワッと浮かび上がる。
-使用例は<a href="https://lokeshdhakar.com/projects/lightbox2/" target="_blank">ここ</a>。<br><b>jQuery必須。なんとかして代わりのプログラム(CSSとjavaScriptのみ)を実装できないか?</b></p>
+使用例は<a href="https://lokeshdhakar.com/projects/lightbox2/" target="_blank">ここ</a>。<br><b>jQuery必須</b></p>
 <h3 id="lightbox-">lightboxの導入</h3>
 <p>lightboxを使うには、</p>
 <ul>
@@ -58,17 +63,17 @@ lightboxのzipファイルをダウンロードする沢山ファイルが入っ
 <li>dist/cssのlightbox.css</li>
 </ul>
 <p>しか使わない。</p>
-<p>lightbox.css(&lt;header>の中)</p>
+<p>lightbox.css(&lt;header&gt;の中)</p>
 <pre data-label=".html"><code class="language-html">
 &lt;link rel="stylesheet" href="css/lightbox.css" type="text/css">
 </code></pre>
 
-<p>jQuery(&lt;/body>の直前)</p>
+<p>jQuery(&lt;/body&gt;の直前)</p>
 <pre data-label=".html"><code class="language-html">
 &lt;script src="js/jquery-3.6.0.min.js">&lt;/script>
 </code></pre>
 
-<p>lightbox.js(&lt;/body>の直前)</p>
+<p>lightbox.js(&lt;/body&gt;の直前)</p>
 <pre data-label=".html"><code class="language-html">
 &lt;script src="js/lightbox.js">&lt;/script>
 </code></pre>
@@ -76,17 +81,17 @@ lightboxのzipファイルをダウンロードする沢山ファイルが入っ
 <h3 id="lightbox-">lightboxのアレンジ</h3>
 <p>キャプションのアレンジなど。</p>
 <ul>
-<li><a href="https://oku-log.com/blog/lightbox/" target="_blank">これ</a>をみると、タイトル内でpとかも指定できる。<br>オプションdata-titleを使えば、タイトルを書ける。<br>タイトルは <strong>"</strong> でくくること。<br><strong>"</strong> の中で、a hrefを使ってリンクを貼ることもできる(この時、リンクは <strong>"</strong> ではなく <strong>'</strong> でくくること)。</li>
+<li><a href="https://oku-log.com/blog/lightbox/" target="_blank">これ</a>をみると、タイトル内でpなども指定できる。<br>オプションdata-titleを使えば、タイトルを書ける。<br>タイトルは <strong>&quot;</strong> でくくること。<br><strong>&quot;</strong> の中で、a hrefを使ってリンクを貼ることもできる(この時、リンクは <strong>&quot;</strong> ではなく <strong>&#39;</strong> でくくること)。</li>
 <li><a href="https://www.web-myoko.net/blog/web-production/how-to-make-new-line-jquery-lightbox-caption/"
 target="_blank">これ</a>上手く使ってjavaScriptを書きかえれば、キャプションで改行できる。</li>
 <li><a href="https://qiita.com/YuuTee/items/1860b988485d0504b831" target="_blank">これ</a>でjavaScriptいじるのも。</li>
 </ul>
 <h2 id="spotlight">Spotlight</h2>
-<p>lightboxと似ているので、Spotlightというのもある。<br>lightboxと比較して</p>
+<p>lightboxと似ているツールで、Spotlightというのもある。<br>lightboxと比較して</p>
 <ul>
 <li>導入方法はほぼ同じ(jQueryと、Spotlight用のCSS、javaScript、imagesを使う)</li>
-<li>モーダルウィンドウの内容が充実<br>「全画面表示」ボタンとかがある。<br>タイトルやキャプションが充実している(ボタン付けたりできる)。<br>でも、タイトルなどで画像が覆われてしまうことも...</li>
-<li>レスポンシブ対応のやり方がよく分からなかった...?<br>私の設定のやり方が悪かったはず。Spotlightのデモページはちゃんとレスポンシブ対応していたけれど、自分でコードを組むと上手くいかない。lightboxは、特に何も考えなくてもレスポンシブしてくれる。</li>
+<li>モーダルウィンドウの内容が充実<br>「全画面表示」ボタンなどがある。<br>タイトルやキャプションが充実している(ボタン付けたりできる)。<br>でも、タイトルなどで画像が覆われてしまうことも...</li>
+<li>レスポンシブ対応のやり方がよく分からなかった...?<br>上手く設定できなかった。Spotlightのデモページはちゃんとレスポンシブ対応していたけれど、自分でコードを組むと上手くいかない。lightboxは、特に何も考えなくてもレスポンシブしてくれる。</li>
 </ul>
 </main>
 <footer>

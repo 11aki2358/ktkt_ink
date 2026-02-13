@@ -115,84 +115,44 @@ abc順に、主に文や単語を装飾するものを。imgとかinput, label, 
 
 <div class="image-set center">
   <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/beck-bogert-and-appice-jeff-beck-at-a-hotel-in-tokyo-japan-may-1973-picture-id1264079987?s=612x612"
+    href="../images/sample-600x600.png"
     data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
     <img class="example-image medium"
       src="../images/sample-150x150.png"
       alt="Beck Bogert And Appice First Japan Tour">
   </a>
   <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/jeff-beck-performs-onstage-at-the-25th-anniversary-rock-roll-hall-of-picture-id106299793?s=612x612"
+    href="../images/sample-600x800.png"
     data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
     <img class="example-image medium"
       src="../images/sample-150x180.png"
       alt="25th Anniversary Rock & Roll Hall Of Fame Concert - Night 2 - Show">
   </a>
   <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/jeff-beck-performs-on-stage-at-the-roundhouse-london-23rd-may-1973-he-picture-id1265962807?s=612x612"
+    href="../images/sample-800x600.png"
     data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
     <img class="example-image medium"
       src="../images/sample-180x150.png"
       alt="Jeff Beck Warm-Up Gig At Roundhouse Before US Tour">
   </a>
   <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/photo-of-jeff-beck-picture-id85357696?s=612x612"
+    href="../images/sample-600x600.png"
     data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
     <img class="example-image medium"
       src="../images/sample-150x150.png" alt="Photo of Jeff BECK">
   </a>
   <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/beck-bogert-and-appice-jeff-beck-at-a-hotel-in-tokyo-japan-may-1973-picture-id1264079987?s=612x612"
+    href="../images/sample-600x800.png"
     data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
     <img class="example-image medium"
       src="../images/sample-150x180.png"
       alt="Beck Bogert And Appice First Japan Tour">
   </a>
   <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/jeff-beck-performs-onstage-at-the-25th-anniversary-rock-roll-hall-of-picture-id106299793?s=612x612"
+    href="../images/sample-800x600.png"
     data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
     <img class="example-image medium"
       src="../images/sample-180x150.png"
       alt="25th Anniversary Rock & Roll Hall Of Fame Concert - Night 2 - Show">
-  </a>
-  <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/jeff-beck-performs-on-stage-at-the-roundhouse-london-23rd-may-1973-he-picture-id1265962807?s=612x612"
-    data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
-    <img class="example-image medium"
-      src="../images/sample-150x150.png"
-      alt="Jeff Beck Warm-Up Gig At Roundhouse Before US Tour">
-  </a>
-  <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/photo-of-jeff-beck-picture-id85357696?s=612x612"
-    data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
-    <img class="example-image medium"
-      src="../images/sample-150x180.png" alt="Photo of Jeff BECK">
-  </a>
-  <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/beck-bogert-and-appice-jeff-beck-at-a-hotel-in-tokyo-japan-may-1973-picture-id1264079987?s=612x612"
-    data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-    <img class="example-image medium"
-      src="../images/sample-180x150.png"
-      alt="Beck Bogert And Appice First Japan Tour">
-  </a>
-  <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/jeff-beck-performs-onstage-at-the-25th-anniversary-rock-roll-hall-of-picture-id106299793?s=612x612"
-    data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-    <img class="example-image medium"
-      src="../images/sample-150x150.png"
-      alt="25th Anniversary Rock & Roll Hall Of Fame Concert - Night 2 - Show">
-  </a>
-  <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/jeff-beck-performs-on-stage-at-the-roundhouse-london-23rd-may-1973-he-picture-id1265962807?s=612x612"
-    data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
-    <img class="example-image medium"
-      src="../images/sample-150x180.png"
-      alt="Jeff Beck Warm-Up Gig At Roundhouse Before US Tour">
-  </a>
-  <a class="example-image-link"
-    href="https://media.gettyimages.com/photos/photo-of-jeff-beck-picture-id85357696?s=612x612"
-    data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
-    <img class="example-image medium"
-      src="../images/sample-180x150.png" alt="Photo of Jeff BECK">
   </a>
 </div>

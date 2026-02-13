@@ -7,13 +7,12 @@
 ##  Start Vercel
 
 静的サイト(html, CSS, javaScriptだけでできたサイト)も、動的サイトやWebアプリもホスティングできる。無料。gitにプッシュ→Vercelにデプロイ、という流れが楽&初期設定がめっちゃシンプル。  
-絶対に静的サイトしか使わん、というならばNetlifyも楽だけれど、Basic認証付けたくなるかも、php使いたくなるかも、という人はVercelが良いと思う。
+絶対に静的サイトしか使わない、という場合ならばNetlifyも楽だけれど、Basic認証付けたくなるかも、php使いたくなるかも、という人はVercelが良いと思う。
 
 ##  Initial settings
 
 gitHubのアカウントを持っていれば、楽々登録できる。  
-(注意 : 無暗にアカウントは消さないこと!
-アカウントを消したら、過去のメールアドレスで再度Vercelに登録することはできない。gitHubからVercelのアカウントを作った場合でも、gitHubに登録されているメアドはVercelに登録される。) 
+(注意 : Vercelのアカウントは、無暗に消さないこと! 同一メールアドレスによるアカウント再登録が難しい(不可?))
 
 ### アカウント作成
 
@@ -31,9 +30,9 @@ gitHubのアカウントを持っていれば、楽々登録できる。
     別ウィンドウが開く。  
     そこにある**Repository access**という項目で、**All repositories**ではなく**Only select repositories**にチェックを入れる。  
     **Select repositories**ボタンが表示されるので、クリック。
-    そこから、たぶん非公開レポジトリも選択できると思うので、それをクリックして**Save**ボタン。
+    そこから非公開レポジトリも選択できると思うので、それをクリックして**Save**ボタン。
 4. お目当てのレポジトリと対応したレポジトリを選択し、**import**ボタンをクリック    
-5. **Configure Project**という設定画面が開かれる。  
+5. **Configure Project**という設定画面が開く。  
     PROJECT NAMEには、好きな名前を記入。
     コレが、デプロイされるサイトのURLになる。
     FRAMEWORK PRESETは、Otherに設定。  
@@ -46,62 +45,44 @@ gitHubのアカウントを持っていれば、楽々登録できる。
 ### サイトの初期設定
 
 ####  index.htmlの置き場所
-Vercelで静的サイトを公開する際には、indexページをどこに置くか、というのに制限がある。
+Vercelで静的サイトを公開する際には、indexページの置き場所に制限がある。
 認められているのは、以下の2か所
 
 1.  .\index.html
 2.  .\public\index.html
   
-のどちらか。  
-当サイトは、今のところ.\index.htmlの方を採用している。  
+当サイトは、今のところ① .\index.htmlの方を採用している。  
 index.html以外のページは、ルートディレクトリ以下のでのディレクトリに置いてもOK(ディレクトリpublicを使う場合は要注意かも)
-
-##### サイトのルートディレクトリってどこさ
-gitHubのレポジトリと対応しているディレクトリが、Vercelでデプロイするサイトのルートディレクトリ。
-サイトに関するすべてのデータは、基本的にはこのディレクトリに全部入っている必要がある。  
-例えば、gitHubにプッシュするときのコマンドが
-
-<pre><code class="language-powershell">
-C:\\Users\~~~~\top> git push -u origin main
-</code></pre>
-
-であるならば、
-gitHubのレポジトリと対応しているというのは、C:\\~~~~~\topのディレクトリ。
-
-##### 何も考えずにサイトを作った場合
-.\index.html  
-(index.htmlはルートディレクトリ直下に置く)    
-index.html以外のファイルは、topの直下になくてもいい(.\blog\article001.htmlとか)。
-でも、index.htmlを.\blog\index.htmlに置くのはダメ。
 
 ##### もうちょっとVercelらしくやる場合
 .\public\index.html    
 *どういうこと?*  
-ルートディレクトリに、publicという名前のディレクトリを作る。
-他の名前じゃダメ。  
-このディレクトリを使って、 上記のという位置関係でindex.htmlを配置する。  
+ルートディレクトリに、publicという名前のディレクトリを作る
+(他の名前ではダメ)。  
+このディレクトリpublicの下に、index.htmlを配置する。  
 (index.html以外は、**public下**の好きなところに配置できる。
-例えば .\public\blog\article001.html とか)。
+例えば .\public\blog\article001.html など)。
     
 *なんで?*  
 Vercelでは、publicという名前のディレクトリには「ここには静的コンテンツだけが入っているよ」という特別な意味が込められている。
-htmlファイルとかサイトで使う画像とか、「サイト閲覧者の操作に左右されない、完成したコンテンツ」はこのディレクトリに入れましょう、ということになっている。  
+htmlファイルやサイトで使う画像など、「サイト閲覧者の操作に左右されない、完成したコンテンツ」はこのディレクトリに入れましょう、ということになっている。  
 シンプルな静的サイトを作るだけだったら、publicうんぬんは特に気にしなくても大丈夫。
-でも、Vercelには「Basic認証は、public下のファイルにしか適用できないよ」的な制限がある。
-凝ったことをしたいならば、ディレクトリpublicを作って、html, CSS, javaScriptをまるっとお引越しする必要がある。
+だが、Vercelには「Basic認証は、public下のファイルにしか適用できないよ」という制限がある。
+凝ったことをしたいならば、ディレクトリpublicを作り、html, CSS, javaScriptをまるっとお引越しする必要がある。
 
 ##  Update your site
+
 サイトの初期設定が完了したら、あとはサイトの更新をgitHubにプッシュするだけでOK。
 gitHub上での変更点は、Vercelサイトに自動的に反映される(デプロイ完了)。  
   
-gitHubにプッシュしたサイトに致命的な過ち(vercel.jsonがおかしいとか)があった場合には、Vercelが文句(Deployment has failed)を垂れてくるし、その回のデプロイは無かったことにしてくれる。  
+gitHubにプッシュしたサイトに致命的な過ち(vercel.jsonがおかしいなど)があった場合には、Vercelが文句(Deployment has failed)を垂れてくる。その回のデプロイは無かったことになる。  
 どこがマズかったのかのヒントはくれるから、それを読んでコードやら何やらを修正する。
     
 ##  Vercel CLI
 必須ではない。  
-とりあえずデプロイしてみてからエラーがないか様子見る、というのもアリ。でも、一日のデプロイ回数には制限がある...  
+とりあえずデプロイしてみてからエラーがないか様子見る、というのもアリ。だが、一日のデプロイ回数には制限がある...  
 html, CSS, javaScriptの部分は、ブラウザや、VS CodeのLive Serverからチェックできる。
-でも、404ページどうなるの? とか、サーバに関するVercel独自のあれこれについては、上記方法ではチェックできない。
+しかし、404ページはどうなるの? とか、サーバに関するVercel独自のあれこれについては、上記方法ではチェックできない。
   
 Vercelのローカル環境を準備すれば、デプロイせずに色んな機能をチェックできて便利。  
 参考:
@@ -140,13 +121,13 @@ Vercelのローカル環境を準備すれば、デプロイせずに色んな�
 > vercel login
 </code></pre>
  
-下記のようなエラーメッセージが出ました。上記コマンドは実行できませんでした。  
+下記のようなエラーメッセージが出た。上記コマンドは実行できなかった。  
 (エラー出なかったよ、という場合は、
 <code class="language-powershell">Continue</code>
 うんぬんの操作へGo)
 
 <pre><code class="language-powershell">
-vercel : このシステムではスクリプトの実行が無効になっているため、ファイル C:\Users\私の指名\AppData\Roaming\npm\
+vercel : このシステムではスクリプトの実行が無効になっているため、ファイル C:\Users\私の氏名\AppData\Roaming\npm\
 vercel.ps1 を読み込むことができません。詳細については、「about_Execution_Policies」(https://go.microsoft.com/fwlink/?Li
 nkID=135170) を参照してください。
 発生場所 行:1 文字:1
@@ -156,9 +137,9 @@ nkID=135170) を参照してください。
     + FullyQualifiedErrorId : UnauthorizedAccess
 </code></pre>
 
-<code class="language-powershell">vercel</code>というコマンドを、「危険なコマンドかも!」とPowershellが拒否しています。  
+<code class="language-powershell">vercel</code>というコマンドを、「危険なコマンドかも!」とPowershellが拒否している状態。  
 この対策として、<a href="https://www.curict.com/item/d1/d1c4a3e.html" target="_blank">こちら</a>のサイトの「実行ポリシーの設定方法
-その1」を試します。
+その1」を試す。
 
 <pre><code class="language-powershell">
 > Set-ExecutionPolicy RemoteSigned -Scope Process
@@ -170,14 +151,14 @@ nkID=135170) を参照してください。
 [Y] はい(Y)  [A] すべて続行(A)  [N] いいえ(N)  [L] すべて無視(L)  [S] 中断(S)  [?] ヘルプ (既定値は "N"): 
 </code></pre>
 
-とりあえず<code class="language-powershell">y</code>と入力しました。  
-もう一度、vercelへのログインを試みます。コマンド
+とりあえず<code class="language-powershell">y</code>と入力。  
+もう一度、vercelへのログインを試みる。コマンド
 
 <pre><code class="language-powershell">
 > vercel login
 </code></pre>
 
-を書き込むと...
+を打ち込むと...
 
 <pre><code class="language-powershell">
 > vercel login
@@ -196,8 +177,8 @@ Vercel CLI 24.0.0
 ログイン方法(gitHub使う? gitLab使う? etc)を聞かれている。
 gitHubでログインしたいので、<code class="language-powershell">Continue with GitHub</code>の先頭に<code class="language-powershell">></code>がついている状態(上記の状態)でEnterをクリック。  
 すると、ブラウザでVercelのページが起動する。
-**CLI Login Success**とか、gitHubに登録してあるメールアドレスとかが書いてある。
-このページは閉じちゃってOK。  
+**CLI Login Success**や、gitHubに登録してあるメールアドレスなどが書いてある。
+このページは閉じてOK。  
 ターミナル側の出力は、
 
 <pre><code class="language-powershell">
@@ -209,7 +190,7 @@ Congratulations! You are now logged in. In order to deploy something, run `verce
 💡  Connect your Git Repositories to deploy every branch push automatically (https://vercel.link/git).    
 </code></pre>
  
-細かい文言は違うかもしれません。とりあえずSuccess! て書いてあるならば成功しているのだろう。
+細かい文言は違うかもしれない。とりあえずSuccess! て書いてあるならば成功しているのだろう。
 
 #### 作業ディレクトリに移動(初期設定)
 デスクトップ下のディレクトリ11aki2358をサイトのルートディレクトリとしてデプロイしている。
@@ -269,16 +250,16 @@ README.txt曰く
 * このフォルダの中身は**絶対に**誰にも見せないでね。
   ディレクトリ.vercelは、.gitignoreに書き込まれているよ。
 
-なんか、このディレクトリはいじったらマズそう。触らぬ神に祟りなし。  
+このディレクトリはいじったらマズそう。  
 なお、.gitignoreというのは、「gitに加えないファイル・ディレクトリの一覧」のこと。
-このリストに加えられているファイルは、公に出ない(ローカル環境、自分のPC以外からはアクセスできない)。
+このリストに加えられているファイルは、公に出ない(ローカル環境・自分のPC以外からはアクセスできない)。
 
 ### Vercel CLIを使う
 面倒な初期設定は終わったぞ!
 
 #### Vercel CLIからデプロイ
 普段はgit経由でVercelにデプロイしている。
-でも、Vercel CLIがあれば、git無しで直にデプロイできる。  
+だが、Vercel CLIがあれば、git無しでVercelに直接デプロイできる。  
 
 ターミナル上でルートディレクトリにいる前提で...
 
@@ -290,7 +271,7 @@ README.txt曰く
     target="_blank">https://marlboro-bambi-8bwsbhq5o-11aki2358.vercel.app/</a>など)から見ることが出来る。
 * コマンド<code class="language-powershell">vercel --prod</code>  
   こちらのコマンドでデプロイしたサイトは、Previwではなく、本サイトとしてデプロイされる。  
-  でも、gitでバージョン管理する方が安全だろうから、このコマンドじゃなくて
+  だが、gitでバージョン管理する方が安全だろうから、このコマンドではなく
 
   <pre><code class="language-powershell">
   > git add .
@@ -325,13 +306,13 @@ README.txt曰く
 ブラウザで、サイトのindex.htmlページが開く。やったぁ!  
 ついでに、Vercel CLIのローカル環境でなければ確認できないことを試してみる。とりあえずお手軽に、404.htmlのチェックを。  
 このページの下の方で、Vercelでの404エラーページの作り方を紹介している。
-この機能は、普通のブラウザとか、VS Codeの拡張機能Live Serverでは確認できない
+この機能は、普通のブラウザや、VS Codeの拡張機能Live Serverでは確認できない
 (ただ、「そのURLは存在しません」と表示されるだけ)。
-でも、Vercel CLIで仮想サーバを開いている場合、存在しないページのURLを入力すると、ちゃんと404.htmlに飛べる。よし!  
+だが、Vercel CLIで仮想サーバを開いている場合には、存在しないページのURLを入力すると、ちゃんと404.htmlに飛べる。よし!  
 
 コンソール上で`Ctr-C`をクリックすれば、仮想サーバを閉じれる。  
 
-Vercel CLIで仮想サーバを起動すると、phpとかのプログラミング言語をインストールしていなくても、ページの動作を確認できる。まじ感謝。
+Vercel CLIで仮想サーバを起動すると、phpとかのプログラミング言語をインストールしていなくても、ページの動作を確認できる。まじ便利。
 
 ##  404 Error Page
 リンク切れを表す404エラー。

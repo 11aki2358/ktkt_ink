@@ -7,42 +7,10 @@
 
 ##  Useful Links
 
-* コードをhtmlに変換してくれる便利サイト :
-  * <a href="https://www.bugbugnow.net/2020/02/HTML-special-character-converter.html" target="_blank">link</a>
-  (1だけ変に変換される)
-  * こちらも :
+* コードをhtmlに変換してくれる便利サイト
     <a href="https://www.webdesignleaves.com/pr/plugins/html_entity_convertor.html" target="_blank">link</a>  
 * サンプル画像の生成 : <a href="http://placehold.jp/" target="_blank">link</a>
 * Netlify FormでWeb拍手を作る : <a href="https://blog.comilab.net/post/2020-05-26/" target="_blank">link</a>
-
-##  Idea
-
-### headerのデザイン
-
-現在は、コンテンツメニューを開くための「OPEN」ボタンはCSSで作図している。
-
-難点
-* OPENボタンだけのためにWebフォントを読みこむのは面倒・データの無駄遣い
-* headerのデザインをrem単位でちまちま調節するのが面倒
-
-対応策
-* OPEN, BACKボタンはSVGで作図
-
-### htmlエスケープのプログラム
-
-参考
-* コードをhtmlに変換してくれる便利サイト :
-  <a href="https://www.bugbugnow.net/2020/02/HTML-special-character-converter.html" target="_blank">link</a>
-  (1だけ変に変換される)  
-* こちらも :
-  <a href="https://www.webdesignleaves.com/pr/plugins/html_entity_convertor.html" target="_blank">link</a>
-* 細かい計画は[こちら](./md-to-html.html)にも
-
-### 自作の静的サイトジェネレーター
-
-簡易的に、javaScript版は作ってみたけれど... : [markdown to html](md-to-html-backyard.html)  
-このサイトを育てるためだけに、デスクトップ用の静的サイトジェネレーターを自作する...?  
-JavaでGUIアプリ作るか、VS Codeの拡張機能を自作する...?
 
 ##  memo
 

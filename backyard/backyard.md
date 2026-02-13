@@ -7,7 +7,7 @@
 * ソフトウェア/Web系を生業にしている人間が書いた文章ではない
 * 2021～2022年にかけて調べた内容がメインであり、情報が古い。あちこちリンク切れしていると思う。
 
-記事は随時お手入れしていきたい..
+記事は随時お手入れしていきたい...
 
 ##  Start & Run
 
@@ -19,7 +19,7 @@
 * [To Start] 静的ホスティングサービスの比較 : [link](start-compareHosting.html)
 * [To Start] Vercel : [link](start-vercel.html)
 <!-- * [To Start] Vercelでphp : [link](start-vercel-php.html) -->
-* [Tools] Chromeのデベロッパーツール : [link](tools-ChromeDev.html)
+<!-- * [Tools] Chromeのデベロッパーツール : [link](tools-ChromeDev.html) -->
 * [Tools] git : [link](tools-git.html)
 * [Tools] VS Code : [link](./tools-VSCode.html)
 
@@ -30,19 +30,7 @@
 html, CSS, javaScriptのあれこれに関するメモ。
 
 **CSSについて**  
-サイト内の全ページに関する内容はstyle.cssにまとめてある。 だが、これだとstyle.cssが大きくなりすぎるので、「style.cssのどの部分のこと?」てなるかもしれない。  
-実際にhtmlに読みこんで使っているCSSファイルはstyle.cssだけれど、このファイルを疑似的に
 
-* style.css
-  * style.css  
-    bodyとかmainとかの大枠について
-  * header.css  
-    headerタグ内について
-  * inline-deco.css  
-    インライン要素の文・単語の装飾
-
-に分割している、的な感じ。  
-(ファイルstyle.cssの中で、@header.cssとか@inline-decoとかで検索すれば、該当箇所がわかる)
 
 * 概要 : [link](design.html)
 * ページ全体のgridレイアウト : [link](design-bodyGrid.html)
@@ -52,13 +40,7 @@ html, CSS, javaScriptのあれこれに関するメモ。
 * 検索除けについて : [link](./design-escSearch.html)
 <!-- * 閲覧制限について(一部未実装) : [link](design-limitation.html) -->
 * Worksの実装について : [link](./design-works.html)
-<!-- * メモ : [link](memo.html) -->
-<!-- 
-### trouble
 
-トラブった内容、エラーのうち、解決に時間がかかった内容
-
-* スクロールバーが表示されるのに動かない : [link](./trouble-scrollx.html) -->
 
 ### Example
 

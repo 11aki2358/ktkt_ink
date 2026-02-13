@@ -11,9 +11,14 @@ Lightboxの使い方や、サムネについて
 
 ##  Lightbox
 
+> 2026.02追記  
+>
+> 現在、サイト内でLIGHTBOXは使用していない。  
+> 記録として、メモだけは残しておく
+
 画像がフワッと浮かび上がる。
 使用例は<a href="https://lokeshdhakar.com/projects/lightbox2/" target="_blank">ここ</a>。  
-<b>jQuery必須。なんとかして代わりのプログラム(CSSとjavaScriptのみ)を実装できないか?</b>
+<b>jQuery必須</b>
 
 ### lightboxの導入
 
@@ -53,7 +58,7 @@ lightbox.js(&amp;lt;/body>の直前)
 
 キャプションのアレンジなど。
 
-* <a href="https://oku-log.com/blog/lightbox/" target="_blank">これ</a>をみると、タイトル内でpとかも指定できる。  
+* <a href="https://oku-log.com/blog/lightbox/" target="_blank">これ</a>をみると、タイトル内でpなども指定できる。  
   オプションdata-titleを使えば、タイトルを書ける。   
   タイトルは **"** でくくること。  
   **"** の中で、a hrefを使ってリンクを貼ることもできる(この時、リンクは **"** ではなく **'** でくくること)。
@@ -63,13 +68,13 @@ lightbox.js(&amp;lt;/body>の直前)
 
 ##  Spotlight
 
-lightboxと似ているので、Spotlightというのもある。  
+lightboxと似ているツールで、Spotlightというのもある。  
 lightboxと比較して
 
 * 導入方法はほぼ同じ(jQueryと、Spotlight用のCSS、javaScript、imagesを使う)
 * モーダルウィンドウの内容が充実    
-  「全画面表示」ボタンとかがある。  
+  「全画面表示」ボタンなどがある。  
   タイトルやキャプションが充実している(ボタン付けたりできる)。  
   でも、タイトルなどで画像が覆われてしまうことも...
 * レスポンシブ対応のやり方がよく分からなかった...?   
-  私の設定のやり方が悪かったはず。Spotlightのデモページはちゃんとレスポンシブ対応していたけれど、自分でコードを組むと上手くいかない。lightboxは、特に何も考えなくてもレスポンシブしてくれる。
+  上手く設定できなかった。Spotlightのデモページはちゃんとレスポンシブ対応していたけれど、自分でコードを組むと上手くいかない。lightboxは、特に何も考えなくてもレスポンシブしてくれる。

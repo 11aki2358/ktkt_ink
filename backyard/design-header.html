@@ -39,8 +39,7 @@
 <!-- CSS : prism -->
 <!-- genre : design -->
 <h2 id="header">Header</h2>
-<p>headerタグの中身についてのメモ。
-headerタグの中では、</p>
+<p>headerタグの中身についてのメモ。<br>headerタグの中では、</p>
 <ul>
 <li><p>サイトのタイトル<br>ページ上部で固定している。h1見出しで、aリンク。</p>
 </li>
@@ -50,7 +49,7 @@ headerタグの中では、</p>
 </li>
 </ul>
 <p>を使用して、ハンバーガーメニューを実装。<br>主にheader.css, headline.cssが関与。  </p>
-<p>主に</p>
+<p>特に</p>
 <ul>
 <li><a href="../css/style.css" target="_blank" class="code-file">style.css</a> : header.cssと、ページ内リンクの飛び先について</li>
 <li><a href="../css/decoration.css" target="_blank" class="code-file">decoration.css</a> : (h1見出しについてのみ)</li>
@@ -67,7 +66,7 @@ headerタグの中では、</p>
 <h2 id="logo-area">logo area</h2>
 <p>ページ上部で固定している部分(h1見出しとopenボタン)。</p>
 <ul>
-<li>header.css : タイトル部分の範囲を指定したり</li>
+<li>header.css : タイトル部分の範囲の指定など</li>
 <li>design.css : h1見出しとh2見出しのフォントサイズなど</li>
 </ul>
 <p>htmlファイルの中身では</p>
@@ -84,35 +83,35 @@ headerタグの中では、</p>
 
 </li>
 </ul>
-<p>ヘッダーのh1とopenボタン、h2の配置は、 使っているフォントに合わせて微調整している。
+<p>ヘッダーのh1やh2の配置は、 使っているフォントに合わせて微調整している。
 下手にいじるとガッタガタな配置になるので注意。</p>
 <h2 id="contents-menu">Contents menu</h2>
-<p>OPENボタンを押すと飛び出す、レコードみたいな部分。ページ内リンクが貼ってある。ハンバーガーぽく見えないけれど、ハンバーガーメニューの機能がコレ。</p>
+<p>OPENボタンを押すと飛び出す、レコードジャケットのような部分。ページ内リンクが貼ってある。ハンバーガーぽく見えないけれど、ハンバーガーメニューの機能がコレ。</p>
 <h3 id="-">仕組み(ざっくり)</h3>
 <p><code class="language-html">#nav-input</code>というタグがついたチェックボックスを用意しておく。このチェックボックス(<code class="language-html">#nav-input</code>)の値が..</p>
 <ul>
 <li>false(チェックされていない) : コンテンツメニューは表示しない</li>
 <li>true(チェックされている) : コンテンツメニューを表示する</li>
 </ul>
-<p>という風にして、コンテンツメニューの表示・非表示を切り替える。<br>このチェックボックスを定義しているのが</p>
+<p>というようにして、コンテンツメニューの表示・非表示を切り替える。<br>このチェックボックスを定義しているのが</p>
 <pre data-label=".html"><code class="language-html">
 &lt;input id="nav-input" type="checkbox" class="nav-unshown">
 </code></pre>
 
-<p>の部分。<br>ページにチェックボックスが表示されていたらヘンなので、<code class="language-html">class="nav-unshown"</code>を付けて非表示にしている。<br>このチェックボックス(<code class="language-html">#nav-input</code>)の値(true/false)を操作できる要素は3種類ある。</p>
+<p>の部分。<br>ページにチェックボックスが表示されていたらヘンなので、<code class="language-html">class=&quot;nav-unshown&quot;</code>を付けて非表示にしている。<br>このチェックボックス(<code class="language-html">#nav-input</code>)の値(true/false)を操作できる要素は3種類ある。</p>
 <ul>
 <li>OPEN/BACKの範囲(<code class="language-html">#nav-open</code>)</li>
 <li>コンテンツメニューの背景のモヤッとした部分(<code class="language-html">#nav-close</code>)</li>
-<li>コンテンツメニューに貼られたリンク(<code class="language-html">class="nav-link"</code>)</li>
+<li>コンテンツメニューに貼られたリンク(<code class="language-html">class=&quot;nav-link&quot;</code>)</li>
 </ul>
-<p>この3つのうち、2番目と3番目のは「チェックを外す(コンテンツメニューを閉じる)」のにしか使えない。</p>
+<p>この3つのうち、2番目と3番目のは「チェックを外す(コンテンツメニューを閉じる)」用途にしか使えない。</p>
 <h3 id="-code-class-language-html-nav-input-code-">チェックボックス(<code class="language-html">#nav-input</code>)にチェックする</h3>
 <p>OPENと書かれた範囲をクリックすれば、チェックボックス(<code class="language-html">#nav-input</code>)の値をtrueにする、という形式。<br>OPENの範囲は、</p>
 <pre><code class="language-powershell">
 &lt;label id="nav-open" for="nav-input">&lt;span>&lt;/span>&lt;/label>
 </code></pre>
 
-<p>で定義されている。<br><code class="language-html">&lt;span>&lt;/span></code>の部分(CSSの<code class="language-css">#nav-open span::after</code>も)でOPENの描画をしている。<br>コレをくくっている<code class="language-html">&lt;label id="nav-open" for="nav-input">&lt;/label></code>の部分が、「この範囲が、チェックボックス(<code class="language-css">#nav-open</code>)の操作をするよ。ちなみにこの部分のidは<code class="language-css">#nav-open</code>だよ」と宣言している。    </p>
+<p>で定義されている。<br><code class="language-html">&lt;span&gt;&lt;/span&gt;</code>の部分(CSSの<code class="language-css">#nav-open span::after</code>も)でOPENの描画をしている。<br>コレをくくっている<code class="language-html">&lt;label id=&quot;nav-open&quot; for=&quot;nav-input&quot;&gt;&lt;/label&gt;</code>の部分が、「この範囲が、チェックボックス(<code class="language-css">#nav-open</code>)の操作をするよ。ちなみにこの部分のidは<code class="language-css">#nav-open</code>だよ」と宣言している。    </p>
 <p>OPENの範囲がクリックされた、つまりチェックボックス(<code class="language-css">#nav-input</code>)の値がtrueになった状況というのは、CSSで<code class="language-css">#nav-input:checked</code>で表される。
 コレを使って、</p>
 <ul>
@@ -145,8 +144,8 @@ headerタグの中では、</p>
 <p>コンテンツメニューの背景のモヤッとした部分。
 ここをクリックすると、チェックボックス(<code class="language-css">#nav-input</code>)の値をtrue→falseに切り替える。</p>
 <h4 id="-nav-link">.nav-link</h4>
-<p>コンテンツメニューに貼られたリンク。ちょっとややこしい。<br><code class="language-css">#nav-open</code>, <code class="language-css">#nav-close</code>のラベルがついた要素は、チェックボックス(<code class="language-css">#nav-input</code>)と兄弟関係だったから、ひねったことをしなくても<code class="language-css">~checked</code>を使えばCSSで操作できた。<br>でも、<code class="language-html">class="nav-link"</code>がついたこのリンクは、チェックボックスと兄弟関係でない。
-だから、javaScriptを使ってチェックボックスのtrue→falseを実装しなければならない。<br><a href="https://rui-log.com/css-hamburger-menu/#postscript01" target="_blank">こちら</a>のリンクで、javaScriptの書き方を説明している。でも、こちらのコードはjQueryを使用しているという条件が必要。<br>純粋なjavaScriptだけでチェックボックスの操作をしたい... 初めて自力でjavaScriptを書くよ、参考資料は</p>
+<p>コンテンツメニューに貼られたリンク。ちょっとややこしい。<br><code class="language-css">#nav-open</code>, <code class="language-css">#nav-close</code>のラベルがついた要素は、チェックボックス(<code class="language-css">#nav-input</code>)と兄弟関係だったから、ひねったことをしなくても<code class="language-css">~checked</code>を使えばCSSで操作できた。<br>だが、<code class="language-html">class=&quot;nav-link&quot;</code>がついたこのリンクは、チェックボックスと兄弟関係でない。
+だから、javaScriptを使ってチェックボックスのtrue→falseを実装しなければならない。<br><a href="https://rui-log.com/css-hamburger-menu/#postscript01" target="_blank">こちら</a>のリンクで、javaScriptの書き方を説明している。でも、こちらのコードはjQueryを使用しているという条件のもと書かれている。<br>純粋なjavaScriptだけでチェックボックスの操作をしたい... 初めて自力でjavaScriptを書くよ、参考資料は</p>
 <ul>
 <li>クリックイベント :
 <a href="http://clue-design.com/javascript/id-class-click" target="_blank">link</a></li>
